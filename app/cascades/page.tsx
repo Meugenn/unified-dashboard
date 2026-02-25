@@ -1,4 +1,7 @@
-import { data, formatNumber, formatPercent, formatScore, getCityName } from "@/lib/data";
+"use client";
+
+import { datasets, formatNumber, formatPercent, formatScore, getCityName } from "@/lib/data";
+import { useRegion } from "@/lib/RegionContext";
 
 function SeverityColor(severity: number): string {
   if (severity >= 0.7) return "var(--accent-red)";
@@ -7,6 +10,9 @@ function SeverityColor(severity: number): string {
 }
 
 export default function CascadesPage() {
+  const { region } = useRegion();
+  const data = datasets[region];
+  
   return (
     <div>
       <div style={{ marginBottom: 8 }}>
@@ -102,7 +108,7 @@ export default function CascadesPage() {
                       fontWeight: 500,
                     }}
                   >
-                    {getCityName(scenario.trigger)}
+                    {getCityName(scenario.trigger, region)}
                   </div>
                 </div>
               </div>
@@ -229,7 +235,7 @@ export default function CascadesPage() {
                         border: `1px solid ${sevColor}25`,
                       }}
                     >
-                      {getCityName(cityId)}
+                      {getCityName(cityId, region)}
                     </span>
                   ))}
                 </div>
@@ -260,7 +266,7 @@ export default function CascadesPage() {
                           border: "1px solid rgba(255,68,102,0.25)",
                         }}
                       >
-                        {getCityName(cityId)}
+                        {getCityName(cityId, region)}
                       </span>
                     ))}
                   </div>
@@ -292,7 +298,7 @@ export default function CascadesPage() {
                           border: "1px solid rgba(251,191,36,0.25)",
                         }}
                       >
-                        {getCityName(cityId)}
+                        {getCityName(cityId, region)}
                       </span>
                     ))}
                   </div>

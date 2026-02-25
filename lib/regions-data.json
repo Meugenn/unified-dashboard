@@ -1,0 +1,3210 @@
+{
+  "generated_at": "2026-02-25T19:33:06.092123",
+  "summary": {
+    "nodes": 42,
+    "edges": 118,
+    "ecowas_active": 4,
+    "uemoa_cfa": 6,
+    "suspended": 3,
+    "external": 7,
+    "port_cities": 18,
+    "ftz_targets": 2
+  },
+  "cities": [
+    {
+      "id": "new-york",
+      "name": "New York",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "country": "United States",
+      "country_iso3": "USA",
+      "bloc": "NAFTA",
+      "population": 5909595,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 20913.3,
+      "trade_openness": 0.45,
+      "ease_of_business": 83.6,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "financial_center",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "mexico-city",
+      "name": "Mexico City",
+      "lat": 19.4326,
+      "lng": -99.1332,
+      "country": "Mexico",
+      "country_iso3": "MEX",
+      "bloc": "NAFTA",
+      "population": 7905438,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 55532.3,
+      "trade_openness": 0.85,
+      "ease_of_business": 84.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "high_income",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "s\u00e3o-paulo",
+      "name": "S\u00e3o Paulo",
+      "lat": -23.5505,
+      "lng": -46.6333,
+      "country": "Brazil",
+      "country_iso3": "BRA",
+      "bloc": "MERCOSUR",
+      "population": 5153279,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 46881.0,
+      "trade_openness": 0.67,
+      "ease_of_business": 67.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "toronto",
+      "name": "Toronto",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "country": "Canada",
+      "country_iso3": "CAN",
+      "bloc": "NAFTA",
+      "population": 11630509,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 48702.9,
+      "trade_openness": 0.72,
+      "ease_of_business": 63.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "buenos-aires",
+      "name": "Buenos Aires",
+      "lat": -34.6037,
+      "lng": -58.3816,
+      "country": "Argentina",
+      "country_iso3": "ARG",
+      "bloc": "MERCOSUR",
+      "population": 9188027,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 23000.9,
+      "trade_openness": 0.3,
+      "ease_of_business": 79.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity"
+      ]
+    },
+    {
+      "id": "lima",
+      "name": "Lima",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "country": "Peru",
+      "country_iso3": "PER",
+      "bloc": "CPTPP",
+      "population": 7009980,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 51755.8,
+      "trade_openness": 0.74,
+      "ease_of_business": 62.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "bogota",
+      "name": "Bogota",
+      "lat": 4.711,
+      "lng": -74.0721,
+      "country": "Colombia",
+      "country_iso3": "COL",
+      "bloc": "CPTPP",
+      "population": 5757902,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 23576.5,
+      "trade_openness": 0.62,
+      "ease_of_business": 70.5,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "london",
+      "name": "London",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "country": "United Kingdom",
+      "country_iso3": "GBR",
+      "bloc": "EU",
+      "population": 2670586,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 39439.9,
+      "trade_openness": 0.76,
+      "ease_of_business": 45.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "high_income",
+        "financial_center",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "country": "France",
+      "country_iso3": "FRA",
+      "bloc": "EU",
+      "population": 8177281,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 16127.5,
+      "trade_openness": 0.68,
+      "ease_of_business": 50.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "berlin",
+      "name": "Berlin",
+      "lat": 52.52,
+      "lng": 13.405,
+      "country": "Germany",
+      "country_iso3": "DEU",
+      "bloc": "EU",
+      "population": 11982163,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 24823.9,
+      "trade_openness": 0.35,
+      "ease_of_business": 74.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "country": "Italy",
+      "country_iso3": "ITA",
+      "bloc": "EU",
+      "population": 4928281,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 28607.7,
+      "trade_openness": 0.35,
+      "ease_of_business": 49.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "madrid",
+      "name": "Madrid",
+      "lat": 40.4168,
+      "lng": -3.7038,
+      "country": "Spain",
+      "country_iso3": "ESP",
+      "bloc": "EU",
+      "population": 8466983,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 5510.8,
+      "trade_openness": 0.68,
+      "ease_of_business": 81.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "tech_hub",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "warsaw",
+      "name": "Warsaw",
+      "lat": 52.2297,
+      "lng": 21.0122,
+      "country": "Poland",
+      "country_iso3": "POL",
+      "bloc": "EU",
+      "population": 7426846,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 9913.2,
+      "trade_openness": 0.74,
+      "ease_of_business": 49.6,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "istanbul",
+      "name": "Istanbul",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "country": "Turkey",
+      "country_iso3": "TUR",
+      "bloc": "EU_CANDIDATE",
+      "population": 3233823,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 40286.7,
+      "trade_openness": 0.67,
+      "ease_of_business": 48.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "high_income",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "lat": 35.6762,
+      "lng": 139.6503,
+      "country": "Japan",
+      "country_iso3": "JPN",
+      "bloc": "CPTPP",
+      "population": 4574477,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 39544.4,
+      "trade_openness": 0.38,
+      "ease_of_business": 63.5,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "high_income",
+        "tech_hub",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "shanghai",
+      "name": "Shanghai",
+      "lat": 31.2304,
+      "lng": 121.4737,
+      "country": "China",
+      "country_iso3": "CHN",
+      "bloc": "CPTPP",
+      "population": 3066235,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 37426.6,
+      "trade_openness": 0.51,
+      "ease_of_business": 88.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "high_income",
+        "manufacturing",
+        "tech_hub",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "lat": 1.3521,
+      "lng": 103.8198,
+      "country": "Singapore",
+      "country_iso3": "SGP",
+      "bloc": "ASEAN",
+      "population": 10284454,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 38054.9,
+      "trade_openness": 0.7,
+      "ease_of_business": 57.8,
+      "cfa_zone": false,
+      "is_ftz_target": true,
+      "tags": [
+        "port",
+        "megacity",
+        "high_income",
+        "financial_center",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "mumbai",
+      "name": "Mumbai",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "country": "India",
+      "country_iso3": "IND",
+      "bloc": "SAARC",
+      "population": 4446807,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 33476.2,
+      "trade_openness": 0.58,
+      "ease_of_business": 78.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "seoul",
+      "name": "Seoul",
+      "lat": 37.5665,
+      "lng": 126.978,
+      "country": "South Korea",
+      "country_iso3": "KOR",
+      "bloc": "CPTPP",
+      "population": 9302838,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 26223.7,
+      "trade_openness": 0.43,
+      "ease_of_business": 73.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "jakarta",
+      "name": "Jakarta",
+      "lat": -6.2088,
+      "lng": 106.8456,
+      "country": "Indonesia",
+      "country_iso3": "IDN",
+      "bloc": "ASEAN",
+      "population": 6309530,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 12259.1,
+      "trade_openness": 0.77,
+      "ease_of_business": 70.6,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity"
+      ]
+    },
+    {
+      "id": "bangkok",
+      "name": "Bangkok",
+      "lat": 13.7563,
+      "lng": 100.5018,
+      "country": "Thailand",
+      "country_iso3": "THA",
+      "bloc": "ASEAN",
+      "population": 2224599,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 5917.9,
+      "trade_openness": 0.34,
+      "ease_of_business": 56.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "lagos",
+      "name": "Lagos",
+      "lat": 6.5244,
+      "lng": 3.3792,
+      "country": "Nigeria",
+      "country_iso3": "NGA",
+      "bloc": "AU",
+      "population": 11545666,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 44194.6,
+      "trade_openness": 0.72,
+      "ease_of_business": 64.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "high_income",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "nairobi",
+      "name": "Nairobi",
+      "lat": -1.2921,
+      "lng": 36.8219,
+      "country": "Kenya",
+      "country_iso3": "KEN",
+      "bloc": "AU",
+      "population": 2402526,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 22044.9,
+      "trade_openness": 0.58,
+      "ease_of_business": 54.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital"
+      ]
+    },
+    {
+      "id": "cairo",
+      "name": "Cairo",
+      "lat": 30.0444,
+      "lng": 31.2357,
+      "country": "Egypt",
+      "country_iso3": "EGY",
+      "bloc": "AU",
+      "population": 11902498,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 42458.1,
+      "trade_openness": 0.34,
+      "ease_of_business": 76.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "tech_hub",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "johannesburg",
+      "name": "Johannesburg",
+      "lat": -26.2041,
+      "lng": 28.0473,
+      "country": "South Africa",
+      "country_iso3": "ZAF",
+      "bloc": "AU",
+      "population": 8289425,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 11379.3,
+      "trade_openness": 0.64,
+      "ease_of_business": 47.5,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "tech_hub",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "accra",
+      "name": "Accra",
+      "lat": 5.6037,
+      "lng": -0.187,
+      "country": "Ghana",
+      "country_iso3": "GHA",
+      "bloc": "AU",
+      "population": 3302031,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 43582.5,
+      "trade_openness": 0.39,
+      "ease_of_business": 87.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "high_income",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "addis-ababa",
+      "name": "Addis Ababa",
+      "lat": 9.032,
+      "lng": 38.7469,
+      "country": "Ethiopia",
+      "country_iso3": "ETH",
+      "bloc": "AU",
+      "population": 3129542,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 46237.7,
+      "trade_openness": 0.78,
+      "ease_of_business": 78.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "high_income"
+      ]
+    },
+    {
+      "id": "casablanca",
+      "name": "Casablanca",
+      "lat": 33.5731,
+      "lng": -7.5898,
+      "country": "Morocco",
+      "country_iso3": "MAR",
+      "bloc": "AU",
+      "population": 9788815,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 8513.0,
+      "trade_openness": 0.69,
+      "ease_of_business": 70.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "megacity"
+      ]
+    },
+    {
+      "id": "dubai",
+      "name": "Dubai",
+      "lat": 25.2048,
+      "lng": 55.2708,
+      "country": "United Arab Emirates",
+      "country_iso3": "ARE",
+      "bloc": "GCC",
+      "population": 10510771,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 14178.5,
+      "trade_openness": 0.39,
+      "ease_of_business": 79.8,
+      "cfa_zone": false,
+      "is_ftz_target": true,
+      "tags": [
+        "port",
+        "megacity",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "riyadh",
+      "name": "Riyadh",
+      "lat": 24.7136,
+      "lng": 46.6753,
+      "country": "Saudi Arabia",
+      "country_iso3": "SAU",
+      "bloc": "GCC",
+      "population": 1043092,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 7422.1,
+      "trade_openness": 0.77,
+      "ease_of_business": 56.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "tehran",
+      "name": "Tehran",
+      "lat": 35.6892,
+      "lng": 51.389,
+      "country": "Iran",
+      "country_iso3": "IRN",
+      "bloc": "ECO",
+      "population": 1593302,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 35407.6,
+      "trade_openness": 0.8,
+      "ease_of_business": 78.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "high_income"
+      ]
+    },
+    {
+      "id": "doha",
+      "name": "Doha",
+      "lat": 25.2854,
+      "lng": 51.531,
+      "country": "Qatar",
+      "country_iso3": "QAT",
+      "bloc": "GCC",
+      "population": 5550953,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 50429.8,
+      "trade_openness": 0.61,
+      "ease_of_business": 50.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "high_income",
+        "manufacturing",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "abu-dhabi",
+      "name": "Abu Dhabi",
+      "lat": 24.4539,
+      "lng": 54.3773,
+      "country": "United Arab Emirates",
+      "country_iso3": "ARE",
+      "bloc": "GCC",
+      "population": 1770553,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 57474.4,
+      "trade_openness": 0.34,
+      "ease_of_business": 65.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "high_income"
+      ]
+    },
+    {
+      "id": "kuwait-city",
+      "name": "Kuwait City",
+      "lat": 29.3759,
+      "lng": 47.9774,
+      "country": "Kuwait",
+      "country_iso3": "KWT",
+      "bloc": "GCC",
+      "population": 1133700,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 25290.6,
+      "trade_openness": 0.46,
+      "ease_of_business": 80.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "muscat",
+      "name": "Muscat",
+      "lat": 23.588,
+      "lng": 58.3829,
+      "country": "Oman",
+      "country_iso3": "OMN",
+      "bloc": "GCC",
+      "population": 4278644,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 45285.5,
+      "trade_openness": 0.6,
+      "ease_of_business": 80.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "high_income",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "sydney",
+      "name": "Sydney",
+      "lat": -33.8688,
+      "lng": 151.2093,
+      "country": "Australia",
+      "country_iso3": "AUS",
+      "bloc": "CPTPP",
+      "population": 11669333,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 51176.6,
+      "trade_openness": 0.78,
+      "ease_of_business": 87.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "melbourne",
+      "name": "Melbourne",
+      "lat": -37.8136,
+      "lng": 144.9631,
+      "country": "Australia",
+      "country_iso3": "AUS",
+      "bloc": "CPTPP",
+      "population": 2743975,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 16285.7,
+      "trade_openness": 0.84,
+      "ease_of_business": 63.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "auckland",
+      "name": "Auckland",
+      "lat": -36.8485,
+      "lng": 174.7633,
+      "country": "New Zealand",
+      "country_iso3": "NZL",
+      "bloc": "CPTPP",
+      "population": 1736524,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 55670.1,
+      "trade_openness": 0.79,
+      "ease_of_business": 68.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "high_income",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "wellington",
+      "name": "Wellington",
+      "lat": -41.2865,
+      "lng": 174.7762,
+      "country": "New Zealand",
+      "country_iso3": "NZL",
+      "bloc": "CPTPP",
+      "population": 2603516,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 32798.5,
+      "trade_openness": 0.65,
+      "ease_of_business": 62.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "high_income",
+        "manufacturing",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "suva",
+      "name": "Suva",
+      "lat": -18.1248,
+      "lng": 178.4501,
+      "country": "Fiji",
+      "country_iso3": "FJI",
+      "bloc": "PIF",
+      "population": 5893511,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 19354.5,
+      "trade_openness": 0.47,
+      "ease_of_business": 81.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity"
+      ]
+    },
+    {
+      "id": "port-moresby",
+      "name": "Port Moresby",
+      "lat": -9.4438,
+      "lng": 147.1803,
+      "country": "Papua New Guinea",
+      "country_iso3": "PNG",
+      "bloc": "PIF",
+      "population": 2253047,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 56895.5,
+      "trade_openness": 0.37,
+      "ease_of_business": 79.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "honolulu",
+      "name": "Honolulu",
+      "lat": 21.3069,
+      "lng": -157.8583,
+      "country": "United States",
+      "country_iso3": "USA",
+      "bloc": "NAFTA",
+      "population": 3025626,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 34475.9,
+      "trade_openness": 0.83,
+      "ease_of_business": 54.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "high_income",
+        "manufacturing",
+        "tech_hub",
+        "transport_hub"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "wellington",
+      "target": "s\u00e3o-paulo",
+      "edge_type": "POLITICAL",
+      "weight": 0.852,
+      "volume": 14911374503,
+      "distance_km": 24655,
+      "is_active": true,
+      "tariff_rate": 0.037,
+      "description": "Political alliance between New Zealand and Brazil"
+    },
+    {
+      "source": "nairobi",
+      "target": "accra",
+      "edge_type": "FINANCIAL",
+      "weight": 0.144,
+      "volume": 5089958088,
+      "distance_km": 4178,
+      "is_active": true,
+      "tariff_rate": 0.026,
+      "description": "Financial corridor Nairobi-Accra"
+    },
+    {
+      "source": "accra",
+      "target": "dubai",
+      "edge_type": "FINANCIAL",
+      "weight": 0.773,
+      "volume": 12325781154,
+      "distance_km": 6528,
+      "is_active": true,
+      "tariff_rate": 0.121,
+      "description": "Financial corridor Accra-Dubai"
+    },
+    {
+      "source": "paris",
+      "target": "london",
+      "edge_type": "TRADE",
+      "weight": 0.156,
+      "volume": 22000130743,
+      "distance_km": 402,
+      "is_active": true,
+      "tariff_rate": 0.03,
+      "description": "Trade route between Paris and London"
+    },
+    {
+      "source": "accra",
+      "target": "cairo",
+      "edge_type": "COMMODITY",
+      "weight": 0.667,
+      "volume": 96355289221,
+      "distance_km": 4418,
+      "is_active": true,
+      "tariff_rate": 0.039,
+      "description": "Commodity trade Accra-Cairo"
+    },
+    {
+      "source": "buenos-aires",
+      "target": "mexico-city",
+      "edge_type": "TRADE",
+      "weight": 0.278,
+      "volume": 123149416310,
+      "distance_km": 7512,
+      "is_active": true,
+      "tariff_rate": 0.014,
+      "description": "Trade route between Buenos Aires and Mexico City"
+    },
+    {
+      "source": "lagos",
+      "target": "london",
+      "edge_type": "TRADE",
+      "weight": 0.948,
+      "volume": 10545212114,
+      "distance_km": 5008,
+      "is_active": false,
+      "tariff_rate": 0.065,
+      "description": "Trade route between Lagos and London"
+    },
+    {
+      "source": "accra",
+      "target": "doha",
+      "edge_type": "TRADE",
+      "weight": 0.444,
+      "volume": 36686402086,
+      "distance_km": 6142,
+      "is_active": true,
+      "tariff_rate": 0.136,
+      "description": "Trade route between Accra and Doha"
+    },
+    {
+      "source": "mumbai",
+      "target": "dubai",
+      "edge_type": "POLITICAL",
+      "weight": 0.131,
+      "volume": 28317059340,
+      "distance_km": 2069,
+      "is_active": true,
+      "tariff_rate": 0.044,
+      "description": "Political alliance between India and United Arab Emirates"
+    },
+    {
+      "source": "addis-ababa",
+      "target": "sydney",
+      "edge_type": "MIGRATORY",
+      "weight": 0.155,
+      "volume": 54578170238,
+      "distance_km": 13360,
+      "is_active": true,
+      "tariff_rate": 0.03,
+      "description": "Migration flow from Addis Ababa to Sydney"
+    },
+    {
+      "source": "kuwait-city",
+      "target": "shanghai",
+      "edge_type": "COMMODITY",
+      "weight": 0.995,
+      "volume": 3727802994,
+      "distance_km": 8160,
+      "is_active": true,
+      "tariff_rate": 0.057,
+      "description": "Commodity trade Kuwait City-Shanghai"
+    },
+    {
+      "source": "nairobi",
+      "target": "tehran",
+      "edge_type": "FINANCIAL",
+      "weight": 0.803,
+      "volume": 2251899834,
+      "distance_km": 4411,
+      "is_active": true,
+      "tariff_rate": 0.048,
+      "description": "Financial corridor Nairobi-Tehran"
+    },
+    {
+      "source": "mumbai",
+      "target": "madrid",
+      "edge_type": "TRADE",
+      "weight": 0.387,
+      "volume": 3585039188,
+      "distance_km": 8824,
+      "is_active": true,
+      "tariff_rate": 0.117,
+      "description": "Trade route between Mumbai and Madrid"
+    },
+    {
+      "source": "toronto",
+      "target": "tehran",
+      "edge_type": "FINANCIAL",
+      "weight": 0.422,
+      "volume": 38652924174,
+      "distance_km": 14542,
+      "is_active": true,
+      "tariff_rate": 0.024,
+      "description": "Financial corridor Toronto-Tehran"
+    },
+    {
+      "source": "shanghai",
+      "target": "mumbai",
+      "edge_type": "FINANCIAL",
+      "weight": 0.835,
+      "volume": 31480875704,
+      "distance_km": 5560,
+      "is_active": true,
+      "tariff_rate": 0.149,
+      "description": "Financial corridor Shanghai-Mumbai"
+    },
+    {
+      "source": "tokyo",
+      "target": "melbourne",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.984,
+      "volume": 6774207331,
+      "distance_km": 8178,
+      "is_active": false,
+      "tariff_rate": 0.149,
+      "description": "Technology transfer Tokyo-Melbourne"
+    },
+    {
+      "source": "madrid",
+      "target": "shanghai",
+      "edge_type": "FINANCIAL",
+      "weight": 0.386,
+      "volume": 8044788591,
+      "distance_km": 13932,
+      "is_active": true,
+      "tariff_rate": 0.089,
+      "description": "Financial corridor Madrid-Shanghai"
+    },
+    {
+      "source": "nairobi",
+      "target": "melbourne",
+      "edge_type": "FINANCIAL",
+      "weight": 0.228,
+      "volume": 4501430252,
+      "distance_km": 12669,
+      "is_active": true,
+      "tariff_rate": 0.122,
+      "description": "Financial corridor Nairobi-Melbourne"
+    },
+    {
+      "source": "doha",
+      "target": "muscat",
+      "edge_type": "AID",
+      "weight": 0.258,
+      "volume": 9336400670,
+      "distance_km": 783,
+      "is_active": true,
+      "tariff_rate": 0.09,
+      "description": "Development aid from Qatar to Oman"
+    },
+    {
+      "source": "mexico-city",
+      "target": "kuwait-city",
+      "edge_type": "MIGRATORY",
+      "weight": 0.101,
+      "volume": 23210817812,
+      "distance_km": 16366,
+      "is_active": true,
+      "tariff_rate": 0.02,
+      "description": "Migration flow from Mexico City to Kuwait City"
+    },
+    {
+      "source": "madrid",
+      "target": "bangkok",
+      "edge_type": "TRADE",
+      "weight": 0.12,
+      "volume": 746072020,
+      "distance_km": 11939,
+      "is_active": false,
+      "tariff_rate": 0.116,
+      "description": "Trade route between Madrid and Bangkok"
+    },
+    {
+      "source": "kuwait-city",
+      "target": "cairo",
+      "edge_type": "TRADE",
+      "weight": 0.436,
+      "volume": 27380304114,
+      "distance_km": 1859,
+      "is_active": true,
+      "tariff_rate": 0.015,
+      "description": "Trade route between Kuwait City and Cairo"
+    },
+    {
+      "source": "jakarta",
+      "target": "bangkok",
+      "edge_type": "POLITICAL",
+      "weight": 0.978,
+      "volume": 1518759977,
+      "distance_km": 2325,
+      "is_active": true,
+      "tariff_rate": 0.096,
+      "description": "Political alliance between Indonesia and Thailand"
+    },
+    {
+      "source": "doha",
+      "target": "honolulu",
+      "edge_type": "AID",
+      "weight": 0.257,
+      "volume": 56666221276,
+      "distance_km": 23246,
+      "is_active": true,
+      "tariff_rate": 0.139,
+      "description": "Development aid from Qatar to United States"
+    },
+    {
+      "source": "nairobi",
+      "target": "tokyo",
+      "edge_type": "COMMODITY",
+      "weight": 0.63,
+      "volume": 4150105445,
+      "distance_km": 12129,
+      "is_active": true,
+      "tariff_rate": 0.103,
+      "description": "Commodity trade Nairobi-Tokyo"
+    },
+    {
+      "source": "paris",
+      "target": "madrid",
+      "edge_type": "COMMODITY",
+      "weight": 0.102,
+      "volume": 8822928260,
+      "distance_km": 1153,
+      "is_active": true,
+      "tariff_rate": 0.128,
+      "description": "Commodity trade Paris-Madrid"
+    },
+    {
+      "source": "melbourne",
+      "target": "s\u00e3o-paulo",
+      "edge_type": "POLITICAL",
+      "weight": 0.642,
+      "volume": 19972498726,
+      "distance_km": 21326,
+      "is_active": false,
+      "tariff_rate": 0.033,
+      "description": "Political alliance between Australia and Brazil"
+    },
+    {
+      "source": "melbourne",
+      "target": "bogota",
+      "edge_type": "MIGRATORY",
+      "weight": 0.227,
+      "volume": 9197568236,
+      "distance_km": 24766,
+      "is_active": true,
+      "tariff_rate": 0.147,
+      "description": "Migration flow from Melbourne to Bogota"
+    },
+    {
+      "source": "rome",
+      "target": "port-moresby",
+      "edge_type": "TRADE",
+      "weight": 0.839,
+      "volume": 24814862840,
+      "distance_km": 15999,
+      "is_active": true,
+      "tariff_rate": 0.05,
+      "description": "Trade route between Rome and Port Moresby"
+    },
+    {
+      "source": "new-york",
+      "target": "singapore",
+      "edge_type": "POLITICAL",
+      "weight": 0.325,
+      "volume": 11067442340,
+      "distance_km": 20216,
+      "is_active": true,
+      "tariff_rate": 0.016,
+      "description": "Political alliance between United States and Singapore"
+    },
+    {
+      "source": "new-york",
+      "target": "toronto",
+      "edge_type": "MIGRATORY",
+      "weight": 0.494,
+      "volume": 62819056098,
+      "distance_km": 680,
+      "is_active": true,
+      "tariff_rate": 0.062,
+      "description": "Migration flow from New York to Toronto"
+    },
+    {
+      "source": "johannesburg",
+      "target": "nairobi",
+      "edge_type": "FINANCIAL",
+      "weight": 0.438,
+      "volume": 8366847010,
+      "distance_km": 2931,
+      "is_active": true,
+      "tariff_rate": 0.087,
+      "description": "Financial corridor Johannesburg-Nairobi"
+    },
+    {
+      "source": "tokyo",
+      "target": "rome",
+      "edge_type": "MIGRATORY",
+      "weight": 0.166,
+      "volume": 43533673747,
+      "distance_km": 14130,
+      "is_active": true,
+      "tariff_rate": 0.048,
+      "description": "Migration flow from Tokyo to Rome"
+    },
+    {
+      "source": "bogota",
+      "target": "buenos-aires",
+      "edge_type": "AID",
+      "weight": 0.253,
+      "volume": 23334517969,
+      "distance_km": 4698,
+      "is_active": true,
+      "tariff_rate": 0.082,
+      "description": "Development aid from Colombia to Argentina"
+    },
+    {
+      "source": "lima",
+      "target": "lagos",
+      "edge_type": "FINANCIAL",
+      "weight": 0.987,
+      "volume": 332692821708,
+      "distance_km": 9161,
+      "is_active": true,
+      "tariff_rate": 0.065,
+      "description": "Financial corridor Lima-Lagos"
+    },
+    {
+      "source": "honolulu",
+      "target": "rome",
+      "edge_type": "FINANCIAL",
+      "weight": 0.901,
+      "volume": 5860497839,
+      "distance_km": 19047,
+      "is_active": true,
+      "tariff_rate": 0.031,
+      "description": "Financial corridor Honolulu-Rome"
+    },
+    {
+      "source": "warsaw",
+      "target": "addis-ababa",
+      "edge_type": "COMMODITY",
+      "weight": 0.599,
+      "volume": 19800622909,
+      "distance_km": 5183,
+      "is_active": true,
+      "tariff_rate": 0.099,
+      "description": "Commodity trade Warsaw-Addis Ababa"
+    },
+    {
+      "source": "jakarta",
+      "target": "shanghai",
+      "edge_type": "TRADE",
+      "weight": 0.145,
+      "volume": 10530739496,
+      "distance_km": 4461,
+      "is_active": true,
+      "tariff_rate": 0.023,
+      "description": "Trade route between Jakarta and Shanghai"
+    },
+    {
+      "source": "cairo",
+      "target": "new-york",
+      "edge_type": "MIGRATORY",
+      "weight": 0.179,
+      "volume": 104015675196,
+      "distance_km": 11741,
+      "is_active": true,
+      "tariff_rate": 0.072,
+      "description": "Migration flow from Cairo to New York"
+    },
+    {
+      "source": "bogota",
+      "target": "mexico-city",
+      "edge_type": "POLITICAL",
+      "weight": 0.254,
+      "volume": 39001941011,
+      "distance_km": 3226,
+      "is_active": true,
+      "tariff_rate": 0.127,
+      "description": "Political alliance between Colombia and Mexico"
+    },
+    {
+      "source": "jakarta",
+      "target": "accra",
+      "edge_type": "MIGRATORY",
+      "weight": 0.54,
+      "volume": 15093880888,
+      "distance_km": 11952,
+      "is_active": true,
+      "tariff_rate": 0.082,
+      "description": "Migration flow from Jakarta to Accra"
+    },
+    {
+      "source": "madrid",
+      "target": "cairo",
+      "edge_type": "MIGRATORY",
+      "weight": 0.432,
+      "volume": 22329531623,
+      "distance_km": 4045,
+      "is_active": true,
+      "tariff_rate": 0.07,
+      "description": "Migration flow from Madrid to Cairo"
+    },
+    {
+      "source": "tokyo",
+      "target": "mumbai",
+      "edge_type": "FINANCIAL",
+      "weight": 0.155,
+      "volume": 41180199396,
+      "distance_km": 7637,
+      "is_active": true,
+      "tariff_rate": 0.013,
+      "description": "Financial corridor Tokyo-Mumbai"
+    },
+    {
+      "source": "nairobi",
+      "target": "muscat",
+      "edge_type": "MIGRATORY",
+      "weight": 0.974,
+      "volume": 12524843330,
+      "distance_km": 3654,
+      "is_active": true,
+      "tariff_rate": 0.126,
+      "description": "Migration flow from Nairobi to Muscat"
+    },
+    {
+      "source": "kuwait-city",
+      "target": "addis-ababa",
+      "edge_type": "FINANCIAL",
+      "weight": 0.718,
+      "volume": 7796166609,
+      "distance_km": 2479,
+      "is_active": true,
+      "tariff_rate": 0.035,
+      "description": "Financial corridor Kuwait City-Addis Ababa"
+    },
+    {
+      "source": "jakarta",
+      "target": "lima",
+      "edge_type": "MIGRATORY",
+      "weight": 0.912,
+      "volume": 40892611912,
+      "distance_km": 20421,
+      "is_active": true,
+      "tariff_rate": 0.135,
+      "description": "Migration flow from Jakarta to Lima"
+    },
+    {
+      "source": "melbourne",
+      "target": "suva",
+      "edge_type": "POLITICAL",
+      "weight": 0.208,
+      "volume": 7843048742,
+      "distance_km": 4311,
+      "is_active": true,
+      "tariff_rate": 0.148,
+      "description": "Political alliance between Australia and Fiji"
+    },
+    {
+      "source": "istanbul",
+      "target": "warsaw",
+      "edge_type": "POLITICAL",
+      "weight": 0.138,
+      "volume": 2387379490,
+      "distance_km": 1527,
+      "is_active": true,
+      "tariff_rate": 0.03,
+      "description": "Political alliance between Turkey and Poland"
+    },
+    {
+      "source": "port-moresby",
+      "target": "berlin",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.636,
+      "volume": 26977058887,
+      "distance_km": 16364,
+      "is_active": true,
+      "tariff_rate": 0.121,
+      "description": "Technology transfer Port Moresby-Berlin"
+    },
+    {
+      "source": "lima",
+      "target": "johannesburg",
+      "edge_type": "FINANCIAL",
+      "weight": 0.458,
+      "volume": 24628140063,
+      "distance_km": 11770,
+      "is_active": true,
+      "tariff_rate": 0.069,
+      "description": "Financial corridor Lima-Johannesburg"
+    },
+    {
+      "source": "new-york",
+      "target": "suva",
+      "edge_type": "FINANCIAL",
+      "weight": 0.57,
+      "volume": 12648507919,
+      "distance_km": 28773,
+      "is_active": true,
+      "tariff_rate": 0.022,
+      "description": "Financial corridor New York-Suva"
+    },
+    {
+      "source": "auckland",
+      "target": "bogota",
+      "edge_type": "TRADE",
+      "weight": 0.606,
+      "volume": 3830482397,
+      "distance_km": 28003,
+      "is_active": true,
+      "tariff_rate": 0.08,
+      "description": "Trade route between Auckland and Bogota"
+    },
+    {
+      "source": "nairobi",
+      "target": "addis-ababa",
+      "edge_type": "AID",
+      "weight": 0.445,
+      "volume": 7837250737,
+      "distance_km": 1165,
+      "is_active": true,
+      "tariff_rate": 0.006,
+      "description": "Development aid from Kenya to Ethiopia"
+    },
+    {
+      "source": "mumbai",
+      "target": "accra",
+      "edge_type": "POLITICAL",
+      "weight": 0.656,
+      "volume": 29853725992,
+      "distance_km": 8246,
+      "is_active": true,
+      "tariff_rate": 0.059,
+      "description": "Political alliance between India and Ghana"
+    },
+    {
+      "source": "lagos",
+      "target": "shanghai",
+      "edge_type": "TRADE",
+      "weight": 0.771,
+      "volume": 108305035454,
+      "distance_km": 13392,
+      "is_active": true,
+      "tariff_rate": 0.003,
+      "description": "Trade route between Lagos and Shanghai"
+    },
+    {
+      "source": "jakarta",
+      "target": "mumbai",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.542,
+      "volume": 16382034414,
+      "distance_km": 4700,
+      "is_active": true,
+      "tariff_rate": 0.13,
+      "description": "Technology transfer Jakarta-Mumbai"
+    },
+    {
+      "source": "paris",
+      "target": "jakarta",
+      "edge_type": "COMMODITY",
+      "weight": 0.499,
+      "volume": 17025687024,
+      "distance_km": 13110,
+      "is_active": true,
+      "tariff_rate": 0.063,
+      "description": "Commodity trade Paris-Jakarta"
+    },
+    {
+      "source": "honolulu",
+      "target": "lima",
+      "edge_type": "POLITICAL",
+      "weight": 0.498,
+      "volume": 69465046864,
+      "distance_km": 9704,
+      "is_active": true,
+      "tariff_rate": 0.073,
+      "description": "Political alliance between United States and Peru"
+    },
+    {
+      "source": "kuwait-city",
+      "target": "cairo",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.151,
+      "volume": 23238856675,
+      "distance_km": 1859,
+      "is_active": true,
+      "tariff_rate": 0.106,
+      "description": "Technology transfer Kuwait City-Cairo"
+    },
+    {
+      "source": "accra",
+      "target": "paris",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.866,
+      "volume": 33606406361,
+      "distance_km": 4809,
+      "is_active": true,
+      "tariff_rate": 0.029,
+      "description": "Technology transfer Accra-Paris"
+    },
+    {
+      "source": "warsaw",
+      "target": "toronto",
+      "edge_type": "POLITICAL",
+      "weight": 0.13,
+      "volume": 8176485408,
+      "distance_km": 11184,
+      "is_active": true,
+      "tariff_rate": 0.03,
+      "description": "Political alliance between Poland and Canada"
+    },
+    {
+      "source": "cairo",
+      "target": "riyadh",
+      "edge_type": "FINANCIAL",
+      "weight": 0.457,
+      "volume": 7253043561,
+      "distance_km": 1813,
+      "is_active": true,
+      "tariff_rate": 0.036,
+      "description": "Financial corridor Cairo-Riyadh"
+    },
+    {
+      "source": "doha",
+      "target": "wellington",
+      "edge_type": "MIGRATORY",
+      "weight": 0.26,
+      "volume": 41925397782,
+      "distance_km": 15548,
+      "is_active": true,
+      "tariff_rate": 0.052,
+      "description": "Migration flow from Doha to Wellington"
+    },
+    {
+      "source": "rome",
+      "target": "singapore",
+      "edge_type": "COMMODITY",
+      "weight": 0.848,
+      "volume": 14994473920,
+      "distance_km": 11091,
+      "is_active": true,
+      "tariff_rate": 0.007,
+      "description": "Commodity trade Rome-Singapore"
+    },
+    {
+      "source": "melbourne",
+      "target": "istanbul",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.299,
+      "volume": 3072290040,
+      "distance_km": 15565,
+      "is_active": true,
+      "tariff_rate": 0.098,
+      "description": "Technology transfer Melbourne-Istanbul"
+    },
+    {
+      "source": "abu-dhabi",
+      "target": "mexico-city",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.802,
+      "volume": 69619455528,
+      "distance_km": 17048,
+      "is_active": true,
+      "tariff_rate": 0.137,
+      "description": "Technology transfer Abu Dhabi-Mexico City"
+    },
+    {
+      "source": "honolulu",
+      "target": "madrid",
+      "edge_type": "FINANCIAL",
+      "weight": 0.821,
+      "volume": 2556044225,
+      "distance_km": 17242,
+      "is_active": true,
+      "tariff_rate": 0.141,
+      "description": "Financial corridor Honolulu-Madrid"
+    },
+    {
+      "source": "honolulu",
+      "target": "mumbai",
+      "edge_type": "MIGRATORY",
+      "weight": 0.906,
+      "volume": 26677302928,
+      "distance_km": 25612,
+      "is_active": true,
+      "tariff_rate": 0.033,
+      "description": "Migration flow from Honolulu to Mumbai"
+    },
+    {
+      "source": "jakarta",
+      "target": "kuwait-city",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.661,
+      "volume": 2684644926,
+      "distance_km": 7635,
+      "is_active": true,
+      "tariff_rate": 0.15,
+      "description": "Technology transfer Jakarta-Kuwait City"
+    },
+    {
+      "source": "cairo",
+      "target": "sydney",
+      "edge_type": "COMMODITY",
+      "weight": 0.634,
+      "volume": 192271202821,
+      "distance_km": 15088,
+      "is_active": true,
+      "tariff_rate": 0.072,
+      "description": "Commodity trade Cairo-Sydney"
+    },
+    {
+      "source": "lagos",
+      "target": "mumbai",
+      "edge_type": "COMMODITY",
+      "weight": 0.393,
+      "volume": 47555791137,
+      "distance_km": 7839,
+      "is_active": true,
+      "tariff_rate": 0.143,
+      "description": "Commodity trade Lagos-Mumbai"
+    },
+    {
+      "source": "honolulu",
+      "target": "jakarta",
+      "edge_type": "POLITICAL",
+      "weight": 0.235,
+      "volume": 12541503813,
+      "distance_km": 29540,
+      "is_active": true,
+      "tariff_rate": 0.121,
+      "description": "Political alliance between United States and Indonesia"
+    },
+    {
+      "source": "wellington",
+      "target": "accra",
+      "edge_type": "COMMODITY",
+      "weight": 0.388,
+      "volume": 4496034646,
+      "distance_km": 20106,
+      "is_active": true,
+      "tariff_rate": 0.075,
+      "description": "Commodity trade Wellington-Accra"
+    },
+    {
+      "source": "seoul",
+      "target": "singapore",
+      "edge_type": "MIGRATORY",
+      "weight": 0.464,
+      "volume": 143196363488,
+      "distance_km": 4771,
+      "is_active": true,
+      "tariff_rate": 0.149,
+      "description": "Migration flow from Seoul to Singapore"
+    },
+    {
+      "source": "warsaw",
+      "target": "lagos",
+      "edge_type": "COMMODITY",
+      "weight": 0.742,
+      "volume": 52744229974,
+      "distance_km": 5437,
+      "is_active": true,
+      "tariff_rate": 0.071,
+      "description": "Commodity trade Warsaw-Lagos"
+    },
+    {
+      "source": "nairobi",
+      "target": "abu-dhabi",
+      "edge_type": "AID",
+      "weight": 0.861,
+      "volume": 9147366705,
+      "distance_km": 3458,
+      "is_active": true,
+      "tariff_rate": 0.027,
+      "description": "Development aid from Kenya to United Arab Emirates"
+    },
+    {
+      "source": "bogota",
+      "target": "tehran",
+      "edge_type": "POLITICAL",
+      "weight": 0.767,
+      "volume": 11318005603,
+      "distance_km": 14344,
+      "is_active": true,
+      "tariff_rate": 0.137,
+      "description": "Political alliance between Colombia and Iran"
+    },
+    {
+      "source": "lagos",
+      "target": "honolulu",
+      "edge_type": "TRADE",
+      "weight": 0.3,
+      "volume": 27907312165,
+      "distance_km": 17972,
+      "is_active": true,
+      "tariff_rate": 0.063,
+      "description": "Trade route between Lagos and Honolulu"
+    },
+    {
+      "source": "lagos",
+      "target": "cairo",
+      "edge_type": "AID",
+      "weight": 0.627,
+      "volume": 252999784202,
+      "distance_km": 4046,
+      "is_active": true,
+      "tariff_rate": 0.008,
+      "description": "Development aid from Nigeria to Egypt"
+    },
+    {
+      "source": "port-moresby",
+      "target": "auckland",
+      "edge_type": "FINANCIAL",
+      "weight": 0.95,
+      "volume": 2916024459,
+      "distance_km": 4315,
+      "is_active": true,
+      "tariff_rate": 0.075,
+      "description": "Financial corridor Port Moresby-Auckland"
+    },
+    {
+      "source": "johannesburg",
+      "target": "kuwait-city",
+      "edge_type": "AID",
+      "weight": 0.472,
+      "volume": 4745463850,
+      "distance_km": 6554,
+      "is_active": true,
+      "tariff_rate": 0.149,
+      "description": "Development aid from South Africa to Kuwait"
+    },
+    {
+      "source": "lagos",
+      "target": "addis-ababa",
+      "edge_type": "FINANCIAL",
+      "weight": 0.904,
+      "volume": 145798052902,
+      "distance_km": 3935,
+      "is_active": true,
+      "tariff_rate": 0.129,
+      "description": "Financial corridor Lagos-Addis Ababa"
+    },
+    {
+      "source": "madrid",
+      "target": "lima",
+      "edge_type": "MIGRATORY",
+      "weight": 0.399,
+      "volume": 33427350090,
+      "distance_km": 10009,
+      "is_active": true,
+      "tariff_rate": 0.009,
+      "description": "Migration flow from Madrid to Lima"
+    },
+    {
+      "source": "dubai",
+      "target": "mumbai",
+      "edge_type": "POLITICAL",
+      "weight": 0.785,
+      "volume": 9325267884,
+      "distance_km": 2069,
+      "is_active": true,
+      "tariff_rate": 0.073,
+      "description": "Political alliance between United Arab Emirates and India"
+    },
+    {
+      "source": "lima",
+      "target": "paris",
+      "edge_type": "FINANCIAL",
+      "weight": 0.49,
+      "volume": 43821741132,
+      "distance_km": 11107,
+      "is_active": true,
+      "tariff_rate": 0.072,
+      "description": "Financial corridor Lima-Paris"
+    },
+    {
+      "source": "new-york",
+      "target": "s\u00e3o-paulo",
+      "edge_type": "FINANCIAL",
+      "weight": 0.279,
+      "volume": 24151922638,
+      "distance_km": 7753,
+      "is_active": true,
+      "tariff_rate": 0.048,
+      "description": "Financial corridor New York-S\u00e3o Paulo"
+    },
+    {
+      "source": "kuwait-city",
+      "target": "warsaw",
+      "edge_type": "TRADE",
+      "weight": 0.709,
+      "volume": 2724599132,
+      "distance_km": 3923,
+      "is_active": true,
+      "tariff_rate": 0.104,
+      "description": "Trade route between Kuwait City and Warsaw"
+    },
+    {
+      "source": "nairobi",
+      "target": "jakarta",
+      "edge_type": "POLITICAL",
+      "weight": 0.192,
+      "volume": 4327481980,
+      "distance_km": 7791,
+      "is_active": true,
+      "tariff_rate": 0.01,
+      "description": "Political alliance between Kenya and Indonesia"
+    },
+    {
+      "source": "s\u00e3o-paulo",
+      "target": "jakarta",
+      "edge_type": "AID",
+      "weight": 0.51,
+      "volume": 20341533846,
+      "distance_km": 17144,
+      "is_active": true,
+      "tariff_rate": 0.065,
+      "description": "Development aid from Brazil to Indonesia"
+    },
+    {
+      "source": "paris",
+      "target": "lagos",
+      "edge_type": "MIGRATORY",
+      "weight": 0.423,
+      "volume": 30820424933,
+      "distance_km": 4700,
+      "is_active": false,
+      "tariff_rate": 0.138,
+      "description": "Migration flow from Paris to Lagos"
+    },
+    {
+      "source": "accra",
+      "target": "mexico-city",
+      "edge_type": "POLITICAL",
+      "weight": 0.302,
+      "volume": 124540681336,
+      "distance_km": 11089,
+      "is_active": true,
+      "tariff_rate": 0.003,
+      "description": "Political alliance between Ghana and Mexico"
+    },
+    {
+      "source": "abu-dhabi",
+      "target": "rome",
+      "edge_type": "TRADE",
+      "weight": 0.43,
+      "volume": 19168005600,
+      "distance_km": 5036,
+      "is_active": true,
+      "tariff_rate": 0.131,
+      "description": "Trade route between Abu Dhabi and Rome"
+    },
+    {
+      "source": "singapore",
+      "target": "muscat",
+      "edge_type": "FINANCIAL",
+      "weight": 0.144,
+      "volume": 150899134256,
+      "distance_km": 5615,
+      "is_active": true,
+      "tariff_rate": 0.098,
+      "description": "Financial corridor Singapore-Muscat"
+    },
+    {
+      "source": "mexico-city",
+      "target": "toronto",
+      "edge_type": "COMMODITY",
+      "weight": 0.204,
+      "volume": 234794449747,
+      "distance_km": 3468,
+      "is_active": true,
+      "tariff_rate": 0.038,
+      "description": "Commodity trade Mexico City-Toronto"
+    },
+    {
+      "source": "berlin",
+      "target": "istanbul",
+      "edge_type": "COMMODITY",
+      "weight": 0.717,
+      "volume": 4560167781,
+      "distance_km": 2149,
+      "is_active": true,
+      "tariff_rate": 0.015,
+      "description": "Commodity trade Berlin-Istanbul"
+    },
+    {
+      "source": "kuwait-city",
+      "target": "mumbai",
+      "edge_type": "FINANCIAL",
+      "weight": 0.645,
+      "volume": 1539147761,
+      "distance_km": 2991,
+      "is_active": true,
+      "tariff_rate": 0.016,
+      "description": "Financial corridor Kuwait City-Mumbai"
+    },
+    {
+      "source": "suva",
+      "target": "london",
+      "edge_type": "AID",
+      "weight": 0.203,
+      "volume": 3627129364,
+      "distance_km": 21275,
+      "is_active": true,
+      "tariff_rate": 0.03,
+      "description": "Development aid from Fiji to United Kingdom"
+    },
+    {
+      "source": "singapore",
+      "target": "kuwait-city",
+      "edge_type": "POLITICAL",
+      "weight": 0.422,
+      "volume": 9858460055,
+      "distance_km": 6935,
+      "is_active": true,
+      "tariff_rate": 0.082,
+      "description": "Political alliance between Singapore and Kuwait"
+    },
+    {
+      "source": "istanbul",
+      "target": "tehran",
+      "edge_type": "AID",
+      "weight": 0.311,
+      "volume": 913014258,
+      "distance_km": 2556,
+      "is_active": true,
+      "tariff_rate": 0.017,
+      "description": "Development aid from Turkey to Iran"
+    },
+    {
+      "source": "melbourne",
+      "target": "doha",
+      "edge_type": "POLITICAL",
+      "weight": 0.955,
+      "volume": 19778833138,
+      "distance_km": 12514,
+      "is_active": true,
+      "tariff_rate": 0.109,
+      "description": "Political alliance between Australia and Qatar"
+    },
+    {
+      "source": "singapore",
+      "target": "honolulu",
+      "edge_type": "POLITICAL",
+      "weight": 0.511,
+      "volume": 79887869871,
+      "distance_km": 29130,
+      "is_active": true,
+      "tariff_rate": 0.008,
+      "description": "Political alliance between Singapore and United States"
+    },
+    {
+      "source": "madrid",
+      "target": "s\u00e3o-paulo",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.362,
+      "volume": 18295787275,
+      "distance_km": 8551,
+      "is_active": true,
+      "tariff_rate": 0.111,
+      "description": "Technology transfer Madrid-S\u00e3o Paulo"
+    },
+    {
+      "source": "bogota",
+      "target": "s\u00e3o-paulo",
+      "edge_type": "TRADE",
+      "weight": 0.867,
+      "volume": 44615177399,
+      "distance_km": 4372,
+      "is_active": true,
+      "tariff_rate": 0.054,
+      "description": "Trade route between Bogota and S\u00e3o Paulo"
+    },
+    {
+      "source": "dubai",
+      "target": "suva",
+      "edge_type": "AID",
+      "weight": 0.891,
+      "volume": 4702024274,
+      "distance_km": 14494,
+      "is_active": true,
+      "tariff_rate": 0.027,
+      "description": "Development aid from United Arab Emirates to Fiji"
+    },
+    {
+      "source": "accra",
+      "target": "riyadh",
+      "edge_type": "AID",
+      "weight": 0.852,
+      "volume": 1571855620,
+      "distance_km": 5617,
+      "is_active": true,
+      "tariff_rate": 0.063,
+      "description": "Development aid from Ghana to Saudi Arabia"
+    },
+    {
+      "source": "rome",
+      "target": "london",
+      "edge_type": "POLITICAL",
+      "weight": 0.727,
+      "volume": 3139667024,
+      "distance_km": 1760,
+      "is_active": false,
+      "tariff_rate": 0.024,
+      "description": "Political alliance between Italy and United Kingdom"
+    },
+    {
+      "source": "addis-ababa",
+      "target": "auckland",
+      "edge_type": "MIGRATORY",
+      "weight": 0.822,
+      "volume": 19429671581,
+      "distance_km": 15933,
+      "is_active": true,
+      "tariff_rate": 0.057,
+      "description": "Migration flow from Addis Ababa to Auckland"
+    },
+    {
+      "source": "nairobi",
+      "target": "suva",
+      "edge_type": "TRADE",
+      "weight": 0.876,
+      "volume": 10704658885,
+      "distance_km": 15831,
+      "is_active": true,
+      "tariff_rate": 0.134,
+      "description": "Trade route between Nairobi and Suva"
+    },
+    {
+      "source": "tehran",
+      "target": "doha",
+      "edge_type": "TRADE",
+      "weight": 0.899,
+      "volume": 14802369307,
+      "distance_km": 1154,
+      "is_active": true,
+      "tariff_rate": 0.098,
+      "description": "Trade route between Tehran and Doha"
+    },
+    {
+      "source": "new-york",
+      "target": "kuwait-city",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.769,
+      "volume": 5227325671,
+      "distance_km": 13598,
+      "is_active": true,
+      "tariff_rate": 0.143,
+      "description": "Technology transfer New York-Kuwait City"
+    },
+    {
+      "source": "lagos",
+      "target": "kuwait-city",
+      "edge_type": "FINANCIAL",
+      "weight": 0.719,
+      "volume": 18648239334,
+      "distance_km": 5562,
+      "is_active": true,
+      "tariff_rate": 0.109,
+      "description": "Financial corridor Lagos-Kuwait City"
+    },
+    {
+      "source": "tehran",
+      "target": "nairobi",
+      "edge_type": "COMMODITY",
+      "weight": 0.709,
+      "volume": 2483765644,
+      "distance_km": 4411,
+      "is_active": true,
+      "tariff_rate": 0.084,
+      "description": "Commodity trade Tehran-Nairobi"
+    },
+    {
+      "source": "suva",
+      "target": "toronto",
+      "edge_type": "TRADE",
+      "weight": 0.679,
+      "volume": 25725831322,
+      "distance_km": 29429,
+      "is_active": true,
+      "tariff_rate": 0.128,
+      "description": "Trade route between Suva and Toronto"
+    },
+    {
+      "source": "rome",
+      "target": "buenos-aires",
+      "edge_type": "TECH_TRANSFER",
+      "weight": 0.542,
+      "volume": 16616586844,
+      "distance_km": 11576,
+      "is_active": false,
+      "tariff_rate": 0.008,
+      "description": "Technology transfer Rome-Buenos Aires"
+    },
+    {
+      "source": "tokyo",
+      "target": "sydney",
+      "edge_type": "COMMODITY",
+      "weight": 0.441,
+      "volume": 178518978118,
+      "distance_km": 7825,
+      "is_active": true,
+      "tariff_rate": 0.067,
+      "description": "Commodity trade Tokyo-Sydney"
+    },
+    {
+      "source": "melbourne",
+      "target": "dubai",
+      "edge_type": "TRADE",
+      "weight": 0.871,
+      "volume": 6322868227,
+      "distance_km": 12167,
+      "is_active": true,
+      "tariff_rate": 0.075,
+      "description": "Trade route between Melbourne and Dubai"
+    },
+    {
+      "source": "honolulu",
+      "target": "mexico-city",
+      "edge_type": "TRADE",
+      "weight": 0.463,
+      "volume": 7696977705,
+      "distance_km": 6521,
+      "is_active": true,
+      "tariff_rate": 0.124,
+      "description": "Trade route between Honolulu and Mexico City"
+    },
+    {
+      "source": "wellington",
+      "target": "suva",
+      "edge_type": "COMMODITY",
+      "weight": 0.374,
+      "volume": 10381569083,
+      "distance_km": 2603,
+      "is_active": true,
+      "tariff_rate": 0.101,
+      "description": "Commodity trade Wellington-Suva"
+    }
+  ],
+  "metrics": {
+    "betweenness": {
+      "new-york": 0.0193,
+      "mexico-city": 0.0086,
+      "s\u00e3o-paulo": 0.0011,
+      "toronto": 0.0038,
+      "buenos-aires": 0.0046,
+      "lima": 0.0114,
+      "bogota": 0.0126,
+      "london": 0.0064,
+      "paris": 0.0134,
+      "berlin": 0.0048,
+      "rome": 0.0027,
+      "madrid": 0.0206,
+      "warsaw": 0.0038,
+      "istanbul": 0.0046,
+      "tokyo": 0.0141,
+      "shanghai": 0.0164,
+      "singapore": 0.0059,
+      "mumbai": 0.0177,
+      "seoul": 0.0024,
+      "jakarta": 0.0016,
+      "bangkok": 0.0011,
+      "lagos": 0.0048,
+      "nairobi": 0.0267,
+      "cairo": 0.0196,
+      "johannesburg": 0.0011,
+      "accra": 0.0207,
+      "addis-ababa": 0.0038,
+      "casablanca": 0.0,
+      "dubai": 0.0067,
+      "riyadh": 0.0031,
+      "tehran": 0.0159,
+      "doha": 0.0146,
+      "abu-dhabi": 0.0011,
+      "kuwait-city": 0.0169,
+      "muscat": 0.0094,
+      "sydney": 0.0085,
+      "melbourne": 0.016,
+      "auckland": 0.0078,
+      "wellington": 0.0061,
+      "suva": 0.0156,
+      "port-moresby": 0.0097,
+      "honolulu": 0.0041
+    },
+    "degree": {
+      "new-york": 0.0508,
+      "mexico-city": 0.0593,
+      "s\u00e3o-paulo": 0.0508,
+      "toronto": 0.0424,
+      "buenos-aires": 0.0254,
+      "lima": 0.0508,
+      "bogota": 0.0508,
+      "london": 0.0339,
+      "paris": 0.0508,
+      "berlin": 0.0169,
+      "rome": 0.0593,
+      "madrid": 0.0678,
+      "warsaw": 0.0424,
+      "istanbul": 0.0339,
+      "tokyo": 0.0424,
+      "shanghai": 0.0424,
+      "singapore": 0.0508,
+      "mumbai": 0.0847,
+      "seoul": 0.0085,
+      "jakarta": 0.0847,
+      "bangkok": 0.0169,
+      "lagos": 0.0847,
+      "nairobi": 0.0932,
+      "cairo": 0.0678,
+      "johannesburg": 0.0254,
+      "accra": 0.0847,
+      "addis-ababa": 0.0508,
+      "casablanca": 0.0,
+      "dubai": 0.0424,
+      "riyadh": 0.0169,
+      "tehran": 0.0508,
+      "doha": 0.0508,
+      "abu-dhabi": 0.0254,
+      "kuwait-city": 0.1017,
+      "muscat": 0.0254,
+      "sydney": 0.0254,
+      "melbourne": 0.0678,
+      "auckland": 0.0254,
+      "wellington": 0.0339,
+      "suva": 0.0593,
+      "port-moresby": 0.0254,
+      "honolulu": 0.0763
+    },
+    "closeness": {
+      "new-york": 0.4995,
+      "mexico-city": 0.5121,
+      "s\u00e3o-paulo": 0.3194,
+      "toronto": 0.6741,
+      "buenos-aires": 0.6355,
+      "lima": 0.4932,
+      "bogota": 0.5033,
+      "london": 0.6685,
+      "paris": 0.3709,
+      "berlin": 0.5314,
+      "rome": 0.5922,
+      "madrid": 0.3514,
+      "warsaw": 0.455,
+      "istanbul": 0.5402,
+      "tokyo": 0.6531,
+      "shanghai": 0.5016,
+      "singapore": 0.4539,
+      "mumbai": 0.6918,
+      "seoul": 0.6664,
+      "jakarta": 0.6049,
+      "bangkok": 0.4094,
+      "lagos": 0.6854,
+      "nairobi": 0.6882,
+      "cairo": 0.4811,
+      "johannesburg": 0.3533,
+      "accra": 0.4651,
+      "addis-ababa": 0.58,
+      "casablanca": 0.5994,
+      "dubai": 0.4196,
+      "riyadh": 0.5806,
+      "tehran": 0.6443,
+      "doha": 0.5847,
+      "abu-dhabi": 0.6742,
+      "kuwait-city": 0.553,
+      "muscat": 0.3804,
+      "sydney": 0.5497,
+      "melbourne": 0.4162,
+      "auckland": 0.4381,
+      "wellington": 0.5689,
+      "suva": 0.6925,
+      "port-moresby": 0.56,
+      "honolulu": 0.6833
+    },
+    "articulation_points": [
+      "abu-dhabi",
+      "muscat",
+      "port-moresby",
+      "bangkok"
+    ],
+    "bridges": [
+      [
+        "london",
+        "nairobi"
+      ],
+      [
+        "sydney",
+        "tehran"
+      ],
+      [
+        "auckland",
+        "melbourne"
+      ],
+      [
+        "addis-ababa",
+        "muscat"
+      ],
+      [
+        "seoul",
+        "casablanca"
+      ],
+      [
+        "new-york",
+        "kuwait-city"
+      ],
+      [
+        "bogota",
+        "mexico-city"
+      ],
+      [
+        "johannesburg",
+        "berlin"
+      ]
+    ],
+    "ecowas_cut_vertices": [
+      "toronto",
+      "warsaw"
+    ],
+    "component_count": 2
+  },
+  "ftz_impact": {
+    "singapore": {
+      "composite": 0.772,
+      "connectivity": 0.863,
+      "port_access": 0.9,
+      "tariff_exposure": 0.74,
+      "trade_volume": 0.615,
+      "diversification": 0.513,
+      "border_proximity": 0.836,
+      "stability": 0.842
+    },
+    "dubai": {
+      "composite": 0.752,
+      "connectivity": 0.703,
+      "port_access": 0.9,
+      "tariff_exposure": 0.888,
+      "trade_volume": 0.513,
+      "diversification": 0.766,
+      "border_proximity": 0.541,
+      "stability": 0.904
+    }
+  },
+  "trade_routes": {
+    "route-001": {
+      "risk": 0.458,
+      "redundancy": 0.758,
+      "min_cut": 3,
+      "shortest_path": [
+        "honolulu",
+        "sydney",
+        "johannesburg",
+        "shanghai"
+      ],
+      "shortest_cost": 5712,
+      "min_cut_nodes": [
+        "honolulu",
+        "sydney"
+      ]
+    },
+    "route-002": {
+      "risk": 0.242,
+      "redundancy": 0.808,
+      "min_cut": 2,
+      "shortest_path": [
+        "addis-ababa",
+        "bangkok",
+        "sydney",
+        "toronto",
+        "new-york",
+        "singapore"
+      ],
+      "shortest_cost": 4695,
+      "min_cut_nodes": [
+        "singapore",
+        "sydney"
+      ]
+    },
+    "route-003": {
+      "risk": 0.788,
+      "redundancy": 0.252,
+      "min_cut": 1,
+      "shortest_path": [
+        "muscat",
+        "wellington",
+        "warsaw",
+        "suva",
+        "seoul",
+        "dubai",
+        "madrid"
+      ],
+      "shortest_cost": 9418,
+      "min_cut_nodes": [
+        "muscat",
+        "suva"
+      ]
+    },
+    "route-004": {
+      "risk": 0.285,
+      "redundancy": 0.313,
+      "min_cut": 2,
+      "shortest_path": [
+        "casablanca",
+        "mumbai",
+        "sydney"
+      ],
+      "shortest_cost": 1092,
+      "min_cut_nodes": [
+        "mumbai",
+        "sydney"
+      ]
+    },
+    "route-005": {
+      "risk": 0.151,
+      "redundancy": 0.695,
+      "min_cut": 3,
+      "shortest_path": [
+        "berlin",
+        "s\u00e3o-paulo",
+        "honolulu",
+        "bangkok",
+        "toronto",
+        "jakarta",
+        "doha",
+        "nairobi"
+      ],
+      "shortest_cost": 4603,
+      "min_cut_nodes": [
+        "honolulu",
+        "toronto"
+      ]
+    },
+    "route-006": {
+      "risk": 0.48,
+      "redundancy": 0.482,
+      "min_cut": 2,
+      "shortest_path": [
+        "abu-dhabi",
+        "rome",
+        "addis-ababa"
+      ],
+      "shortest_cost": 4624,
+      "min_cut_nodes": [
+        "abu-dhabi",
+        "rome"
+      ]
+    },
+    "route-007": {
+      "risk": 0.432,
+      "redundancy": 0.593,
+      "min_cut": 3,
+      "shortest_path": [
+        "cairo",
+        "seoul",
+        "istanbul",
+        "suva",
+        "kuwait-city"
+      ],
+      "shortest_cost": 1144,
+      "min_cut_nodes": [
+        "cairo",
+        "istanbul"
+      ]
+    },
+    "route-008": {
+      "risk": 0.367,
+      "redundancy": 0.757,
+      "min_cut": 1,
+      "shortest_path": [
+        "shanghai",
+        "suva",
+        "port-moresby",
+        "honolulu",
+        "s\u00e3o-paulo",
+        "bangkok"
+      ],
+      "shortest_cost": 7322,
+      "min_cut_nodes": [
+        "port-moresby",
+        "s\u00e3o-paulo"
+      ]
+    },
+    "route-009": {
+      "risk": 0.131,
+      "redundancy": 0.829,
+      "min_cut": 1,
+      "shortest_path": [
+        "seoul",
+        "mexico-city",
+        "kuwait-city",
+        "cairo",
+        "abu-dhabi",
+        "auckland",
+        "dubai",
+        "doha"
+      ],
+      "shortest_cost": 6248,
+      "min_cut_nodes": [
+        "mexico-city",
+        "seoul"
+      ]
+    },
+    "route-010": {
+      "risk": 0.248,
+      "redundancy": 0.641,
+      "min_cut": 1,
+      "shortest_path": [
+        "muscat",
+        "new-york",
+        "port-moresby",
+        "buenos-aires"
+      ],
+      "shortest_cost": 7950,
+      "min_cut_nodes": [
+        "muscat",
+        "buenos-aires"
+      ]
+    },
+    "route-011": {
+      "risk": 0.161,
+      "redundancy": 0.238,
+      "min_cut": 2,
+      "shortest_path": [
+        "casablanca",
+        "buenos-aires",
+        "berlin",
+        "mexico-city",
+        "riyadh",
+        "lagos",
+        "s\u00e3o-paulo"
+      ],
+      "shortest_cost": 2154,
+      "min_cut_nodes": [
+        "riyadh",
+        "buenos-aires"
+      ]
+    },
+    "route-012": {
+      "risk": 0.403,
+      "redundancy": 0.212,
+      "min_cut": 3,
+      "shortest_path": [
+        "addis-ababa",
+        "johannesburg",
+        "dubai",
+        "port-moresby",
+        "accra"
+      ],
+      "shortest_cost": 2938,
+      "min_cut_nodes": [
+        "accra",
+        "addis-ababa"
+      ]
+    },
+    "route-013": {
+      "risk": 0.303,
+      "redundancy": 0.68,
+      "min_cut": 3,
+      "shortest_path": [
+        "suva",
+        "buenos-aires",
+        "auckland",
+        "s\u00e3o-paulo",
+        "port-moresby",
+        "nairobi",
+        "abu-dhabi",
+        "bogota"
+      ],
+      "shortest_cost": 2417,
+      "min_cut_nodes": [
+        "port-moresby",
+        "abu-dhabi"
+      ]
+    },
+    "route-014": {
+      "risk": 0.254,
+      "redundancy": 0.723,
+      "min_cut": 3,
+      "shortest_path": [
+        "johannesburg",
+        "accra",
+        "mexico-city",
+        "tehran",
+        "rome",
+        "muscat"
+      ],
+      "shortest_cost": 5832,
+      "min_cut_nodes": [
+        "muscat",
+        "accra"
+      ]
+    },
+    "route-015": {
+      "risk": 0.186,
+      "redundancy": 0.204,
+      "min_cut": 3,
+      "shortest_path": [
+        "honolulu",
+        "cairo",
+        "new-york",
+        "sydney",
+        "berlin"
+      ],
+      "shortest_cost": 7456,
+      "min_cut_nodes": [
+        "berlin",
+        "honolulu"
+      ]
+    },
+    "route-016": {
+      "risk": 0.2,
+      "redundancy": 0.329,
+      "min_cut": 3,
+      "shortest_path": [
+        "istanbul",
+        "nairobi",
+        "addis-ababa",
+        "honolulu",
+        "abu-dhabi"
+      ],
+      "shortest_cost": 5140,
+      "min_cut_nodes": [
+        "nairobi",
+        "istanbul"
+      ]
+    },
+    "route-017": {
+      "risk": 0.551,
+      "redundancy": 0.251,
+      "min_cut": 3,
+      "shortest_path": [
+        "melbourne",
+        "toronto",
+        "sydney",
+        "riyadh"
+      ],
+      "shortest_cost": 2103,
+      "min_cut_nodes": [
+        "sydney",
+        "melbourne"
+      ]
+    },
+    "route-018": {
+      "risk": 0.19,
+      "redundancy": 0.659,
+      "min_cut": 1,
+      "shortest_path": [
+        "auckland",
+        "doha",
+        "lagos",
+        "nairobi"
+      ],
+      "shortest_cost": 5671,
+      "min_cut_nodes": [
+        "auckland",
+        "nairobi"
+      ]
+    }
+  },
+  "cascades": [
+    {
+      "name": "Regional Decoupling",
+      "trigger": "Trade bloc fragmentation",
+      "type": "REGIONAL_ISOLATION",
+      "affected_cities": [
+        "doha",
+        "dubai",
+        "lagos",
+        "jakarta",
+        "auckland",
+        "berlin",
+        "cairo",
+        "bangkok",
+        "casablanca",
+        "rome"
+      ],
+      "isolated_cities": [
+        "berlin",
+        "jakarta"
+      ],
+      "trade_disrupted_cities": [
+        "cairo",
+        "auckland",
+        "berlin",
+        "dubai"
+      ],
+      "new_components": 3,
+      "trade_volume_affected": 639783677,
+      "severity": 0.6
+    },
+    {
+      "name": "Commodity Price Shock",
+      "trigger": "Resource nationalism",
+      "type": "COMMODITY_CRISIS",
+      "affected_cities": [
+        "riyadh",
+        "dubai",
+        "nairobi",
+        "jakarta",
+        "doha",
+        "sydney",
+        "bogota",
+        "madrid",
+        "lima",
+        "mumbai",
+        "paris",
+        "port-moresby"
+      ],
+      "isolated_cities": [
+        "doha",
+        "paris",
+        "dubai"
+      ],
+      "trade_disrupted_cities": [
+        "dubai",
+        "riyadh",
+        "lima",
+        "paris",
+        "bogota",
+        "madrid",
+        "doha",
+        "port-moresby"
+      ],
+      "new_components": 1,
+      "trade_volume_affected": 530956399,
+      "severity": 0.55
+    },
+    {
+      "name": "Migration Crisis Cascade",
+      "trigger": "Political instability",
+      "type": "DEMOGRAPHIC_SHOCK",
+      "affected_cities": [
+        "muscat",
+        "tehran",
+        "berlin",
+        "cairo",
+        "accra",
+        "tokyo",
+        "seoul",
+        "paris",
+        "riyadh",
+        "abu-dhabi",
+        "lima",
+        "warsaw",
+        "madrid"
+      ],
+      "isolated_cities": [
+        "lima",
+        "cairo"
+      ],
+      "trade_disrupted_cities": [
+        "lima",
+        "berlin",
+        "riyadh",
+        "warsaw",
+        "paris",
+        "abu-dhabi",
+        "tehran"
+      ],
+      "new_components": 3,
+      "trade_volume_affected": 769227099,
+      "severity": 0.5
+    },
+    {
+      "name": "Infrastructure Cyber Attack",
+      "trigger": "State-sponsored hacking",
+      "type": "CYBER_WARFARE",
+      "affected_cities": [
+        "berlin",
+        "tehran",
+        "nairobi",
+        "s\u00e3o-paulo",
+        "tokyo",
+        "doha",
+        "auckland",
+        "buenos-aires",
+        "singapore",
+        "cairo",
+        "sydney",
+        "mexico-city",
+        "lagos",
+        "bogota",
+        "kuwait-city"
+      ],
+      "isolated_cities": [
+        "auckland",
+        "buenos-aires",
+        "bogota",
+        "berlin"
+      ],
+      "trade_disrupted_cities": [
+        "sydney",
+        "doha",
+        "tehran"
+      ],
+      "new_components": 3,
+      "trade_volume_affected": 781064841,
+      "severity": 0.65
+    },
+    {
+      "name": "Climate Finance Gap",
+      "trigger": "Green investment withdrawal",
+      "type": "FINANCIAL_SHORTFALL",
+      "affected_cities": [
+        "mumbai",
+        "singapore",
+        "auckland",
+        "muscat",
+        "melbourne",
+        "madrid",
+        "johannesburg",
+        "sydney",
+        "cairo",
+        "buenos-aires",
+        "port-moresby",
+        "warsaw",
+        "riyadh",
+        "london",
+        "doha"
+      ],
+      "isolated_cities": [
+        "madrid",
+        "london",
+        "doha",
+        "sydney",
+        "warsaw"
+      ],
+      "trade_disrupted_cities": [
+        "mumbai",
+        "cairo",
+        "auckland",
+        "sydney",
+        "riyadh",
+        "muscat",
+        "singapore"
+      ],
+      "new_components": 3,
+      "trade_volume_affected": 586086201,
+      "severity": 0.45
+    },
+    {
+      "name": "Tech Sovereignty Conflict",
+      "trigger": "Digital platform bans",
+      "type": "TECH_FRAGMENTATION",
+      "affected_cities": [
+        "berlin",
+        "madrid",
+        "rome",
+        "cairo",
+        "london",
+        "tokyo",
+        "addis-ababa",
+        "lagos"
+      ],
+      "isolated_cities": [
+        "lagos",
+        "tokyo"
+      ],
+      "trade_disrupted_cities": [
+        "lagos",
+        "madrid",
+        "london",
+        "addis-ababa",
+        "cairo",
+        "berlin"
+      ],
+      "new_components": 1,
+      "trade_volume_affected": 225886599,
+      "severity": 0.55
+    }
+  ],
+  "opportunities": [
+    {
+      "city_id": "auckland",
+      "city_name": "Auckland",
+      "country": "New Zealand",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.078,
+      "model_score": 0.324,
+      "actual_score": 0.401,
+      "confidence": 0.8
+    },
+    {
+      "city_id": "toronto",
+      "city_name": "Toronto",
+      "country": "Canada",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.253,
+      "model_score": 0.61,
+      "actual_score": 0.863,
+      "confidence": 0.742
+    },
+    {
+      "city_id": "melbourne",
+      "city_name": "Melbourne",
+      "country": "Australia",
+      "signal_type": "RISK",
+      "gap": 0.227,
+      "model_score": 0.737,
+      "actual_score": 0.964,
+      "confidence": 0.887
+    },
+    {
+      "city_id": "lima",
+      "city_name": "Lima",
+      "country": "Peru",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.064,
+      "model_score": 0.583,
+      "actual_score": 0.647,
+      "confidence": 0.769
+    },
+    {
+      "city_id": "tokyo",
+      "city_name": "Tokyo",
+      "country": "Japan",
+      "signal_type": "RISK",
+      "gap": 0.061,
+      "model_score": 0.777,
+      "actual_score": 0.837,
+      "confidence": 0.887
+    },
+    {
+      "city_id": "madrid",
+      "city_name": "Madrid",
+      "country": "Spain",
+      "signal_type": "RISK",
+      "gap": 0.006,
+      "model_score": 0.401,
+      "actual_score": 0.407,
+      "confidence": 0.84
+    },
+    {
+      "city_id": "riyadh",
+      "city_name": "Riyadh",
+      "country": "Saudi Arabia",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.259,
+      "model_score": 0.527,
+      "actual_score": 0.268,
+      "confidence": 0.646
+    },
+    {
+      "city_id": "mexico-city",
+      "city_name": "Mexico City",
+      "country": "Mexico",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.216,
+      "model_score": 0.603,
+      "actual_score": 0.818,
+      "confidence": 0.747
+    },
+    {
+      "city_id": "berlin",
+      "city_name": "Berlin",
+      "country": "Germany",
+      "signal_type": "RISK",
+      "gap": -0.194,
+      "model_score": 0.841,
+      "actual_score": 0.647,
+      "confidence": 0.81
+    },
+    {
+      "city_id": "muscat",
+      "city_name": "Muscat",
+      "country": "Oman",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.229,
+      "model_score": 0.589,
+      "actual_score": 0.36,
+      "confidence": 0.646
+    },
+    {
+      "city_id": "wellington",
+      "city_name": "Wellington",
+      "country": "New Zealand",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.299,
+      "model_score": 0.863,
+      "actual_score": 0.563,
+      "confidence": 0.837
+    },
+    {
+      "city_id": "casablanca",
+      "city_name": "Casablanca",
+      "country": "Morocco",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.078,
+      "model_score": 0.326,
+      "actual_score": 0.248,
+      "confidence": 0.785
+    },
+    {
+      "city_id": "tokyo",
+      "city_name": "Tokyo",
+      "country": "Japan",
+      "signal_type": "NEUTRAL",
+      "gap": -0.011,
+      "model_score": 0.761,
+      "actual_score": 0.75,
+      "confidence": 0.723
+    },
+    {
+      "city_id": "melbourne",
+      "city_name": "Melbourne",
+      "country": "Australia",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.22,
+      "model_score": 0.586,
+      "actual_score": 0.367,
+      "confidence": 0.681
+    },
+    {
+      "city_id": "lima",
+      "city_name": "Lima",
+      "country": "Peru",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.226,
+      "model_score": 0.545,
+      "actual_score": 0.771,
+      "confidence": 0.666
+    },
+    {
+      "city_id": "new-york",
+      "city_name": "New York",
+      "country": "United States",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.229,
+      "model_score": 0.304,
+      "actual_score": 0.075,
+      "confidence": 0.829
+    },
+    {
+      "city_id": "bangkok",
+      "city_name": "Bangkok",
+      "country": "Thailand",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.236,
+      "model_score": 0.556,
+      "actual_score": 0.32,
+      "confidence": 0.805
+    },
+    {
+      "city_id": "singapore",
+      "city_name": "Singapore",
+      "country": "Singapore",
+      "signal_type": "RISK",
+      "gap": -0.046,
+      "model_score": 0.519,
+      "actual_score": 0.474,
+      "confidence": 0.696
+    },
+    {
+      "city_id": "accra",
+      "city_name": "Accra",
+      "country": "Ghana",
+      "signal_type": "RISK",
+      "gap": -0.052,
+      "model_score": 0.77,
+      "actual_score": 0.718,
+      "confidence": 0.769
+    },
+    {
+      "city_id": "cairo",
+      "city_name": "Cairo",
+      "country": "Egypt",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.01,
+      "model_score": 0.893,
+      "actual_score": 0.883,
+      "confidence": 0.802
+    },
+    {
+      "city_id": "accra",
+      "city_name": "Accra",
+      "country": "Ghana",
+      "signal_type": "RISK",
+      "gap": 0.213,
+      "model_score": 0.696,
+      "actual_score": 0.909,
+      "confidence": 0.862
+    },
+    {
+      "city_id": "dubai",
+      "city_name": "Dubai",
+      "country": "United Arab Emirates",
+      "signal_type": "RISK",
+      "gap": 0.27,
+      "model_score": 0.36,
+      "actual_score": 0.63,
+      "confidence": 0.778
+    },
+    {
+      "city_id": "lagos",
+      "city_name": "Lagos",
+      "country": "Nigeria",
+      "signal_type": "RISK",
+      "gap": 0.068,
+      "model_score": 0.711,
+      "actual_score": 0.779,
+      "confidence": 0.618
+    },
+    {
+      "city_id": "johannesburg",
+      "city_name": "Johannesburg",
+      "country": "South Africa",
+      "signal_type": "NEUTRAL",
+      "gap": -0.297,
+      "model_score": 0.355,
+      "actual_score": 0.058,
+      "confidence": 0.651
+    }
+  ]
+}

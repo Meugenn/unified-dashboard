@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 import { Sidebar } from "@/components/Sidebar";
+import { RegionProvider } from "@/lib/RegionContext";
 
 const jetbrains = JetBrains_Mono({
   variable: "--font-jetbrains",
@@ -22,8 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jetbrains.variable} antialiased`}>
-        <Sidebar />
-        <main className="main-content">{children}</main>
+        <Suspense>
+          <RegionProvider>
+            <Sidebar />
+            <main className="main-content">{children}</main>
+          </RegionProvider>
+        </Suspense>
       </body>
     </html>
   );

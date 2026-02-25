@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
+import { useRegion } from "@/lib/RegionContext";
 
 // Dynamically import MapView to avoid SSR issues with Leaflet
 const MapView = dynamic(() => import("@/components/MapView"), {
@@ -26,6 +27,15 @@ const MapView = dynamic(() => import("@/components/MapView"), {
 });
 
 export default function MapPage() {
+  const { region } = useRegion();
+  
+  const regionNames = {
+    "west-africa": "West Africa",
+    "europe": "Europe", 
+    "world": "World",
+    "regions": "Regions"
+  };
+
   return (
     <div>
       <div style={{ marginBottom: 8 }}>
@@ -48,7 +58,7 @@ export default function MapPage() {
           marginBottom: 24,
         }}
       >
-        Interactive visualization of West Africa FTZ network
+        Interactive visualization of {regionNames[region]} FTZ network
       </p>
 
       <div

@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { data, formatScore, getCityName, getCityById } from "@/lib/data";
+import { datasets, formatScore, getCityName, getCityById } from "@/lib/data";
+import { useRegion } from "@/lib/RegionContext";
 
 interface RouteRow {
   city_id: string;
@@ -16,6 +17,8 @@ interface RouteRow {
 type SortKey = keyof Omit<RouteRow, "city_id" | "shortest_path" | "min_cut_nodes">;
 
 export default function RoutesPage() {
+  const { region } = useRegion();
+  const data = datasets[region];
   const [sortKey, setSortKey] = useState<SortKey>("risk");
   const [sortAsc, setSortAsc] = useState(false);
 
@@ -25,7 +28,7 @@ export default function RoutesPage() {
       city_id: cityId,
       ...route,
     }));
-  }, []);
+  }, [data.trade_routes]);
 
   const sorted = useMemo(() => {
     return [...rows].sort((a, b) => {
@@ -84,7 +87,7 @@ export default function RoutesPage() {
         }}
       >
         {sorted.map((route) => {
-          const city = getCityById(route.city_id);
+          const city = getCityById(route.city_id, region);
           const riskColor = route.risk < 0.3 ? "var(--accent-green)" : route.risk < 0.6 ? "var(--accent-amber)" : "var(--accent-red)";
           const redundancyColor = route.redundancy > 50000 ? "var(--accent-green)" : route.redundancy > 30000 ? "var(--accent-amber)" : "var(--accent-red)";
           
@@ -93,7 +96,7 @@ export default function RoutesPage() {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
                 <div>
                   <div style={{ fontSize: 16, fontWeight: 600, color: "var(--text-primary)", marginBottom: 4 }}>
-                    {getCityName(route.city_id)}
+                    {getCityName(route.city_id, region)}
                   </div>
                   <div style={{ fontSize: 11, color: "var(--text-muted)" }}>
                     {city?.country || ""}
@@ -140,7 +143,7 @@ export default function RoutesPage() {
                             border: "1px solid rgba(129, 140, 248, 0.2)",
                           }}
                         >
-                          {getCityName(cityId)}
+                          {getCityName(cityId, region)}
                         </span>
                         {idx < route.shortest_path.length - 1 && (
                           <span style={{ fontSize: 10, color: "var(--text-muted)", margin: "0 4px" }}>→</span>
@@ -173,7 +176,7 @@ export default function RoutesPage() {
                           border: "1px solid rgba(255, 68, 102, 0.2)",
                         }}
                       >
-                        {getCityName(cityId)}
+                        {getCityName(cityId, region)}
                       </span>
                     ))}
                   </div>
@@ -229,7 +232,7 @@ export default function RoutesPage() {
           </thead>
           <tbody>
             {sorted.map((route, i) => {
-              const city = getCityById(route.city_id);
+              const city = getCityById(route.city_id, region);
               const riskColor = route.risk < 0.3 ? "var(--accent-green)" : route.risk < 0.6 ? "var(--accent-amber)" : "var(--accent-red)";
               const redundancyColor = route.redundancy > 50000 ? "var(--accent-green)" : route.redundancy > 30000 ? "var(--accent-amber)" : "var(--accent-red)";
               
@@ -237,7 +240,7 @@ export default function RoutesPage() {
                 <tr key={route.city_id}>
                   <td style={{ color: "var(--text-muted)" }}>{i + 1}</td>
                   <td style={{ color: "var(--text-primary)", fontWeight: 500 }}>
-                    {getCityName(route.city_id)}
+                    {getCityName(route.city_id, region)}
                   </td>
                   <td>{city?.country || ""}</td>
                   <td>
@@ -264,13 +267,13 @@ export default function RoutesPage() {
                   <td>{route.min_cut}</td>
                   <td>
                     <div style={{ fontSize: 10, color: "var(--text-secondary)" }}>
-                      {route.shortest_path.map(getCityName).join(" → ")}
+                      {route.shortest_path.map(id => getCityName(id, region)).join(" → ")}
                       {route.shortest_cost !== null && route.shortest_cost > 0 && ` (${formatScore(route.shortest_cost)})`}
                     </div>
                   </td>
                   <td>
                     <div style={{ fontSize: 9, color: "var(--text-muted)" }}>
-                      {route.min_cut_nodes.map(getCityName).join(", ")}
+                      {route.min_cut_nodes.map(id => getCityName(id, region)).join(", ")}
                     </div>
                   </td>
                 </tr>

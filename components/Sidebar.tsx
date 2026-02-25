@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRegion, REGIONS } from "@/lib/RegionContext";
 
 const NAV_ITEMS = [
   { href: "/", label: "Overview", icon: "grid" },
@@ -70,6 +71,7 @@ function NavIcon({ icon }: { icon: string }) {
 
 export function Sidebar() {
   const pathname = usePathname();
+  const { region, setRegion } = useRegion();
 
   return (
     <nav className="sidebar">
@@ -98,6 +100,38 @@ export function Sidebar() {
         >
           Network Analysis
         </div>
+      </div>
+
+      {/* Region Switcher */}
+      <div style={{ padding: "0 24px", marginBottom: 24 }}>
+        <div className="label-mono" style={{ marginBottom: 8, fontSize: 10 }}>
+          Region
+        </div>
+        <select
+          value={region}
+          onChange={(e) => setRegion(e.target.value as any)}
+          style={{
+            width: "100%",
+            padding: "8px 12px",
+            fontSize: 12,
+            fontFamily: "var(--font-jetbrains), monospace",
+            background: "var(--bg-card)",
+            border: "1px solid var(--border-card)",
+            borderRadius: 4,
+            color: "var(--text-primary)",
+            outline: "none",
+            cursor: "pointer",
+          }}
+        >
+          {REGIONS.map((r) => (
+            <option key={r} value={r}>
+              {r === "west-africa" ? "West Africa" :
+               r === "europe" ? "Europe" :
+               r === "world" ? "World" :
+               r === "regions" ? "Regions" : r}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div
@@ -141,7 +175,10 @@ export function Sidebar() {
             color: "var(--text-muted)",
           }}
         >
-          analysis-data.json
+          {region === "west-africa" ? "analysis-data.json" :
+           region === "europe" ? "europe-data.json" :
+           region === "world" ? "world-data.json" :
+           "regions-data.json"}
         </div>
       </div>
     </nav>

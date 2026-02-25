@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { data, formatScore, getCityName, getCityById } from "@/lib/data";
+import { datasets, formatScore, getCityName, getCityById } from "@/lib/data";
+import { useRegion } from "@/lib/RegionContext";
 
 interface FTZRow {
   city_id: string;
@@ -29,6 +30,8 @@ const SCORE_COLUMNS: { key: SortKey; label: string; color: string }[] = [
 ];
 
 export default function ImpactPage() {
+  const { region } = useRegion();
+  const data = datasets[region];
   const [sortKey, setSortKey] = useState<SortKey>("composite");
   const [sortAsc, setSortAsc] = useState(false);
 
@@ -38,7 +41,7 @@ export default function ImpactPage() {
       city_id: cityId,
       ...scores,
     }));
-  }, []);
+  }, [data.ftz_impact]);
 
   const sorted = useMemo(() => {
     return [...rows].sort((a, b) => {
@@ -102,7 +105,7 @@ export default function ImpactPage() {
                   flexShrink: 0,
                 }}
               >
-                {getCityName(city.city_id)}
+                {getCityName(city.city_id, region)}
               </div>
               <div
                 style={{
@@ -212,12 +215,12 @@ export default function ImpactPage() {
           </thead>
           <tbody>
             {sorted.map((city, i) => {
-              const cityInfo = getCityById(city.city_id);
+              const cityInfo = getCityById(city.city_id, region);
               return (
                 <tr key={city.city_id}>
                   <td style={{ color: "var(--text-muted)" }}>{i + 1}</td>
                   <td style={{ color: "var(--text-primary)", fontWeight: 500 }}>
-                    {getCityName(city.city_id)}
+                    {getCityName(city.city_id, region)}
                   </td>
                   <td>{cityInfo?.country ?? ""}</td>
                   {SCORE_COLUMNS.map((col) => {

@@ -1,0 +1,2840 @@
+{
+  "generated_at": "2026-02-25T19:33:06.089933",
+  "summary": {
+    "nodes": 40,
+    "edges": 99,
+    "ecowas_active": 7,
+    "uemoa_cfa": 8,
+    "suspended": 6,
+    "external": 5,
+    "port_cities": 16,
+    "ftz_targets": 4
+  },
+  "cities": [
+    {
+      "id": "new-york",
+      "name": "New York",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "country": "United States",
+      "country_iso3": "USA",
+      "bloc": "G7",
+      "population": 9432176,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 36526.1,
+      "trade_openness": 0.36,
+      "ease_of_business": 80.6,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "high_income",
+        "financial_center"
+      ]
+    },
+    {
+      "id": "london",
+      "name": "London",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "country": "United Kingdom",
+      "country_iso3": "GBR",
+      "bloc": "G7",
+      "population": 13530541,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 76900.9,
+      "trade_openness": 0.55,
+      "ease_of_business": 88.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "high_income",
+        "financial_center",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "lat": 35.6762,
+      "lng": 139.6503,
+      "country": "Japan",
+      "country_iso3": "JPN",
+      "bloc": "G7",
+      "population": 12825620,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 72028.7,
+      "trade_openness": 0.51,
+      "ease_of_business": 71.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "high_income",
+        "tech_hub",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "shanghai",
+      "name": "Shanghai",
+      "lat": 31.2304,
+      "lng": 121.4737,
+      "country": "China",
+      "country_iso3": "CHN",
+      "bloc": "BRICS",
+      "population": 10332586,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 17864.6,
+      "trade_openness": 0.76,
+      "ease_of_business": 71.6,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "megacity"
+      ]
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "lat": 1.3521,
+      "lng": 103.8198,
+      "country": "Singapore",
+      "country_iso3": "SGP",
+      "bloc": "ASEAN",
+      "population": 11294051,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 28624.2,
+      "trade_openness": 0.63,
+      "ease_of_business": 73.5,
+      "cfa_zone": false,
+      "is_ftz_target": true,
+      "tags": [
+        "port",
+        "megacity",
+        "financial_center",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "dubai",
+      "name": "Dubai",
+      "lat": 25.2048,
+      "lng": 55.2708,
+      "country": "United Arab Emirates",
+      "country_iso3": "ARE",
+      "bloc": "GCC",
+      "population": 13791109,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 15814.5,
+      "trade_openness": 0.5,
+      "ease_of_business": 40.3,
+      "cfa_zone": false,
+      "is_ftz_target": true,
+      "tags": [
+        "port",
+        "megacity",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "s\u00e3o-paulo",
+      "name": "S\u00e3o Paulo",
+      "lat": -23.5505,
+      "lng": -46.6333,
+      "country": "Brazil",
+      "country_iso3": "BRA",
+      "bloc": "BRICS",
+      "population": 11622863,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 39013.4,
+      "trade_openness": 0.36,
+      "ease_of_business": 69.2,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "megacity",
+        "high_income",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "mumbai",
+      "name": "Mumbai",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "country": "India",
+      "country_iso3": "IND",
+      "bloc": "BRICS",
+      "population": 6442241,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 32189.2,
+      "trade_openness": 0.64,
+      "ease_of_business": 44.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "megacity",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "sydney",
+      "name": "Sydney",
+      "lat": -33.8688,
+      "lng": 151.2093,
+      "country": "Australia",
+      "country_iso3": "AUS",
+      "bloc": "APEC",
+      "population": 5565128,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 20509.0,
+      "trade_openness": 0.55,
+      "ease_of_business": 73.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "hong-kong",
+      "name": "Hong Kong",
+      "lat": 22.3193,
+      "lng": 114.1694,
+      "country": "China",
+      "country_iso3": "CHN",
+      "bloc": "APEC",
+      "population": 2860421,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 14913.6,
+      "trade_openness": 0.71,
+      "ease_of_business": 66.8,
+      "cfa_zone": false,
+      "is_ftz_target": true,
+      "tags": [
+        "port",
+        "financial_center",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "toronto",
+      "name": "Toronto",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "country": "Canada",
+      "country_iso3": "CAN",
+      "bloc": "G7",
+      "population": 1128967,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 12154.8,
+      "trade_openness": 0.87,
+      "ease_of_business": 82.2,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "manufacturing",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "lagos",
+      "name": "Lagos",
+      "lat": 6.5244,
+      "lng": 3.3792,
+      "country": "Nigeria",
+      "country_iso3": "NGA",
+      "bloc": "AU",
+      "population": 17225192,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 1702.8,
+      "trade_openness": 0.53,
+      "ease_of_business": 78.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "nairobi",
+      "name": "Nairobi",
+      "lat": -1.2921,
+      "lng": 36.8219,
+      "country": "Kenya",
+      "country_iso3": "KEN",
+      "bloc": "AU",
+      "population": 24458006,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 3968.2,
+      "trade_openness": 0.56,
+      "ease_of_business": 65.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity"
+      ]
+    },
+    {
+      "id": "cairo",
+      "name": "Cairo",
+      "lat": 30.0444,
+      "lng": 31.2357,
+      "country": "Egypt",
+      "country_iso3": "EGY",
+      "bloc": "AU",
+      "population": 11739795,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 19619.3,
+      "trade_openness": 0.37,
+      "ease_of_business": 41.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity"
+      ]
+    },
+    {
+      "id": "moscow",
+      "name": "Moscow",
+      "lat": 55.7558,
+      "lng": 37.6173,
+      "country": "Russia",
+      "country_iso3": "RUS",
+      "bloc": "BRICS",
+      "population": 7070880,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 8084.5,
+      "trade_openness": 0.81,
+      "ease_of_business": 53.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity"
+      ]
+    },
+    {
+      "id": "seoul",
+      "name": "Seoul",
+      "lat": 37.5665,
+      "lng": 126.978,
+      "country": "South Korea",
+      "country_iso3": "KOR",
+      "bloc": "APEC",
+      "population": 6696087,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 12755.0,
+      "trade_openness": 0.77,
+      "ease_of_business": 44.2,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "jakarta",
+      "name": "Jakarta",
+      "lat": -6.2088,
+      "lng": 106.8456,
+      "country": "Indonesia",
+      "country_iso3": "IDN",
+      "bloc": "ASEAN",
+      "population": 6890476,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 30458.3,
+      "trade_openness": 0.79,
+      "ease_of_business": 84.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "bangkok",
+      "name": "Bangkok",
+      "lat": 13.7563,
+      "lng": 100.5018,
+      "country": "Thailand",
+      "country_iso3": "THA",
+      "bloc": "ASEAN",
+      "population": 13754296,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 31570.3,
+      "trade_openness": 0.35,
+      "ease_of_business": 92.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "mexico-city",
+      "name": "Mexico City",
+      "lat": 19.4326,
+      "lng": -99.1332,
+      "country": "Mexico",
+      "country_iso3": "MEX",
+      "bloc": "APEC",
+      "population": 12427523,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 37345.4,
+      "trade_openness": 0.64,
+      "ease_of_business": 74.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "buenos-aires",
+      "name": "Buenos Aires",
+      "lat": -34.6037,
+      "lng": -58.3816,
+      "country": "Argentina",
+      "country_iso3": "ARG",
+      "bloc": "MERCOSUR",
+      "population": 2145653,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 21412.2,
+      "trade_openness": 0.68,
+      "ease_of_business": 83.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "johannesburg",
+      "name": "Johannesburg",
+      "lat": -26.2041,
+      "lng": 28.0473,
+      "country": "South Africa",
+      "country_iso3": "ZAF",
+      "bloc": "BRICS",
+      "population": 1630944,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 6991.2,
+      "trade_openness": 0.8,
+      "ease_of_business": 44.2,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital"
+      ]
+    },
+    {
+      "id": "riyadh",
+      "name": "Riyadh",
+      "lat": 24.7136,
+      "lng": 46.6753,
+      "country": "Saudi Arabia",
+      "country_iso3": "SAU",
+      "bloc": "GCC",
+      "population": 8763013,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 25311.5,
+      "trade_openness": 0.87,
+      "ease_of_business": 80.6,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "istanbul",
+      "name": "Istanbul",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "country": "Turkey",
+      "country_iso3": "TUR",
+      "bloc": "G20",
+      "population": 11150313,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 21647.0,
+      "trade_openness": 0.39,
+      "ease_of_business": 43.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "megacity"
+      ]
+    },
+    {
+      "id": "berlin",
+      "name": "Berlin",
+      "lat": 52.52,
+      "lng": 13.405,
+      "country": "Germany",
+      "country_iso3": "DEU",
+      "bloc": "EU",
+      "population": 9464927,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 27614.4,
+      "trade_openness": 0.32,
+      "ease_of_business": 78.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity"
+      ]
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "country": "France",
+      "country_iso3": "FRA",
+      "bloc": "EU",
+      "population": 12746166,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 57119.2,
+      "trade_openness": 0.76,
+      "ease_of_business": 77.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "los-angeles",
+      "name": "Los Angeles",
+      "lat": 34.0522,
+      "lng": -118.2437,
+      "country": "United States",
+      "country_iso3": "USA",
+      "bloc": "G7",
+      "population": 10361069,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 28743.3,
+      "trade_openness": 0.47,
+      "ease_of_business": 79.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity"
+      ]
+    },
+    {
+      "id": "chicago",
+      "name": "Chicago",
+      "lat": 41.8781,
+      "lng": -87.6298,
+      "country": "United States",
+      "country_iso3": "USA",
+      "bloc": "G7",
+      "population": 10776746,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 28226.4,
+      "trade_openness": 0.85,
+      "ease_of_business": 57.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "san-francisco",
+      "name": "San Francisco",
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "country": "United States",
+      "country_iso3": "USA",
+      "bloc": "G7",
+      "population": 2421349,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 15835.4,
+      "trade_openness": 0.53,
+      "ease_of_business": 83.5,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": []
+    },
+    {
+      "id": "beijing",
+      "name": "Beijing",
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "country": "China",
+      "country_iso3": "CHN",
+      "bloc": "BRICS",
+      "population": 12499346,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 36935.7,
+      "trade_openness": 0.36,
+      "ease_of_business": 76.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "shenzhen",
+      "name": "Shenzhen",
+      "lat": 22.5431,
+      "lng": 114.0579,
+      "country": "China",
+      "country_iso3": "CHN",
+      "bloc": "BRICS",
+      "population": 6733317,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 38168.4,
+      "trade_openness": 0.59,
+      "ease_of_business": 52.5,
+      "cfa_zone": false,
+      "is_ftz_target": true,
+      "tags": [
+        "port",
+        "megacity",
+        "high_income",
+        "manufacturing",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "delhi",
+      "name": "Delhi",
+      "lat": 28.7041,
+      "lng": 77.1025,
+      "country": "India",
+      "country_iso3": "IND",
+      "bloc": "BRICS",
+      "population": 13933131,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 23892.0,
+      "trade_openness": 0.74,
+      "ease_of_business": 69.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity"
+      ]
+    },
+    {
+      "id": "karachi",
+      "name": "Karachi",
+      "lat": 24.8607,
+      "lng": 67.0011,
+      "country": "Pakistan",
+      "country_iso3": "PAK",
+      "bloc": "SAARC",
+      "population": 12587931,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 1649.0,
+      "trade_openness": 0.8,
+      "ease_of_business": 82.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "lima",
+      "name": "Lima",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "country": "Peru",
+      "country_iso3": "PER",
+      "bloc": "APEC",
+      "population": 12347486,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 30185.5,
+      "trade_openness": 0.88,
+      "ease_of_business": 73.6,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "high_income",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "bogota",
+      "name": "Bogota",
+      "lat": 4.711,
+      "lng": -74.0721,
+      "country": "Colombia",
+      "country_iso3": "COL",
+      "bloc": "APEC",
+      "population": 14566457,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 32453.0,
+      "trade_openness": 0.84,
+      "ease_of_business": 50.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "santiago",
+      "name": "Santiago",
+      "lat": -33.4489,
+      "lng": -70.6693,
+      "country": "Chile",
+      "country_iso3": "CHL",
+      "bloc": "APEC",
+      "population": 14054755,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 18365.5,
+      "trade_openness": 0.62,
+      "ease_of_business": 93.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "kuala-lumpur",
+      "name": "Kuala Lumpur",
+      "lat": 3.139,
+      "lng": 101.6869,
+      "country": "Malaysia",
+      "country_iso3": "MYS",
+      "bloc": "ASEAN",
+      "population": 11757199,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 21820.7,
+      "trade_openness": 0.52,
+      "ease_of_business": 91.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "tech_hub",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "manila",
+      "name": "Manila",
+      "lat": 14.5995,
+      "lng": 120.9842,
+      "country": "Philippines",
+      "country_iso3": "PHL",
+      "bloc": "ASEAN",
+      "population": 3689594,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 14547.7,
+      "trade_openness": 0.84,
+      "ease_of_business": 48.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "hanoi",
+      "name": "Hanoi",
+      "lat": 21.0285,
+      "lng": 105.8542,
+      "country": "Vietnam",
+      "country_iso3": "VNM",
+      "bloc": "ASEAN",
+      "population": 6865064,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 37566.5,
+      "trade_openness": 0.55,
+      "ease_of_business": 61.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "megacity",
+        "high_income",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "addis-ababa",
+      "name": "Addis Ababa",
+      "lat": 9.032,
+      "lng": 38.7469,
+      "country": "Ethiopia",
+      "country_iso3": "ETH",
+      "bloc": "AU",
+      "population": 6346644,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 37578.9,
+      "trade_openness": 0.8,
+      "ease_of_business": 75.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "accra",
+      "name": "Accra",
+      "lat": 5.6037,
+      "lng": -0.187,
+      "country": "Ghana",
+      "country_iso3": "GHA",
+      "bloc": "AU",
+      "population": 12678150,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 34088.9,
+      "trade_openness": 0.76,
+      "ease_of_business": 65.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "tech_hub"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "kuala-lumpur",
+      "target": "addis-ababa",
+      "edge_type": "FINANCIAL",
+      "weight": 0.481,
+      "volume": 96353234783,
+      "distance_km": 7016,
+      "is_active": true,
+      "tariff_rate": 0.018,
+      "description": "Financial corridor Kuala Lumpur-Addis Ababa"
+    },
+    {
+      "source": "seoul",
+      "target": "chicago",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.815,
+      "volume": 25162363468,
+      "distance_km": 23826,
+      "is_active": true,
+      "tariff_rate": 0.136,
+      "description": "Supply chain link Seoul-Chicago"
+    },
+    {
+      "source": "addis-ababa",
+      "target": "santiago",
+      "edge_type": "TRADE",
+      "weight": 0.669,
+      "volume": 73418492465,
+      "distance_km": 13028,
+      "is_active": true,
+      "tariff_rate": 0.044,
+      "description": "Trade route between Addis Ababa and Santiago"
+    },
+    {
+      "source": "new-york",
+      "target": "accra",
+      "edge_type": "CULTURAL",
+      "weight": 0.317,
+      "volume": 132737890918,
+      "distance_km": 9073,
+      "is_active": true,
+      "tariff_rate": 0.013,
+      "description": "Cultural exchange between New York and Accra"
+    },
+    {
+      "source": "berlin",
+      "target": "singapore",
+      "edge_type": "FINANCIAL",
+      "weight": 0.59,
+      "volume": 134702071744,
+      "distance_km": 11531,
+      "is_active": true,
+      "tariff_rate": 0.003,
+      "description": "Financial corridor Berlin-Singapore"
+    },
+    {
+      "source": "delhi",
+      "target": "tokyo",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.448,
+      "volume": 248874870228,
+      "distance_km": 6985,
+      "is_active": true,
+      "tariff_rate": 0.054,
+      "description": "Supply chain link Delhi-Tokyo"
+    },
+    {
+      "source": "singapore",
+      "target": "istanbul",
+      "edge_type": "POLITICAL",
+      "weight": 0.76,
+      "volume": 100947950129,
+      "distance_km": 9401,
+      "is_active": true,
+      "tariff_rate": 0.11,
+      "description": "Political alliance between Singapore and Turkey"
+    },
+    {
+      "source": "riyadh",
+      "target": "sydney",
+      "edge_type": "TRADE",
+      "weight": 0.417,
+      "volume": 18815680674,
+      "distance_km": 13301,
+      "is_active": true,
+      "tariff_rate": 0.125,
+      "description": "Trade route between Riyadh and Sydney"
+    },
+    {
+      "source": "shenzhen",
+      "target": "delhi",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.264,
+      "volume": 30475611263,
+      "distance_km": 4158,
+      "is_active": true,
+      "tariff_rate": 0.142,
+      "description": "Supply chain link Shenzhen-Delhi"
+    },
+    {
+      "source": "tokyo",
+      "target": "mexico-city",
+      "edge_type": "POLITICAL",
+      "weight": 0.139,
+      "volume": 205368823992,
+      "distance_km": 26566,
+      "is_active": true,
+      "tariff_rate": 0.14,
+      "description": "Political alliance between Japan and Mexico"
+    },
+    {
+      "source": "lima",
+      "target": "los-angeles",
+      "edge_type": "DIPLOMATIC",
+      "weight": 0.589,
+      "volume": 64523149732,
+      "distance_km": 6862,
+      "is_active": true,
+      "tariff_rate": 0.029,
+      "description": "Diplomatic relations Peru-United States"
+    },
+    {
+      "source": "istanbul",
+      "target": "shanghai",
+      "edge_type": "DIPLOMATIC",
+      "weight": 0.69,
+      "volume": 27583921504,
+      "distance_km": 10324,
+      "is_active": true,
+      "tariff_rate": 0.066,
+      "description": "Diplomatic relations Turkey-China"
+    },
+    {
+      "source": "los-angeles",
+      "target": "beijing",
+      "edge_type": "MIGRATORY",
+      "weight": 0.405,
+      "volume": 62551982336,
+      "distance_km": 26054,
+      "is_active": true,
+      "tariff_rate": 0.055,
+      "description": "Migration flow from Los Angeles to Beijing"
+    },
+    {
+      "source": "bogota",
+      "target": "bangkok",
+      "edge_type": "DIPLOMATIC",
+      "weight": 0.174,
+      "volume": 186087546579,
+      "distance_km": 19403,
+      "is_active": true,
+      "tariff_rate": 0.149,
+      "description": "Diplomatic relations Colombia-Thailand"
+    },
+    {
+      "source": "lagos",
+      "target": "santiago",
+      "edge_type": "CULTURAL",
+      "weight": 0.389,
+      "volume": 1908885488,
+      "distance_km": 9340,
+      "is_active": true,
+      "tariff_rate": 0.046,
+      "description": "Cultural exchange between Lagos and Santiago"
+    },
+    {
+      "source": "addis-ababa",
+      "target": "san-francisco",
+      "edge_type": "POLITICAL",
+      "weight": 0.721,
+      "volume": 7022657800,
+      "distance_km": 18171,
+      "is_active": true,
+      "tariff_rate": 0.131,
+      "description": "Political alliance between Ethiopia and United States"
+    },
+    {
+      "source": "istanbul",
+      "target": "accra",
+      "edge_type": "MIGRATORY",
+      "weight": 0.347,
+      "volume": 204674682160,
+      "distance_km": 5091,
+      "is_active": false,
+      "tariff_rate": 0.011,
+      "description": "Migration flow from Istanbul to Accra"
+    },
+    {
+      "source": "los-angeles",
+      "target": "berlin",
+      "edge_type": "FINANCIAL",
+      "weight": 0.821,
+      "volume": 108263929105,
+      "distance_km": 14756,
+      "is_active": false,
+      "tariff_rate": 0.021,
+      "description": "Financial corridor Los Angeles-Berlin"
+    },
+    {
+      "source": "addis-ababa",
+      "target": "beijing",
+      "edge_type": "TRADE",
+      "weight": 0.214,
+      "volume": 60382671155,
+      "distance_km": 9276,
+      "is_active": true,
+      "tariff_rate": 0.054,
+      "description": "Trade route between Addis Ababa and Beijing"
+    },
+    {
+      "source": "manila",
+      "target": "tokyo",
+      "edge_type": "FINANCIAL",
+      "weight": 0.238,
+      "volume": 47347093430,
+      "distance_km": 3125,
+      "is_active": true,
+      "tariff_rate": 0.067,
+      "description": "Financial corridor Manila-Tokyo"
+    },
+    {
+      "source": "singapore",
+      "target": "manila",
+      "edge_type": "POLITICAL",
+      "weight": 0.577,
+      "volume": 14858126516,
+      "distance_km": 2406,
+      "is_active": true,
+      "tariff_rate": 0.037,
+      "description": "Political alliance between Singapore and Philippines"
+    },
+    {
+      "source": "mumbai",
+      "target": "london",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.267,
+      "volume": 233834845224,
+      "distance_km": 8867,
+      "is_active": false,
+      "tariff_rate": 0.018,
+      "description": "Supply chain link Mumbai-London"
+    },
+    {
+      "source": "jakarta",
+      "target": "beijing",
+      "edge_type": "POLITICAL",
+      "weight": 0.997,
+      "volume": 62262502494,
+      "distance_km": 5227,
+      "is_active": false,
+      "tariff_rate": 0.074,
+      "description": "Political alliance between Indonesia and China"
+    },
+    {
+      "source": "mumbai",
+      "target": "sydney",
+      "edge_type": "DIPLOMATIC",
+      "weight": 0.167,
+      "volume": 10131140635,
+      "distance_km": 10494,
+      "is_active": true,
+      "tariff_rate": 0.15,
+      "description": "Diplomatic relations India-Australia"
+    },
+    {
+      "source": "johannesburg",
+      "target": "istanbul",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.158,
+      "volume": 3110299847,
+      "distance_km": 7461,
+      "is_active": true,
+      "tariff_rate": 0.128,
+      "description": "Supply chain link Johannesburg-Istanbul"
+    },
+    {
+      "source": "lagos",
+      "target": "berlin",
+      "edge_type": "FINANCIAL",
+      "weight": 0.302,
+      "volume": 15115859536,
+      "distance_km": 5225,
+      "is_active": true,
+      "tariff_rate": 0.036,
+      "description": "Financial corridor Lagos-Berlin"
+    },
+    {
+      "source": "karachi",
+      "target": "london",
+      "edge_type": "CULTURAL",
+      "weight": 0.599,
+      "volume": 17298833279,
+      "distance_km": 8016,
+      "is_active": true,
+      "tariff_rate": 0.083,
+      "description": "Cultural exchange between Karachi and London"
+    },
+    {
+      "source": "accra",
+      "target": "dubai",
+      "edge_type": "TRADE",
+      "weight": 0.378,
+      "volume": 188445780061,
+      "distance_km": 6528,
+      "is_active": true,
+      "tariff_rate": 0.079,
+      "description": "Trade route between Accra and Dubai"
+    },
+    {
+      "source": "chicago",
+      "target": "manila",
+      "edge_type": "TRADE",
+      "weight": 0.213,
+      "volume": 11467565591,
+      "distance_km": 23353,
+      "is_active": true,
+      "tariff_rate": 0.07,
+      "description": "Trade route between Chicago and Manila"
+    },
+    {
+      "source": "bogota",
+      "target": "istanbul",
+      "edge_type": "POLITICAL",
+      "weight": 0.89,
+      "volume": 180566489993,
+      "distance_km": 12127,
+      "is_active": true,
+      "tariff_rate": 0.027,
+      "description": "Political alliance between Colombia and Turkey"
+    },
+    {
+      "source": "sydney",
+      "target": "san-francisco",
+      "edge_type": "FINANCIAL",
+      "weight": 0.92,
+      "volume": 898384087,
+      "distance_km": 31396,
+      "is_active": true,
+      "tariff_rate": 0.023,
+      "description": "Financial corridor Sydney-San Francisco"
+    },
+    {
+      "source": "toronto",
+      "target": "johannesburg",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.303,
+      "volume": 297319407,
+      "distance_km": 14224,
+      "is_active": true,
+      "tariff_rate": 0.043,
+      "description": "Supply chain link Toronto-Johannesburg"
+    },
+    {
+      "source": "dubai",
+      "target": "jakarta",
+      "edge_type": "POLITICAL",
+      "weight": 0.672,
+      "volume": 52483281572,
+      "distance_km": 6703,
+      "is_active": true,
+      "tariff_rate": 0.045,
+      "description": "Political alliance between United Arab Emirates and Indonesia"
+    },
+    {
+      "source": "santiago",
+      "target": "dubai",
+      "edge_type": "FINANCIAL",
+      "weight": 0.677,
+      "volume": 68931352333,
+      "distance_km": 15421,
+      "is_active": true,
+      "tariff_rate": 0.026,
+      "description": "Financial corridor Santiago-Dubai"
+    },
+    {
+      "source": "accra",
+      "target": "addis-ababa",
+      "edge_type": "CULTURAL",
+      "weight": 0.858,
+      "volume": 120688901834,
+      "distance_km": 4338,
+      "is_active": true,
+      "tariff_rate": 0.004,
+      "description": "Cultural exchange between Accra and Addis Ababa"
+    },
+    {
+      "source": "tokyo",
+      "target": "manila",
+      "edge_type": "CULTURAL",
+      "weight": 0.686,
+      "volume": 77216021278,
+      "distance_km": 3125,
+      "is_active": true,
+      "tariff_rate": 0.096,
+      "description": "Cultural exchange between Tokyo and Manila"
+    },
+    {
+      "source": "karachi",
+      "target": "santiago",
+      "edge_type": "CULTURAL",
+      "weight": 0.678,
+      "volume": 3611164652,
+      "distance_km": 16595,
+      "is_active": true,
+      "tariff_rate": 0.121,
+      "description": "Cultural exchange between Karachi and Santiago"
+    },
+    {
+      "source": "los-angeles",
+      "target": "buenos-aires",
+      "edge_type": "MIGRATORY",
+      "weight": 0.166,
+      "volume": 2925770669,
+      "distance_km": 10110,
+      "is_active": true,
+      "tariff_rate": 0.073,
+      "description": "Migration flow from Los Angeles to Buenos Aires"
+    },
+    {
+      "source": "cairo",
+      "target": "riyadh",
+      "edge_type": "FINANCIAL",
+      "weight": 0.229,
+      "volume": 88730020808,
+      "distance_km": 1813,
+      "is_active": true,
+      "tariff_rate": 0.148,
+      "description": "Financial corridor Cairo-Riyadh"
+    },
+    {
+      "source": "istanbul",
+      "target": "los-angeles",
+      "edge_type": "POLITICAL",
+      "weight": 0.785,
+      "volume": 77523062192,
+      "distance_km": 16359,
+      "is_active": true,
+      "tariff_rate": 0.036,
+      "description": "Political alliance between Turkey and United States"
+    },
+    {
+      "source": "mumbai",
+      "target": "bangkok",
+      "edge_type": "MIGRATORY",
+      "weight": 0.323,
+      "volume": 25567842179,
+      "distance_km": 3122,
+      "is_active": true,
+      "tariff_rate": 0.058,
+      "description": "Migration flow from Mumbai to Bangkok"
+    },
+    {
+      "source": "accra",
+      "target": "chicago",
+      "edge_type": "POLITICAL",
+      "weight": 0.966,
+      "volume": 238529881383,
+      "distance_km": 10508,
+      "is_active": true,
+      "tariff_rate": 0.14,
+      "description": "Political alliance between Ghana and United States"
+    },
+    {
+      "source": "johannesburg",
+      "target": "nairobi",
+      "edge_type": "DIPLOMATIC",
+      "weight": 0.243,
+      "volume": 2204800202,
+      "distance_km": 2931,
+      "is_active": true,
+      "tariff_rate": 0.132,
+      "description": "Diplomatic relations South Africa-Kenya"
+    },
+    {
+      "source": "karachi",
+      "target": "london",
+      "edge_type": "TRADE",
+      "weight": 0.951,
+      "volume": 22901744922,
+      "distance_km": 8016,
+      "is_active": false,
+      "tariff_rate": 0.032,
+      "description": "Trade route between Karachi and London"
+    },
+    {
+      "source": "istanbul",
+      "target": "shanghai",
+      "edge_type": "TRADE",
+      "weight": 0.353,
+      "volume": 55036968261,
+      "distance_km": 10324,
+      "is_active": true,
+      "tariff_rate": 0.101,
+      "description": "Trade route between Istanbul and Shanghai"
+    },
+    {
+      "source": "mexico-city",
+      "target": "santiago",
+      "edge_type": "TRADE",
+      "weight": 0.862,
+      "volume": 110065474838,
+      "distance_km": 6666,
+      "is_active": true,
+      "tariff_rate": 0.109,
+      "description": "Trade route between Mexico City and Santiago"
+    },
+    {
+      "source": "los-angeles",
+      "target": "berlin",
+      "edge_type": "TRADE",
+      "weight": 0.461,
+      "volume": 92124517158,
+      "distance_km": 14756,
+      "is_active": true,
+      "tariff_rate": 0.083,
+      "description": "Trade route between Los Angeles and Berlin"
+    },
+    {
+      "source": "singapore",
+      "target": "paris",
+      "edge_type": "FINANCIAL",
+      "weight": 0.505,
+      "volume": 269430819916,
+      "distance_km": 12436,
+      "is_active": true,
+      "tariff_rate": 0.093,
+      "description": "Financial corridor Singapore-Paris"
+    },
+    {
+      "source": "accra",
+      "target": "mumbai",
+      "edge_type": "POLITICAL",
+      "weight": 0.978,
+      "volume": 76037077034,
+      "distance_km": 8246,
+      "is_active": true,
+      "tariff_rate": 0.051,
+      "description": "Political alliance between Ghana and India"
+    },
+    {
+      "source": "berlin",
+      "target": "hong-kong",
+      "edge_type": "POLITICAL",
+      "weight": 0.642,
+      "volume": 9618174124,
+      "distance_km": 11676,
+      "is_active": true,
+      "tariff_rate": 0.006,
+      "description": "Political alliance between Germany and China"
+    },
+    {
+      "source": "riyadh",
+      "target": "delhi",
+      "edge_type": "FINANCIAL",
+      "weight": 0.511,
+      "volume": 92435856064,
+      "distance_km": 3406,
+      "is_active": true,
+      "tariff_rate": 0.049,
+      "description": "Financial corridor Riyadh-Delhi"
+    },
+    {
+      "source": "accra",
+      "target": "johannesburg",
+      "edge_type": "POLITICAL",
+      "weight": 0.454,
+      "volume": 6265057952,
+      "distance_km": 4720,
+      "is_active": true,
+      "tariff_rate": 0.089,
+      "description": "Political alliance between Ghana and South Africa"
+    },
+    {
+      "source": "lima",
+      "target": "santiago",
+      "edge_type": "MIGRATORY",
+      "weight": 0.738,
+      "volume": 64419854842,
+      "distance_km": 2478,
+      "is_active": true,
+      "tariff_rate": 0.055,
+      "description": "Migration flow from Lima to Santiago"
+    },
+    {
+      "source": "mumbai",
+      "target": "chicago",
+      "edge_type": "FINANCIAL",
+      "weight": 0.377,
+      "volume": 114026668635,
+      "distance_km": 17995,
+      "is_active": true,
+      "tariff_rate": 0.094,
+      "description": "Financial corridor Mumbai-Chicago"
+    },
+    {
+      "source": "addis-ababa",
+      "target": "delhi",
+      "edge_type": "CULTURAL",
+      "weight": 0.97,
+      "volume": 126039877518,
+      "distance_km": 4784,
+      "is_active": true,
+      "tariff_rate": 0.087,
+      "description": "Cultural exchange between Addis Ababa and Delhi"
+    },
+    {
+      "source": "shanghai",
+      "target": "hanoi",
+      "edge_type": "MIGRATORY",
+      "weight": 0.253,
+      "volume": 61654820157,
+      "distance_km": 2070,
+      "is_active": true,
+      "tariff_rate": 0.126,
+      "description": "Migration flow from Shanghai to Hanoi"
+    },
+    {
+      "source": "hong-kong",
+      "target": "seoul",
+      "edge_type": "TRADE",
+      "weight": 0.615,
+      "volume": 5213753762,
+      "distance_km": 2210,
+      "is_active": true,
+      "tariff_rate": 0.066,
+      "description": "Trade route between Hong Kong and Seoul"
+    },
+    {
+      "source": "chicago",
+      "target": "hong-kong",
+      "edge_type": "MIGRATORY",
+      "weight": 0.721,
+      "volume": 11415596508,
+      "distance_km": 22504,
+      "is_active": true,
+      "tariff_rate": 0.138,
+      "description": "Migration flow from Chicago to Hong Kong"
+    },
+    {
+      "source": "shanghai",
+      "target": "sydney",
+      "edge_type": "FINANCIAL",
+      "weight": 0.287,
+      "volume": 15118226117,
+      "distance_km": 7944,
+      "is_active": true,
+      "tariff_rate": 0.079,
+      "description": "Financial corridor Shanghai-Sydney"
+    },
+    {
+      "source": "johannesburg",
+      "target": "lagos",
+      "edge_type": "MIGRATORY",
+      "weight": 0.921,
+      "volume": 250971069,
+      "distance_km": 4549,
+      "is_active": true,
+      "tariff_rate": 0.116,
+      "description": "Migration flow from Johannesburg to Lagos"
+    },
+    {
+      "source": "jakarta",
+      "target": "accra",
+      "edge_type": "MIGRATORY",
+      "weight": 0.273,
+      "volume": 51554597775,
+      "distance_km": 11952,
+      "is_active": true,
+      "tariff_rate": 0.034,
+      "description": "Migration flow from Jakarta to Accra"
+    },
+    {
+      "source": "buenos-aires",
+      "target": "mexico-city",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.287,
+      "volume": 30693570367,
+      "distance_km": 7512,
+      "is_active": true,
+      "tariff_rate": 0.052,
+      "description": "Supply chain link Buenos Aires-Mexico City"
+    },
+    {
+      "source": "bangkok",
+      "target": "mexico-city",
+      "edge_type": "TRADE",
+      "weight": 0.616,
+      "volume": 228144096033,
+      "distance_km": 22168,
+      "is_active": true,
+      "tariff_rate": 0.059,
+      "description": "Trade route between Bangkok and Mexico City"
+    },
+    {
+      "source": "istanbul",
+      "target": "hong-kong",
+      "edge_type": "CULTURAL",
+      "weight": 0.138,
+      "volume": 19719131709,
+      "distance_km": 9681,
+      "is_active": true,
+      "tariff_rate": 0.139,
+      "description": "Cultural exchange between Istanbul and Hong Kong"
+    },
+    {
+      "source": "jakarta",
+      "target": "delhi",
+      "edge_type": "POLITICAL",
+      "weight": 0.282,
+      "volume": 78478576647,
+      "distance_km": 5090,
+      "is_active": false,
+      "tariff_rate": 0.104,
+      "description": "Political alliance between Indonesia and India"
+    },
+    {
+      "source": "sydney",
+      "target": "s\u00e3o-paulo",
+      "edge_type": "FINANCIAL",
+      "weight": 0.767,
+      "volume": 28704802208,
+      "distance_km": 21990,
+      "is_active": true,
+      "tariff_rate": 0.136,
+      "description": "Financial corridor Sydney-S\u00e3o Paulo"
+    },
+    {
+      "source": "moscow",
+      "target": "shanghai",
+      "edge_type": "TRADE",
+      "weight": 0.472,
+      "volume": 15437161141,
+      "distance_km": 9697,
+      "is_active": true,
+      "tariff_rate": 0.116,
+      "description": "Trade route between Moscow and Shanghai"
+    },
+    {
+      "source": "new-york",
+      "target": "kuala-lumpur",
+      "edge_type": "POLITICAL",
+      "weight": 0.466,
+      "volume": 165863349161,
+      "distance_km": 19942,
+      "is_active": true,
+      "tariff_rate": 0.072,
+      "description": "Political alliance between United States and Malaysia"
+    },
+    {
+      "source": "nairobi",
+      "target": "mexico-city",
+      "edge_type": "CULTURAL",
+      "weight": 0.357,
+      "volume": 9567732602,
+      "distance_km": 15265,
+      "is_active": true,
+      "tariff_rate": 0.098,
+      "description": "Cultural exchange between Nairobi and Mexico City"
+    },
+    {
+      "source": "moscow",
+      "target": "santiago",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.751,
+      "volume": 27735416952,
+      "distance_km": 15573,
+      "is_active": false,
+      "tariff_rate": 0.026,
+      "description": "Supply chain link Moscow-Santiago"
+    },
+    {
+      "source": "lagos",
+      "target": "tokyo",
+      "edge_type": "DIPLOMATIC",
+      "weight": 0.457,
+      "volume": 28213572548,
+      "distance_km": 15468,
+      "is_active": false,
+      "tariff_rate": 0.144,
+      "description": "Diplomatic relations Nigeria-Japan"
+    },
+    {
+      "source": "mexico-city",
+      "target": "tokyo",
+      "edge_type": "TRADE",
+      "weight": 0.369,
+      "volume": 533918920961,
+      "distance_km": 26566,
+      "is_active": false,
+      "tariff_rate": 0.05,
+      "description": "Trade route between Mexico City and Tokyo"
+    },
+    {
+      "source": "shenzhen",
+      "target": "santiago",
+      "edge_type": "FINANCIAL",
+      "weight": 0.545,
+      "volume": 124931074883,
+      "distance_km": 21425,
+      "is_active": true,
+      "tariff_rate": 0.07,
+      "description": "Financial corridor Shenzhen-Santiago"
+    },
+    {
+      "source": "nairobi",
+      "target": "mumbai",
+      "edge_type": "CULTURAL",
+      "weight": 0.246,
+      "volume": 19561406907,
+      "distance_km": 4596,
+      "is_active": true,
+      "tariff_rate": 0.028,
+      "description": "Cultural exchange between Nairobi and Mumbai"
+    },
+    {
+      "source": "riyadh",
+      "target": "mexico-city",
+      "edge_type": "FINANCIAL",
+      "weight": 0.707,
+      "volume": 48074625039,
+      "distance_km": 16195,
+      "is_active": true,
+      "tariff_rate": 0.096,
+      "description": "Financial corridor Riyadh-Mexico City"
+    },
+    {
+      "source": "los-angeles",
+      "target": "san-francisco",
+      "edge_type": "FINANCIAL",
+      "weight": 0.395,
+      "volume": 9838407997,
+      "distance_km": 620,
+      "is_active": true,
+      "tariff_rate": 0.147,
+      "description": "Financial corridor Los Angeles-San Francisco"
+    },
+    {
+      "source": "delhi",
+      "target": "johannesburg",
+      "edge_type": "POLITICAL",
+      "weight": 0.106,
+      "volume": 3145844183,
+      "distance_km": 8172,
+      "is_active": true,
+      "tariff_rate": 0.04,
+      "description": "Political alliance between India and South Africa"
+    },
+    {
+      "source": "riyadh",
+      "target": "buenos-aires",
+      "edge_type": "FINANCIAL",
+      "weight": 0.751,
+      "volume": 1240458473,
+      "distance_km": 13391,
+      "is_active": true,
+      "tariff_rate": 0.104,
+      "description": "Financial corridor Riyadh-Buenos Aires"
+    },
+    {
+      "source": "shanghai",
+      "target": "mumbai",
+      "edge_type": "MIGRATORY",
+      "weight": 0.376,
+      "volume": 33313038753,
+      "distance_km": 5560,
+      "is_active": true,
+      "tariff_rate": 0.134,
+      "description": "Migration flow from Shanghai to Mumbai"
+    },
+    {
+      "source": "buenos-aires",
+      "target": "mumbai",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.925,
+      "volume": 6293434597,
+      "distance_km": 15741,
+      "is_active": true,
+      "tariff_rate": 0.033,
+      "description": "Supply chain link Buenos Aires-Mumbai"
+    },
+    {
+      "source": "sydney",
+      "target": "delhi",
+      "edge_type": "POLITICAL",
+      "weight": 0.509,
+      "volume": 75183240968,
+      "distance_km": 10765,
+      "is_active": true,
+      "tariff_rate": 0.105,
+      "description": "Political alliance between Australia and India"
+    },
+    {
+      "source": "delhi",
+      "target": "santiago",
+      "edge_type": "DIPLOMATIC",
+      "weight": 0.698,
+      "volume": 44250622240,
+      "distance_km": 17794,
+      "is_active": true,
+      "tariff_rate": 0.113,
+      "description": "Diplomatic relations India-Chile"
+    },
+    {
+      "source": "dubai",
+      "target": "bogota",
+      "edge_type": "MIGRATORY",
+      "weight": 0.575,
+      "volume": 81180929938,
+      "distance_km": 14536,
+      "is_active": false,
+      "tariff_rate": 0.017,
+      "description": "Migration flow from Dubai to Bogota"
+    },
+    {
+      "source": "kuala-lumpur",
+      "target": "lima",
+      "edge_type": "POLITICAL",
+      "weight": 0.615,
+      "volume": 36786942321,
+      "distance_km": 19910,
+      "is_active": true,
+      "tariff_rate": 0.078,
+      "description": "Political alliance between Malaysia and Peru"
+    },
+    {
+      "source": "mumbai",
+      "target": "cairo",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.625,
+      "volume": 13029214203,
+      "distance_km": 4779,
+      "is_active": true,
+      "tariff_rate": 0.121,
+      "description": "Supply chain link Mumbai-Cairo"
+    },
+    {
+      "source": "shenzhen",
+      "target": "sydney",
+      "edge_type": "FINANCIAL",
+      "weight": 0.474,
+      "volume": 34361290408,
+      "distance_km": 7497,
+      "is_active": true,
+      "tariff_rate": 0.101,
+      "description": "Financial corridor Shenzhen-Sydney"
+    },
+    {
+      "source": "buenos-aires",
+      "target": "london",
+      "edge_type": "MIGRATORY",
+      "weight": 0.329,
+      "volume": 5054324426,
+      "distance_km": 11540,
+      "is_active": true,
+      "tariff_rate": 0.011,
+      "description": "Migration flow from Buenos Aires to London"
+    },
+    {
+      "source": "san-francisco",
+      "target": "istanbul",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.157,
+      "volume": 18406446334,
+      "distance_km": 16808,
+      "is_active": false,
+      "tariff_rate": 0.01,
+      "description": "Supply chain link San Francisco-Istanbul"
+    },
+    {
+      "source": "delhi",
+      "target": "tokyo",
+      "edge_type": "CULTURAL",
+      "weight": 0.468,
+      "volume": 480066197966,
+      "distance_km": 6985,
+      "is_active": true,
+      "tariff_rate": 0.147,
+      "description": "Cultural exchange between Delhi and Tokyo"
+    },
+    {
+      "source": "chicago",
+      "target": "berlin",
+      "edge_type": "MIGRATORY",
+      "weight": 0.504,
+      "volume": 146489976815,
+      "distance_km": 11276,
+      "is_active": true,
+      "tariff_rate": 0.012,
+      "description": "Migration flow from Chicago to Berlin"
+    },
+    {
+      "source": "santiago",
+      "target": "sydney",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.874,
+      "volume": 9586658457,
+      "distance_km": 24628,
+      "is_active": false,
+      "tariff_rate": 0.059,
+      "description": "Supply chain link Santiago-Sydney"
+    },
+    {
+      "source": "sydney",
+      "target": "moscow",
+      "edge_type": "DIPLOMATIC",
+      "weight": 0.103,
+      "volume": 934287555,
+      "distance_km": 16060,
+      "is_active": true,
+      "tariff_rate": 0.101,
+      "description": "Diplomatic relations Australia-Russia"
+    },
+    {
+      "source": "santiago",
+      "target": "san-francisco",
+      "edge_type": "FINANCIAL",
+      "weight": 0.441,
+      "volume": 5308480729,
+      "distance_km": 9772,
+      "is_active": true,
+      "tariff_rate": 0.023,
+      "description": "Financial corridor Santiago-San Francisco"
+    },
+    {
+      "source": "nairobi",
+      "target": "mumbai",
+      "edge_type": "TRADE",
+      "weight": 0.829,
+      "volume": 18044286866,
+      "distance_km": 4596,
+      "is_active": true,
+      "tariff_rate": 0.133,
+      "description": "Trade route between Nairobi and Mumbai"
+    },
+    {
+      "source": "london",
+      "target": "seoul",
+      "edge_type": "POLITICAL",
+      "weight": 0.161,
+      "volume": 109174480020,
+      "distance_km": 14193,
+      "is_active": true,
+      "tariff_rate": 0.101,
+      "description": "Political alliance between United Kingdom and South Korea"
+    },
+    {
+      "source": "shanghai",
+      "target": "seoul",
+      "edge_type": "SUPPLY_CHAIN",
+      "weight": 0.14,
+      "volume": 14725308266,
+      "distance_km": 931,
+      "is_active": true,
+      "tariff_rate": 0.113,
+      "description": "Supply chain link Shanghai-Seoul"
+    },
+    {
+      "source": "shanghai",
+      "target": "sydney",
+      "edge_type": "FINANCIAL",
+      "weight": 0.994,
+      "volume": 11480062735,
+      "distance_km": 7944,
+      "is_active": false,
+      "tariff_rate": 0.086,
+      "description": "Financial corridor Shanghai-Sydney"
+    },
+    {
+      "source": "manila",
+      "target": "addis-ababa",
+      "edge_type": "DIPLOMATIC",
+      "weight": 0.705,
+      "volume": 9079644875,
+      "distance_km": 9149,
+      "is_active": true,
+      "tariff_rate": 0.021,
+      "description": "Diplomatic relations Philippines-Ethiopia"
+    },
+    {
+      "source": "bogota",
+      "target": "moscow",
+      "edge_type": "MIGRATORY",
+      "weight": 0.37,
+      "volume": 5832115501,
+      "distance_km": 13630,
+      "is_active": false,
+      "tariff_rate": 0.132,
+      "description": "Migration flow from Bogota to Moscow"
+    }
+  ],
+  "metrics": {
+    "betweenness": {
+      "new-york": 0.0074,
+      "london": 0.0126,
+      "tokyo": 0.0121,
+      "shanghai": 0.016,
+      "singapore": 0.0157,
+      "dubai": 0.0152,
+      "s\u00e3o-paulo": 0.0027,
+      "mumbai": 0.0317,
+      "sydney": 0.0129,
+      "hong-kong": 0.0067,
+      "toronto": 0.0006,
+      "lagos": 0.0061,
+      "nairobi": 0.0122,
+      "cairo": 0.0038,
+      "moscow": 0.0137,
+      "seoul": 0.0049,
+      "jakarta": 0.0114,
+      "bangkok": 0.0098,
+      "mexico-city": 0.0259,
+      "buenos-aires": 0.0114,
+      "johannesburg": 0.0235,
+      "riyadh": 0.0113,
+      "istanbul": 0.0049,
+      "berlin": 0.0059,
+      "paris": 0.0008,
+      "los-angeles": 0.0183,
+      "chicago": 0.0224,
+      "san-francisco": 0.0171,
+      "beijing": 0.0011,
+      "shenzhen": 0.0088,
+      "delhi": 0.0069,
+      "karachi": 0.0033,
+      "lima": 0.0082,
+      "bogota": 0.0097,
+      "santiago": 0.0388,
+      "kuala-lumpur": 0.0023,
+      "manila": 0.0154,
+      "hanoi": 0.0029,
+      "addis-ababa": 0.0158,
+      "accra": 0.0155
+    },
+    "degree": {
+      "new-york": 0.0202,
+      "london": 0.0505,
+      "tokyo": 0.0707,
+      "shanghai": 0.0808,
+      "singapore": 0.0404,
+      "dubai": 0.0404,
+      "s\u00e3o-paulo": 0.0101,
+      "mumbai": 0.101,
+      "sydney": 0.101,
+      "hong-kong": 0.0404,
+      "toronto": 0.0101,
+      "lagos": 0.0404,
+      "nairobi": 0.0404,
+      "cairo": 0.0202,
+      "moscow": 0.0404,
+      "seoul": 0.0404,
+      "jakarta": 0.0404,
+      "bangkok": 0.0303,
+      "mexico-city": 0.0707,
+      "buenos-aires": 0.0505,
+      "johannesburg": 0.0606,
+      "riyadh": 0.0505,
+      "istanbul": 0.0909,
+      "berlin": 0.0606,
+      "paris": 0.0101,
+      "los-angeles": 0.0707,
+      "chicago": 0.0606,
+      "san-francisco": 0.0505,
+      "beijing": 0.0303,
+      "shenzhen": 0.0303,
+      "delhi": 0.0909,
+      "karachi": 0.0303,
+      "lima": 0.0303,
+      "bogota": 0.0404,
+      "santiago": 0.1111,
+      "kuala-lumpur": 0.0303,
+      "manila": 0.0505,
+      "hanoi": 0.0101,
+      "addis-ababa": 0.0707,
+      "accra": 0.0808
+    },
+    "closeness": {
+      "new-york": 0.6478,
+      "london": 0.4332,
+      "tokyo": 0.6828,
+      "shanghai": 0.3061,
+      "singapore": 0.6749,
+      "dubai": 0.6848,
+      "s\u00e3o-paulo": 0.3469,
+      "mumbai": 0.6998,
+      "sydney": 0.4916,
+      "hong-kong": 0.397,
+      "toronto": 0.5418,
+      "lagos": 0.3818,
+      "nairobi": 0.6661,
+      "cairo": 0.5208,
+      "moscow": 0.6102,
+      "seoul": 0.4523,
+      "jakarta": 0.5135,
+      "bangkok": 0.4437,
+      "mexico-city": 0.4046,
+      "buenos-aires": 0.5051,
+      "johannesburg": 0.4989,
+      "riyadh": 0.3394,
+      "istanbul": 0.6925,
+      "berlin": 0.4878,
+      "paris": 0.6359,
+      "los-angeles": 0.6657,
+      "chicago": 0.4483,
+      "san-francisco": 0.4656,
+      "beijing": 0.525,
+      "shenzhen": 0.3885,
+      "delhi": 0.3584,
+      "karachi": 0.4043,
+      "lima": 0.6739,
+      "bogota": 0.5317,
+      "santiago": 0.467,
+      "kuala-lumpur": 0.361,
+      "manila": 0.4319,
+      "hanoi": 0.4519,
+      "addis-ababa": 0.6333,
+      "accra": 0.4997
+    },
+    "articulation_points": [
+      "riyadh",
+      "jakarta",
+      "karachi",
+      "shenzhen"
+    ],
+    "bridges": [
+      [
+        "istanbul",
+        "toronto"
+      ],
+      [
+        "sydney",
+        "santiago"
+      ],
+      [
+        "karachi",
+        "lagos"
+      ],
+      [
+        "santiago",
+        "shanghai"
+      ]
+    ],
+    "ecowas_cut_vertices": [
+      "bogota",
+      "tokyo"
+    ],
+    "component_count": 1
+  },
+  "ftz_impact": {
+    "singapore": {
+      "composite": 0.816,
+      "connectivity": 0.931,
+      "port_access": 0.9,
+      "tariff_exposure": 0.867,
+      "trade_volume": 0.806,
+      "diversification": 0.586,
+      "border_proximity": 0.837,
+      "stability": 0.681
+    },
+    "dubai": {
+      "composite": 0.772,
+      "connectivity": 0.848,
+      "port_access": 0.9,
+      "tariff_exposure": 0.702,
+      "trade_volume": 0.702,
+      "diversification": 0.568,
+      "border_proximity": 0.747,
+      "stability": 0.833
+    },
+    "hong-kong": {
+      "composite": 0.729,
+      "connectivity": 0.816,
+      "port_access": 0.9,
+      "tariff_exposure": 0.821,
+      "trade_volume": 0.695,
+      "diversification": 0.403,
+      "border_proximity": 0.721,
+      "stability": 0.604
+    },
+    "shenzhen": {
+      "composite": 0.79,
+      "connectivity": 0.785,
+      "port_access": 0.9,
+      "tariff_exposure": 0.769,
+      "trade_volume": 0.891,
+      "diversification": 0.408,
+      "border_proximity": 0.825,
+      "stability": 0.836
+    }
+  },
+  "trade_routes": {
+    "route-001": {
+      "risk": 0.269,
+      "redundancy": 0.634,
+      "min_cut": 2,
+      "shortest_path": [
+        "s\u00e3o-paulo",
+        "bogota",
+        "hong-kong"
+      ],
+      "shortest_cost": 6807,
+      "min_cut_nodes": [
+        "bogota",
+        "hong-kong"
+      ]
+    },
+    "route-002": {
+      "risk": 0.496,
+      "redundancy": 0.893,
+      "min_cut": 1,
+      "shortest_path": [
+        "berlin",
+        "los-angeles",
+        "shenzhen"
+      ],
+      "shortest_cost": 5914,
+      "min_cut_nodes": [
+        "shenzhen",
+        "berlin"
+      ]
+    },
+    "route-003": {
+      "risk": 0.592,
+      "redundancy": 0.258,
+      "min_cut": 2,
+      "shortest_path": [
+        "tokyo",
+        "dubai",
+        "los-angeles",
+        "paris",
+        "manila",
+        "delhi",
+        "shanghai",
+        "new-york"
+      ],
+      "shortest_cost": 6427,
+      "min_cut_nodes": [
+        "dubai",
+        "manila"
+      ]
+    },
+    "route-004": {
+      "risk": 0.433,
+      "redundancy": 0.233,
+      "min_cut": 1,
+      "shortest_path": [
+        "moscow",
+        "cairo",
+        "manila"
+      ],
+      "shortest_cost": 5593,
+      "min_cut_nodes": [
+        "manila",
+        "moscow"
+      ]
+    },
+    "route-005": {
+      "risk": 0.201,
+      "redundancy": 0.774,
+      "min_cut": 2,
+      "shortest_path": [
+        "johannesburg",
+        "london",
+        "cairo",
+        "hanoi"
+      ],
+      "shortest_cost": 2260,
+      "min_cut_nodes": [
+        "cairo",
+        "johannesburg"
+      ]
+    },
+    "route-006": {
+      "risk": 0.653,
+      "redundancy": 0.683,
+      "min_cut": 1,
+      "shortest_path": [
+        "seoul",
+        "manila",
+        "paris",
+        "santiago",
+        "riyadh",
+        "hanoi",
+        "sydney"
+      ],
+      "shortest_cost": 9204,
+      "min_cut_nodes": [
+        "hanoi",
+        "paris"
+      ]
+    },
+    "route-007": {
+      "risk": 0.687,
+      "redundancy": 0.438,
+      "min_cut": 3,
+      "shortest_path": [
+        "s\u00e3o-paulo",
+        "san-francisco",
+        "moscow"
+      ],
+      "shortest_cost": 7499,
+      "min_cut_nodes": [
+        "san-francisco",
+        "s\u00e3o-paulo"
+      ]
+    },
+    "route-008": {
+      "risk": 0.576,
+      "redundancy": 0.662,
+      "min_cut": 1,
+      "shortest_path": [
+        "bangkok",
+        "beijing",
+        "karachi",
+        "moscow",
+        "istanbul",
+        "paris",
+        "san-francisco",
+        "lagos"
+      ],
+      "shortest_cost": 5839,
+      "min_cut_nodes": [
+        "moscow",
+        "paris"
+      ]
+    },
+    "route-009": {
+      "risk": 0.366,
+      "redundancy": 0.749,
+      "min_cut": 1,
+      "shortest_path": [
+        "dubai",
+        "bangkok",
+        "hong-kong"
+      ],
+      "shortest_cost": 7383,
+      "min_cut_nodes": [
+        "bangkok",
+        "hong-kong"
+      ]
+    },
+    "route-010": {
+      "risk": 0.411,
+      "redundancy": 0.733,
+      "min_cut": 1,
+      "shortest_path": [
+        "dubai",
+        "new-york",
+        "buenos-aires"
+      ],
+      "shortest_cost": 3170,
+      "min_cut_nodes": [
+        "dubai",
+        "buenos-aires"
+      ]
+    },
+    "route-011": {
+      "risk": 0.118,
+      "redundancy": 0.448,
+      "min_cut": 1,
+      "shortest_path": [
+        "beijing",
+        "kuala-lumpur",
+        "addis-ababa",
+        "lima",
+        "chicago",
+        "s\u00e3o-paulo"
+      ],
+      "shortest_cost": 6315,
+      "min_cut_nodes": [
+        "lima",
+        "beijing"
+      ]
+    },
+    "route-012": {
+      "risk": 0.5,
+      "redundancy": 0.319,
+      "min_cut": 2,
+      "shortest_path": [
+        "chicago",
+        "paris",
+        "dubai",
+        "kuala-lumpur",
+        "seoul"
+      ],
+      "shortest_cost": 3777,
+      "min_cut_nodes": [
+        "paris",
+        "dubai"
+      ]
+    }
+  },
+  "cascades": [
+    {
+      "name": "US-China Decoupling",
+      "trigger": "Trade war escalation",
+      "type": "TECH_DECOUPLING",
+      "affected_cities": [
+        "bangkok",
+        "karachi",
+        "hong-kong",
+        "singapore",
+        "toronto",
+        "san-francisco",
+        "accra",
+        "chicago",
+        "buenos-aires"
+      ],
+      "isolated_cities": [
+        "karachi",
+        "san-francisco",
+        "hong-kong",
+        "buenos-aires",
+        "singapore"
+      ],
+      "trade_disrupted_cities": [
+        "singapore",
+        "chicago",
+        "bangkok",
+        "karachi",
+        "hong-kong",
+        "accra",
+        "san-francisco"
+      ],
+      "new_components": 2,
+      "trade_volume_affected": 704968032,
+      "severity": 0.75
+    },
+    {
+      "name": "SWIFT Sanctions Cascade",
+      "trigger": "Financial system exclusion",
+      "type": "FINANCIAL_ISOLATION",
+      "affected_cities": [
+        "riyadh",
+        "beijing",
+        "accra",
+        "san-francisco",
+        "sydney",
+        "buenos-aires",
+        "johannesburg",
+        "nairobi",
+        "delhi",
+        "toronto",
+        "dubai"
+      ],
+      "isolated_cities": [
+        "buenos-aires",
+        "sydney",
+        "nairobi",
+        "san-francisco",
+        "accra"
+      ],
+      "trade_disrupted_cities": [
+        "sydney",
+        "johannesburg",
+        "buenos-aires",
+        "beijing",
+        "dubai",
+        "nairobi"
+      ],
+      "new_components": 3,
+      "trade_volume_affected": 798358955,
+      "severity": 0.7
+    },
+    {
+      "name": "Pandemic Supply Chain Shock",
+      "trigger": "Global health crisis",
+      "type": "SUPPLY_CHAIN_COLLAPSE",
+      "affected_cities": [
+        "kuala-lumpur",
+        "london",
+        "shenzhen",
+        "cairo",
+        "beijing",
+        "mexico-city",
+        "singapore"
+      ],
+      "isolated_cities": [
+        "mexico-city",
+        "cairo",
+        "london",
+        "shenzhen",
+        "kuala-lumpur"
+      ],
+      "trade_disrupted_cities": [
+        "mexico-city",
+        "london",
+        "cairo",
+        "beijing",
+        "kuala-lumpur"
+      ],
+      "new_components": 2,
+      "trade_volume_affected": 794420369,
+      "severity": 0.6
+    },
+    {
+      "name": "Suez Blockage Ripple",
+      "trigger": "Major shipping lane closure",
+      "type": "LOGISTICS_DISRUPTION",
+      "affected_cities": [
+        "hanoi",
+        "los-angeles",
+        "santiago",
+        "lima",
+        "chicago",
+        "accra",
+        "tokyo",
+        "berlin",
+        "dubai",
+        "shanghai",
+        "paris",
+        "mumbai"
+      ],
+      "isolated_cities": [
+        "santiago",
+        "paris",
+        "shanghai",
+        "hanoi"
+      ],
+      "trade_disrupted_cities": [
+        "paris",
+        "mumbai",
+        "tokyo",
+        "accra",
+        "shanghai",
+        "hanoi",
+        "berlin"
+      ],
+      "new_components": 1,
+      "trade_volume_affected": 355243022,
+      "severity": 0.55
+    },
+    {
+      "name": "Climate Migration Wave",
+      "trigger": "Extreme weather events",
+      "type": "MIGRATION_CRISIS",
+      "affected_cities": [
+        "bogota",
+        "kuala-lumpur",
+        "hanoi",
+        "manila",
+        "moscow",
+        "beijing",
+        "berlin",
+        "los-angeles",
+        "shenzhen",
+        "paris",
+        "riyadh",
+        "mexico-city",
+        "istanbul"
+      ],
+      "isolated_cities": [
+        "beijing",
+        "bogota",
+        "los-angeles"
+      ],
+      "trade_disrupted_cities": [
+        "moscow",
+        "berlin",
+        "kuala-lumpur"
+      ],
+      "new_components": 1,
+      "trade_volume_affected": 698790647,
+      "severity": 0.65
+    },
+    {
+      "name": "Digital Currency War",
+      "trigger": "CBDC competition",
+      "type": "MONETARY_CONFLICT",
+      "affected_cities": [
+        "istanbul",
+        "buenos-aires",
+        "riyadh",
+        "shenzhen",
+        "cairo",
+        "bogota",
+        "delhi"
+      ],
+      "isolated_cities": [
+        "shenzhen",
+        "istanbul",
+        "delhi",
+        "cairo"
+      ],
+      "trade_disrupted_cities": [
+        "istanbul",
+        "riyadh",
+        "delhi",
+        "cairo",
+        "shenzhen"
+      ],
+      "new_components": 2,
+      "trade_volume_affected": 588781950,
+      "severity": 0.5
+    }
+  ],
+  "opportunities": [
+    {
+      "city_id": "toronto",
+      "city_name": "Toronto",
+      "country": "Canada",
+      "signal_type": "NEUTRAL",
+      "gap": 0.144,
+      "model_score": 0.61,
+      "actual_score": 0.754,
+      "confidence": 0.793
+    },
+    {
+      "city_id": "riyadh",
+      "city_name": "Riyadh",
+      "country": "Saudi Arabia",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.275,
+      "model_score": 0.439,
+      "actual_score": 0.714,
+      "confidence": 0.742
+    },
+    {
+      "city_id": "lagos",
+      "city_name": "Lagos",
+      "country": "Nigeria",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.094,
+      "model_score": 0.537,
+      "actual_score": 0.632,
+      "confidence": 0.858
+    },
+    {
+      "city_id": "nairobi",
+      "city_name": "Nairobi",
+      "country": "Kenya",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.042,
+      "model_score": 0.303,
+      "actual_score": 0.26,
+      "confidence": 0.675
+    },
+    {
+      "city_id": "bangkok",
+      "city_name": "Bangkok",
+      "country": "Thailand",
+      "signal_type": "RISK",
+      "gap": 0.185,
+      "model_score": 0.338,
+      "actual_score": 0.523,
+      "confidence": 0.636
+    },
+    {
+      "city_id": "santiago",
+      "city_name": "Santiago",
+      "country": "Chile",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.104,
+      "model_score": 0.575,
+      "actual_score": 0.47,
+      "confidence": 0.692
+    },
+    {
+      "city_id": "karachi",
+      "city_name": "Karachi",
+      "country": "Pakistan",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.083,
+      "model_score": 0.658,
+      "actual_score": 0.742,
+      "confidence": 0.814
+    },
+    {
+      "city_id": "hanoi",
+      "city_name": "Hanoi",
+      "country": "Vietnam",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.089,
+      "model_score": 0.575,
+      "actual_score": 0.486,
+      "confidence": 0.66
+    },
+    {
+      "city_id": "buenos-aires",
+      "city_name": "Buenos Aires",
+      "country": "Argentina",
+      "signal_type": "NEUTRAL",
+      "gap": 0.054,
+      "model_score": 0.703,
+      "actual_score": 0.757,
+      "confidence": 0.71
+    },
+    {
+      "city_id": "seoul",
+      "city_name": "Seoul",
+      "country": "South Korea",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.19,
+      "model_score": 0.716,
+      "actual_score": 0.526,
+      "confidence": 0.779
+    },
+    {
+      "city_id": "chicago",
+      "city_name": "Chicago",
+      "country": "United States",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.045,
+      "model_score": 0.554,
+      "actual_score": 0.599,
+      "confidence": 0.77
+    },
+    {
+      "city_id": "santiago",
+      "city_name": "Santiago",
+      "country": "Chile",
+      "signal_type": "RISK",
+      "gap": 0.087,
+      "model_score": 0.9,
+      "actual_score": 0.987,
+      "confidence": 0.794
+    },
+    {
+      "city_id": "karachi",
+      "city_name": "Karachi",
+      "country": "Pakistan",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.188,
+      "model_score": 0.805,
+      "actual_score": 0.617,
+      "confidence": 0.817
+    },
+    {
+      "city_id": "istanbul",
+      "city_name": "Istanbul",
+      "country": "Turkey",
+      "signal_type": "NEUTRAL",
+      "gap": -0.009,
+      "model_score": 0.417,
+      "actual_score": 0.408,
+      "confidence": 0.734
+    },
+    {
+      "city_id": "kuala-lumpur",
+      "city_name": "Kuala Lumpur",
+      "country": "Malaysia",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.003,
+      "model_score": 0.711,
+      "actual_score": 0.708,
+      "confidence": 0.745
+    },
+    {
+      "city_id": "beijing",
+      "city_name": "Beijing",
+      "country": "China",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.25,
+      "model_score": 0.319,
+      "actual_score": 0.068,
+      "confidence": 0.866
+    },
+    {
+      "city_id": "mexico-city",
+      "city_name": "Mexico City",
+      "country": "Mexico",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.165,
+      "model_score": 0.473,
+      "actual_score": 0.308,
+      "confidence": 0.873
+    },
+    {
+      "city_id": "manila",
+      "city_name": "Manila",
+      "country": "Philippines",
+      "signal_type": "RISK",
+      "gap": 0.16,
+      "model_score": 0.63,
+      "actual_score": 0.789,
+      "confidence": 0.64
+    },
+    {
+      "city_id": "mumbai",
+      "city_name": "Mumbai",
+      "country": "India",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.026,
+      "model_score": 0.895,
+      "actual_score": 0.92,
+      "confidence": 0.79
+    },
+    {
+      "city_id": "tokyo",
+      "city_name": "Tokyo",
+      "country": "Japan",
+      "signal_type": "RISK",
+      "gap": -0.035,
+      "model_score": 0.431,
+      "actual_score": 0.396,
+      "confidence": 0.749
+    },
+    {
+      "city_id": "seoul",
+      "city_name": "Seoul",
+      "country": "South Korea",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.3,
+      "model_score": 0.57,
+      "actual_score": 0.869,
+      "confidence": 0.722
+    },
+    {
+      "city_id": "dubai",
+      "city_name": "Dubai",
+      "country": "United Arab Emirates",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.296,
+      "model_score": 0.765,
+      "actual_score": 1.062,
+      "confidence": 0.683
+    },
+    {
+      "city_id": "hanoi",
+      "city_name": "Hanoi",
+      "country": "Vietnam",
+      "signal_type": "RISK",
+      "gap": 0.217,
+      "model_score": 0.666,
+      "actual_score": 0.883,
+      "confidence": 0.75
+    },
+    {
+      "city_id": "accra",
+      "city_name": "Accra",
+      "country": "Ghana",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.176,
+      "model_score": 0.424,
+      "actual_score": 0.248,
+      "confidence": 0.621
+    },
+    {
+      "city_id": "istanbul",
+      "city_name": "Istanbul",
+      "country": "Turkey",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.058,
+      "model_score": 0.401,
+      "actual_score": 0.459,
+      "confidence": 0.943
+    }
+  ]
+}

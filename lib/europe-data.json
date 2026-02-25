@@ -1,0 +1,2380 @@
+{
+  "generated_at": "2026-02-25T19:33:06.087386",
+  "summary": {
+    "nodes": 30,
+    "edges": 87,
+    "ecowas_active": 23,
+    "uemoa_cfa": 1,
+    "suspended": 3,
+    "external": 2,
+    "port_cities": 8,
+    "ftz_targets": 0
+  },
+  "cities": [
+    {
+      "id": "london",
+      "name": "London",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "country": "United Kingdom",
+      "country_iso3": "GBR",
+      "bloc": "PARTNER",
+      "population": 11227801,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 26679.9,
+      "trade_openness": 0.7,
+      "ease_of_business": 67.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "financial_center",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "country": "France",
+      "country_iso3": "FRA",
+      "bloc": "EU",
+      "population": 10406820,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 45315.3,
+      "trade_openness": 0.41,
+      "ease_of_business": 66.6,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "berlin",
+      "name": "Berlin",
+      "lat": 52.52,
+      "lng": 13.405,
+      "country": "Germany",
+      "country_iso3": "DEU",
+      "bloc": "EU",
+      "population": 9642600,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 45171.2,
+      "trade_openness": 0.58,
+      "ease_of_business": 68.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "country": "Italy",
+      "country_iso3": "ITA",
+      "bloc": "EU",
+      "population": 5161907,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 29328.8,
+      "trade_openness": 0.78,
+      "ease_of_business": 70.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "madrid",
+      "name": "Madrid",
+      "lat": 40.4168,
+      "lng": -3.7038,
+      "country": "Spain",
+      "country_iso3": "ESP",
+      "bloc": "EU",
+      "population": 14041365,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 22607.0,
+      "trade_openness": 0.58,
+      "ease_of_business": 63.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "manufacturing",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "amsterdam",
+      "name": "Amsterdam",
+      "lat": 52.3676,
+      "lng": 4.9041,
+      "country": "Netherlands",
+      "country_iso3": "NLD",
+      "bloc": "EU",
+      "population": 14957042,
+      "is_port": false,
+      "is_capital": false,
+      "gdp_per_capita": 41698.1,
+      "trade_openness": 0.48,
+      "ease_of_business": 62.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "brussels",
+      "name": "Brussels",
+      "lat": 50.8503,
+      "lng": 4.3517,
+      "country": "Belgium",
+      "country_iso3": "BEL",
+      "bloc": "EU",
+      "population": 2194522,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 42807.6,
+      "trade_openness": 0.58,
+      "ease_of_business": 85.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "high_income"
+      ]
+    },
+    {
+      "id": "vienna",
+      "name": "Vienna",
+      "lat": 48.2082,
+      "lng": 16.3738,
+      "country": "Austria",
+      "country_iso3": "AUT",
+      "bloc": "EU",
+      "population": 11968026,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 58882.1,
+      "trade_openness": 0.64,
+      "ease_of_business": 65.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "warsaw",
+      "name": "Warsaw",
+      "lat": 52.2297,
+      "lng": 21.0122,
+      "country": "Poland",
+      "country_iso3": "POL",
+      "bloc": "EU",
+      "population": 11237414,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 61289.7,
+      "trade_openness": 0.49,
+      "ease_of_business": 69.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "prague",
+      "name": "Prague",
+      "lat": 50.0755,
+      "lng": 14.4378,
+      "country": "Czech Republic",
+      "country_iso3": "CZE",
+      "bloc": "EU",
+      "population": 7230428,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 36064.5,
+      "trade_openness": 0.48,
+      "ease_of_business": 88.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "stockholm",
+      "name": "Stockholm",
+      "lat": 59.3293,
+      "lng": 18.0686,
+      "country": "Sweden",
+      "country_iso3": "SWE",
+      "bloc": "EU",
+      "population": 11285264,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 47531.1,
+      "trade_openness": 0.51,
+      "ease_of_business": 67.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "copenhagen",
+      "name": "Copenhagen",
+      "lat": 55.6761,
+      "lng": 12.5683,
+      "country": "Denmark",
+      "country_iso3": "DNK",
+      "bloc": "EU",
+      "population": 7200828,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 41719.8,
+      "trade_openness": 0.8,
+      "ease_of_business": 64.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "zurich",
+      "name": "Zurich",
+      "lat": 47.3769,
+      "lng": 8.5417,
+      "country": "Switzerland",
+      "country_iso3": "CHE",
+      "bloc": "EFTA",
+      "population": 3184052,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 67524.8,
+      "trade_openness": 0.57,
+      "ease_of_business": 61.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "high_income",
+        "financial_center"
+      ]
+    },
+    {
+      "id": "dublin",
+      "name": "Dublin",
+      "lat": 53.3498,
+      "lng": -6.2603,
+      "country": "Ireland",
+      "country_iso3": "IRL",
+      "bloc": "EU",
+      "population": 14941486,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 76545.9,
+      "trade_openness": 0.67,
+      "ease_of_business": 63.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "lisbon",
+      "name": "Lisbon",
+      "lat": 38.7223,
+      "lng": -9.1393,
+      "country": "Portugal",
+      "country_iso3": "PRT",
+      "bloc": "EU",
+      "population": 5424115,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 46085.9,
+      "trade_openness": 0.58,
+      "ease_of_business": 88.6,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "helsinki",
+      "name": "Helsinki",
+      "lat": 60.1699,
+      "lng": 24.9384,
+      "country": "Finland",
+      "country_iso3": "FIN",
+      "bloc": "EU",
+      "population": 2285277,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 72231.1,
+      "trade_openness": 0.52,
+      "ease_of_business": 79.2,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "oslo",
+      "name": "Oslo",
+      "lat": 59.9139,
+      "lng": 10.7522,
+      "country": "Norway",
+      "country_iso3": "NOR",
+      "bloc": "EEA",
+      "population": 13563184,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 75346.0,
+      "trade_openness": 0.77,
+      "ease_of_business": 78.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "lat": 37.9838,
+      "lng": 23.7275,
+      "country": "Greece",
+      "country_iso3": "GRC",
+      "bloc": "EU",
+      "population": 14035435,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 38450.8,
+      "trade_openness": 0.42,
+      "ease_of_business": 86.3,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "budapest",
+      "name": "Budapest",
+      "lat": 47.4979,
+      "lng": 19.0402,
+      "country": "Hungary",
+      "country_iso3": "HUN",
+      "bloc": "EU",
+      "population": 13260786,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 51962.4,
+      "trade_openness": 0.45,
+      "ease_of_business": 79.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "bucharest",
+      "name": "Bucharest",
+      "lat": 44.4268,
+      "lng": 26.1025,
+      "country": "Romania",
+      "country_iso3": "ROU",
+      "bloc": "EU",
+      "population": 4053384,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 75734.8,
+      "trade_openness": 0.7,
+      "ease_of_business": 80.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "high_income"
+      ]
+    },
+    {
+      "id": "istanbul",
+      "name": "Istanbul",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "country": "Turkey",
+      "country_iso3": "TUR",
+      "bloc": "CANDIDATE",
+      "population": 9183481,
+      "is_port": true,
+      "is_capital": false,
+      "gdp_per_capita": 47089.2,
+      "trade_openness": 0.5,
+      "ease_of_business": 61.9,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "megacity",
+        "high_income",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "kyiv",
+      "name": "Kyiv",
+      "lat": 50.4501,
+      "lng": 30.5234,
+      "country": "Ukraine",
+      "country_iso3": "UKR",
+      "bloc": "CANDIDATE",
+      "population": 12375600,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 57866.2,
+      "trade_openness": 0.49,
+      "ease_of_business": 87.2,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "tbilisi",
+      "name": "Tbilisi",
+      "lat": 41.7151,
+      "lng": 44.8271,
+      "country": "Georgia",
+      "country_iso3": "GEO",
+      "bloc": "PARTNER",
+      "population": 4094297,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 52354.0,
+      "trade_openness": 0.69,
+      "ease_of_business": 86.5,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "belgrade",
+      "name": "Belgrade",
+      "lat": 44.7866,
+      "lng": 20.4489,
+      "country": "Serbia",
+      "country_iso3": "SRB",
+      "bloc": "CANDIDATE",
+      "population": 2082524,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 25815.8,
+      "trade_openness": 0.57,
+      "ease_of_business": 72.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital"
+      ]
+    },
+    {
+      "id": "zagreb",
+      "name": "Zagreb",
+      "lat": 45.815,
+      "lng": 15.9819,
+      "country": "Croatia",
+      "country_iso3": "HRV",
+      "bloc": "EU",
+      "population": 2151177,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 23636.8,
+      "trade_openness": 0.69,
+      "ease_of_business": 84.0,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "manufacturing",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "bratislava",
+      "name": "Bratislava",
+      "lat": 48.1486,
+      "lng": 17.1077,
+      "country": "Slovakia",
+      "country_iso3": "SVK",
+      "bloc": "EU",
+      "population": 3578418,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 36712.7,
+      "trade_openness": 0.5,
+      "ease_of_business": 87.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "high_income",
+        "transport_hub"
+      ]
+    },
+    {
+      "id": "ljubljana",
+      "name": "Ljubljana",
+      "lat": 46.0569,
+      "lng": 14.5058,
+      "country": "Slovenia",
+      "country_iso3": "SVN",
+      "bloc": "EU",
+      "population": 9569560,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 70161.7,
+      "trade_openness": 0.79,
+      "ease_of_business": 87.8,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "tallinn",
+      "name": "Tallinn",
+      "lat": 59.437,
+      "lng": 24.7536,
+      "country": "Estonia",
+      "country_iso3": "EST",
+      "bloc": "EU",
+      "population": 7228339,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 74146.6,
+      "trade_openness": 0.47,
+      "ease_of_business": 60.1,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "high_income"
+      ]
+    },
+    {
+      "id": "riga",
+      "name": "Riga",
+      "lat": 56.9496,
+      "lng": 24.1052,
+      "country": "Latvia",
+      "country_iso3": "LVA",
+      "bloc": "EU",
+      "population": 12186866,
+      "is_port": false,
+      "is_capital": true,
+      "gdp_per_capita": 77439.1,
+      "trade_openness": 0.8,
+      "ease_of_business": 76.7,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "capital",
+        "megacity",
+        "high_income",
+        "manufacturing",
+        "tech_hub"
+      ]
+    },
+    {
+      "id": "vilnius",
+      "name": "Vilnius",
+      "lat": 54.6872,
+      "lng": 25.2797,
+      "country": "Lithuania",
+      "country_iso3": "LTU",
+      "bloc": "EU",
+      "population": 10217032,
+      "is_port": true,
+      "is_capital": true,
+      "gdp_per_capita": 64144.2,
+      "trade_openness": 0.42,
+      "ease_of_business": 69.4,
+      "cfa_zone": false,
+      "is_ftz_target": false,
+      "tags": [
+        "port",
+        "capital",
+        "megacity",
+        "high_income"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "oslo",
+      "target": "berlin",
+      "edge_type": "ENERGY",
+      "weight": 0.267,
+      "volume": 547750513819,
+      "distance_km": 871,
+      "is_active": true,
+      "tariff_rate": 0.035,
+      "description": "Energy pipeline/grid between Oslo and Berlin"
+    },
+    {
+      "source": "rome",
+      "target": "riga",
+      "edge_type": "FINANCIAL",
+      "weight": 0.322,
+      "volume": 175677381924,
+      "distance_km": 2109,
+      "is_active": true,
+      "tariff_rate": 0.063,
+      "description": "Financial corridor Rome-Riga"
+    },
+    {
+      "source": "budapest",
+      "target": "oslo",
+      "edge_type": "CULTURAL",
+      "weight": 0.941,
+      "volume": 343702300197,
+      "distance_km": 1657,
+      "is_active": true,
+      "tariff_rate": 0.036,
+      "description": "Cultural exchange between Budapest and Oslo"
+    },
+    {
+      "source": "zurich",
+      "target": "madrid",
+      "edge_type": "INFRASTRUCTURE",
+      "weight": 0.681,
+      "volume": 66114540801,
+      "distance_km": 1563,
+      "is_active": false,
+      "tariff_rate": 0.14,
+      "description": "Infrastructure project connecting Zurich and Madrid"
+    },
+    {
+      "source": "london",
+      "target": "lisbon",
+      "edge_type": "FINANCIAL",
+      "weight": 0.999,
+      "volume": 149208079812,
+      "distance_km": 1736,
+      "is_active": true,
+      "tariff_rate": 0.032,
+      "description": "Financial corridor London-Lisbon"
+    },
+    {
+      "source": "warsaw",
+      "target": "madrid",
+      "edge_type": "CULTURAL",
+      "weight": 0.893,
+      "volume": 387105998711,
+      "distance_km": 3040,
+      "is_active": true,
+      "tariff_rate": 0.024,
+      "description": "Cultural exchange between Warsaw and Madrid"
+    },
+    {
+      "source": "ljubljana",
+      "target": "athens",
+      "edge_type": "INFRASTRUCTURE",
+      "weight": 0.372,
+      "volume": 713575460277,
+      "distance_km": 1360,
+      "is_active": true,
+      "tariff_rate": 0.079,
+      "description": "Infrastructure project connecting Ljubljana and Athens"
+    },
+    {
+      "source": "kyiv",
+      "target": "ljubljana",
+      "edge_type": "FINANCIAL",
+      "weight": 0.369,
+      "volume": 654127237218,
+      "distance_km": 1843,
+      "is_active": false,
+      "tariff_rate": 0.02,
+      "description": "Financial corridor Kyiv-Ljubljana"
+    },
+    {
+      "source": "rome",
+      "target": "riga",
+      "edge_type": "TRADE",
+      "weight": 0.768,
+      "volume": 56485850940,
+      "distance_km": 2109,
+      "is_active": true,
+      "tariff_rate": 0.032,
+      "description": "Trade route between Rome and Riga"
+    },
+    {
+      "source": "stockholm",
+      "target": "brussels",
+      "edge_type": "INFRASTRUCTURE",
+      "weight": 0.671,
+      "volume": 30313504927,
+      "distance_km": 1789,
+      "is_active": true,
+      "tariff_rate": 0.136,
+      "description": "Infrastructure project connecting Stockholm and Brussels"
+    },
+    {
+      "source": "tallinn",
+      "target": "paris",
+      "edge_type": "TRADE",
+      "weight": 0.671,
+      "volume": 423550140892,
+      "distance_km": 2749,
+      "is_active": true,
+      "tariff_rate": 0.05,
+      "description": "Trade route between Tallinn and Paris"
+    },
+    {
+      "source": "madrid",
+      "target": "istanbul",
+      "edge_type": "CULTURAL",
+      "weight": 0.245,
+      "volume": 128965011329,
+      "distance_km": 3628,
+      "is_active": true,
+      "tariff_rate": 0.084,
+      "description": "Cultural exchange between Madrid and Istanbul"
+    },
+    {
+      "source": "rome",
+      "target": "berlin",
+      "edge_type": "INFRASTRUCTURE",
+      "weight": 0.914,
+      "volume": 74950776221,
+      "distance_km": 1182,
+      "is_active": true,
+      "tariff_rate": 0.087,
+      "description": "Infrastructure project connecting Rome and Berlin"
+    },
+    {
+      "source": "madrid",
+      "target": "dublin",
+      "edge_type": "POLITICAL",
+      "weight": 0.138,
+      "volume": 287840817966,
+      "distance_km": 1463,
+      "is_active": false,
+      "tariff_rate": 0.146,
+      "description": "Political alliance between Spain and Ireland"
+    },
+    {
+      "source": "paris",
+      "target": "riga",
+      "edge_type": "CULTURAL",
+      "weight": 0.289,
+      "volume": 255509882719,
+      "distance_km": 2576,
+      "is_active": true,
+      "tariff_rate": 0.117,
+      "description": "Cultural exchange between Paris and Riga"
+    },
+    {
+      "source": "riga",
+      "target": "tallinn",
+      "edge_type": "MIGRATORY",
+      "weight": 0.976,
+      "volume": 770848762407,
+      "distance_km": 285,
+      "is_active": false,
+      "tariff_rate": 0.036,
+      "description": "Migration flow from Riga to Tallinn"
+    },
+    {
+      "source": "amsterdam",
+      "target": "bratislava",
+      "edge_type": "ENERGY",
+      "weight": 0.259,
+      "volume": 72378036913,
+      "distance_km": 1433,
+      "is_active": true,
+      "tariff_rate": 0.139,
+      "description": "Energy pipeline/grid between Amsterdam and Bratislava"
+    },
+    {
+      "source": "bratislava",
+      "target": "vilnius",
+      "edge_type": "MIGRATORY",
+      "weight": 0.822,
+      "volume": 149957535057,
+      "distance_km": 1161,
+      "is_active": true,
+      "tariff_rate": 0.04,
+      "description": "Migration flow from Bratislava to Vilnius"
+    },
+    {
+      "source": "bratislava",
+      "target": "tbilisi",
+      "edge_type": "TRADE",
+      "weight": 0.444,
+      "volume": 4887965938,
+      "distance_km": 3158,
+      "is_active": true,
+      "tariff_rate": 0.03,
+      "description": "Trade route between Bratislava and Tbilisi"
+    },
+    {
+      "source": "vilnius",
+      "target": "lisbon",
+      "edge_type": "CULTURAL",
+      "weight": 0.375,
+      "volume": 263947055972,
+      "distance_km": 4211,
+      "is_active": true,
+      "tariff_rate": 0.004,
+      "description": "Cultural exchange between Vilnius and Lisbon"
+    },
+    {
+      "source": "brussels",
+      "target": "zurich",
+      "edge_type": "CULTURAL",
+      "weight": 0.351,
+      "volume": 4683860646,
+      "distance_km": 604,
+      "is_active": true,
+      "tariff_rate": 0.053,
+      "description": "Cultural exchange between Brussels and Zurich"
+    },
+    {
+      "source": "oslo",
+      "target": "zurich",
+      "edge_type": "INFRASTRUCTURE",
+      "weight": 0.983,
+      "volume": 245822488320,
+      "distance_km": 1413,
+      "is_active": false,
+      "tariff_rate": 0.017,
+      "description": "Infrastructure project connecting Oslo and Zurich"
+    },
+    {
+      "source": "warsaw",
+      "target": "amsterdam",
+      "edge_type": "FINANCIAL",
+      "weight": 0.966,
+      "volume": 259615319517,
+      "distance_km": 1788,
+      "is_active": true,
+      "tariff_rate": 0.065,
+      "description": "Financial corridor Warsaw-Amsterdam"
+    },
+    {
+      "source": "belgrade",
+      "target": "bratislava",
+      "edge_type": "CULTURAL",
+      "weight": 0.493,
+      "volume": 13914250926,
+      "distance_km": 526,
+      "is_active": true,
+      "tariff_rate": 0.135,
+      "description": "Cultural exchange between Belgrade and Bratislava"
+    },
+    {
+      "source": "brussels",
+      "target": "warsaw",
+      "edge_type": "TRADE",
+      "weight": 0.738,
+      "volume": 6678068977,
+      "distance_km": 1855,
+      "is_active": false,
+      "tariff_rate": 0.081,
+      "description": "Trade route between Brussels and Warsaw"
+    },
+    {
+      "source": "belgrade",
+      "target": "kyiv",
+      "edge_type": "POLITICAL",
+      "weight": 0.428,
+      "volume": 8968710275,
+      "distance_km": 1282,
+      "is_active": true,
+      "tariff_rate": 0.05,
+      "description": "Political alliance between Serbia and Ukraine"
+    },
+    {
+      "source": "stockholm",
+      "target": "kyiv",
+      "edge_type": "ENERGY",
+      "weight": 0.212,
+      "volume": 695313628396,
+      "distance_km": 1697,
+      "is_active": true,
+      "tariff_rate": 0.1,
+      "description": "Energy pipeline/grid between Stockholm and Kyiv"
+    },
+    {
+      "source": "stockholm",
+      "target": "zurich",
+      "edge_type": "INFRASTRUCTURE",
+      "weight": 0.366,
+      "volume": 39424354254,
+      "distance_km": 1696,
+      "is_active": true,
+      "tariff_rate": 0.141,
+      "description": "Infrastructure project connecting Stockholm and Zurich"
+    },
+    {
+      "source": "kyiv",
+      "target": "belgrade",
+      "edge_type": "POLITICAL",
+      "weight": 0.654,
+      "volume": 25864846672,
+      "distance_km": 1282,
+      "is_active": true,
+      "tariff_rate": 0.0,
+      "description": "Political alliance between Ukraine and Serbia"
+    },
+    {
+      "source": "prague",
+      "target": "brussels",
+      "edge_type": "MIGRATORY",
+      "weight": 0.807,
+      "volume": 30685761428,
+      "distance_km": 1122,
+      "is_active": true,
+      "tariff_rate": 0.066,
+      "description": "Migration flow from Prague to Brussels"
+    },
+    {
+      "source": "kyiv",
+      "target": "brussels",
+      "edge_type": "FINANCIAL",
+      "weight": 0.526,
+      "volume": 121918220090,
+      "distance_km": 2905,
+      "is_active": true,
+      "tariff_rate": 0.025,
+      "description": "Financial corridor Kyiv-Brussels"
+    },
+    {
+      "source": "berlin",
+      "target": "prague",
+      "edge_type": "FINANCIAL",
+      "weight": 0.697,
+      "volume": 144994997980,
+      "distance_km": 294,
+      "is_active": true,
+      "tariff_rate": 0.143,
+      "description": "Financial corridor Berlin-Prague"
+    },
+    {
+      "source": "vienna",
+      "target": "kyiv",
+      "edge_type": "CULTURAL",
+      "weight": 0.302,
+      "volume": 241401509015,
+      "distance_km": 1590,
+      "is_active": true,
+      "tariff_rate": 0.037,
+      "description": "Cultural exchange between Vienna and Kyiv"
+    },
+    {
+      "source": "helsinki",
+      "target": "bucharest",
+      "edge_type": "ENERGY",
+      "weight": 0.792,
+      "volume": 48914142023,
+      "distance_km": 1752,
+      "is_active": true,
+      "tariff_rate": 0.086,
+      "description": "Energy pipeline/grid between Helsinki and Bucharest"
+    },
+    {
+      "source": "tbilisi",
+      "target": "zurich",
+      "edge_type": "MIGRATORY",
+      "weight": 0.46,
+      "volume": 17530596239,
+      "distance_km": 4076,
+      "is_active": true,
+      "tariff_rate": 0.134,
+      "description": "Migration flow from Tbilisi to Zurich"
+    },
+    {
+      "source": "tallinn",
+      "target": "zagreb",
+      "edge_type": "TRADE",
+      "weight": 0.801,
+      "volume": 14056408446,
+      "distance_km": 1798,
+      "is_active": true,
+      "tariff_rate": 0.104,
+      "description": "Trade route between Tallinn and Zagreb"
+    },
+    {
+      "source": "lisbon",
+      "target": "paris",
+      "edge_type": "FINANCIAL",
+      "weight": 0.324,
+      "volume": 201800759273,
+      "distance_km": 1700,
+      "is_active": true,
+      "tariff_rate": 0.12,
+      "description": "Financial corridor Lisbon-Paris"
+    },
+    {
+      "source": "kyiv",
+      "target": "oslo",
+      "edge_type": "FINANCIAL",
+      "weight": 0.636,
+      "volume": 1394200449848,
+      "distance_km": 2433,
+      "is_active": true,
+      "tariff_rate": 0.092,
+      "description": "Financial corridor Kyiv-Oslo"
+    },
+    {
+      "source": "belgrade",
+      "target": "riga",
+      "edge_type": "FINANCIAL",
+      "weight": 0.484,
+      "volume": 92495439234,
+      "distance_km": 1409,
+      "is_active": true,
+      "tariff_rate": 0.024,
+      "description": "Financial corridor Belgrade-Riga"
+    },
+    {
+      "source": "tallinn",
+      "target": "helsinki",
+      "edge_type": "MIGRATORY",
+      "weight": 0.333,
+      "volume": 50405898212,
+      "distance_km": 83,
+      "is_active": true,
+      "tariff_rate": 0.115,
+      "description": "Migration flow from Tallinn to Helsinki"
+    },
+    {
+      "source": "oslo",
+      "target": "helsinki",
+      "edge_type": "INFRASTRUCTURE",
+      "weight": 0.315,
+      "volume": 157851403293,
+      "distance_km": 1574,
+      "is_active": true,
+      "tariff_rate": 0.035,
+      "description": "Infrastructure project connecting Oslo and Helsinki"
+    },
+    {
+      "source": "stockholm",
+      "target": "riga",
+      "edge_type": "FINANCIAL",
+      "weight": 0.173,
+      "volume": 195694823154,
+      "distance_km": 720,
+      "is_active": true,
+      "tariff_rate": 0.023,
+      "description": "Financial corridor Stockholm-Riga"
+    },
+    {
+      "source": "brussels",
+      "target": "berlin",
+      "edge_type": "MIGRATORY",
+      "weight": 0.467,
+      "volume": 46276903489,
+      "distance_km": 1021,
+      "is_active": true,
+      "tariff_rate": 0.031,
+      "description": "Migration flow from Brussels to Berlin"
+    },
+    {
+      "source": "dublin",
+      "target": "zurich",
+      "edge_type": "ENERGY",
+      "weight": 0.626,
+      "volume": 349545822090,
+      "distance_km": 1771,
+      "is_active": true,
+      "tariff_rate": 0.115,
+      "description": "Energy pipeline/grid between Dublin and Zurich"
+    },
+    {
+      "source": "zurich",
+      "target": "helsinki",
+      "edge_type": "TRADE",
+      "weight": 0.948,
+      "volume": 23684779015,
+      "distance_km": 2308,
+      "is_active": true,
+      "tariff_rate": 0.134,
+      "description": "Trade route between Zurich and Helsinki"
+    },
+    {
+      "source": "ljubljana",
+      "target": "dublin",
+      "edge_type": "FINANCIAL",
+      "weight": 0.773,
+      "volume": 873608800241,
+      "distance_km": 2443,
+      "is_active": true,
+      "tariff_rate": 0.033,
+      "description": "Financial corridor Ljubljana-Dublin"
+    },
+    {
+      "source": "vienna",
+      "target": "warsaw",
+      "edge_type": "MIGRATORY",
+      "weight": 0.537,
+      "volume": 407129868721,
+      "distance_km": 681,
+      "is_active": true,
+      "tariff_rate": 0.12,
+      "description": "Migration flow from Vienna to Warsaw"
+    },
+    {
+      "source": "belgrade",
+      "target": "amsterdam",
+      "edge_type": "ENERGY",
+      "weight": 0.521,
+      "volume": 11483890624,
+      "distance_km": 1919,
+      "is_active": true,
+      "tariff_rate": 0.004,
+      "description": "Energy pipeline/grid between Belgrade and Amsterdam"
+    },
+    {
+      "source": "zurich",
+      "target": "budapest",
+      "edge_type": "FINANCIAL",
+      "weight": 0.697,
+      "volume": 38444975354,
+      "distance_km": 1165,
+      "is_active": true,
+      "tariff_rate": 0.13,
+      "description": "Financial corridor Zurich-Budapest"
+    },
+    {
+      "source": "amsterdam",
+      "target": "paris",
+      "edge_type": "CULTURAL",
+      "weight": 0.441,
+      "volume": 147693803764,
+      "distance_km": 481,
+      "is_active": true,
+      "tariff_rate": 0.114,
+      "description": "Cultural exchange between Amsterdam and Paris"
+    },
+    {
+      "source": "zurich",
+      "target": "warsaw",
+      "edge_type": "ENERGY",
+      "weight": 0.956,
+      "volume": 133416392597,
+      "distance_km": 1485,
+      "is_active": true,
+      "tariff_rate": 0.071,
+      "description": "Energy pipeline/grid between Zurich and Warsaw"
+    },
+    {
+      "source": "belgrade",
+      "target": "athens",
+      "edge_type": "TRADE",
+      "weight": 1.0,
+      "volume": 22193485741,
+      "distance_km": 838,
+      "is_active": true,
+      "tariff_rate": 0.117,
+      "description": "Trade route between Belgrade and Athens"
+    },
+    {
+      "source": "istanbul",
+      "target": "paris",
+      "edge_type": "ENERGY",
+      "weight": 0.128,
+      "volume": 116209909967,
+      "distance_km": 3081,
+      "is_active": true,
+      "tariff_rate": 0.093,
+      "description": "Energy pipeline/grid between Istanbul and Paris"
+    },
+    {
+      "source": "vienna",
+      "target": "madrid",
+      "edge_type": "MIGRATORY",
+      "weight": 0.703,
+      "volume": 262069220311,
+      "distance_km": 2390,
+      "is_active": true,
+      "tariff_rate": 0.105,
+      "description": "Migration flow from Vienna to Madrid"
+    },
+    {
+      "source": "zagreb",
+      "target": "copenhagen",
+      "edge_type": "POLITICAL",
+      "weight": 0.645,
+      "volume": 29498052818,
+      "distance_km": 1158,
+      "is_active": true,
+      "tariff_rate": 0.117,
+      "description": "Political alliance between Croatia and Denmark"
+    },
+    {
+      "source": "amsterdam",
+      "target": "prague",
+      "edge_type": "TRADE",
+      "weight": 0.621,
+      "volume": 303290007010,
+      "distance_km": 1088,
+      "is_active": true,
+      "tariff_rate": 0.136,
+      "description": "Trade route between Amsterdam and Prague"
+    },
+    {
+      "source": "zurich",
+      "target": "tbilisi",
+      "edge_type": "POLITICAL",
+      "weight": 0.168,
+      "volume": 65081694012,
+      "distance_km": 4076,
+      "is_active": true,
+      "tariff_rate": 0.015,
+      "description": "Political alliance between Switzerland and Georgia"
+    },
+    {
+      "source": "zagreb",
+      "target": "prague",
+      "edge_type": "ENERGY",
+      "weight": 0.716,
+      "volume": 21618740310,
+      "distance_km": 503,
+      "is_active": true,
+      "tariff_rate": 0.085,
+      "description": "Energy pipeline/grid between Zagreb and Prague"
+    },
+    {
+      "source": "paris",
+      "target": "copenhagen",
+      "edge_type": "FINANCIAL",
+      "weight": 0.486,
+      "volume": 113917209271,
+      "distance_km": 1363,
+      "is_active": true,
+      "tariff_rate": 0.051,
+      "description": "Financial corridor Paris-Copenhagen"
+    },
+    {
+      "source": "tallinn",
+      "target": "dublin",
+      "edge_type": "ENERGY",
+      "weight": 0.541,
+      "volume": 566205155465,
+      "distance_km": 3508,
+      "is_active": true,
+      "tariff_rate": 0.134,
+      "description": "Energy pipeline/grid between Tallinn and Dublin"
+    },
+    {
+      "source": "lisbon",
+      "target": "tbilisi",
+      "edge_type": "POLITICAL",
+      "weight": 0.492,
+      "volume": 80064155188,
+      "distance_km": 5999,
+      "is_active": false,
+      "tariff_rate": 0.041,
+      "description": "Political alliance between Portugal and Georgia"
+    },
+    {
+      "source": "bratislava",
+      "target": "vilnius",
+      "edge_type": "FINANCIAL",
+      "weight": 0.797,
+      "volume": 84656047364,
+      "distance_km": 1161,
+      "is_active": true,
+      "tariff_rate": 0.089,
+      "description": "Financial corridor Bratislava-Vilnius"
+    },
+    {
+      "source": "stockholm",
+      "target": "tallinn",
+      "edge_type": "POLITICAL",
+      "weight": 0.848,
+      "volume": 76086365603,
+      "distance_km": 742,
+      "is_active": true,
+      "tariff_rate": 0.037,
+      "description": "Political alliance between Sweden and Estonia"
+    },
+    {
+      "source": "lisbon",
+      "target": "budapest",
+      "edge_type": "FINANCIAL",
+      "weight": 0.701,
+      "volume": 127318089624,
+      "distance_km": 3276,
+      "is_active": true,
+      "tariff_rate": 0.049,
+      "description": "Financial corridor Lisbon-Budapest"
+    },
+    {
+      "source": "helsinki",
+      "target": "brussels",
+      "edge_type": "CULTURAL",
+      "weight": 0.818,
+      "volume": 11578101716,
+      "distance_km": 2508,
+      "is_active": true,
+      "tariff_rate": 0.105,
+      "description": "Cultural exchange between Helsinki and Brussels"
+    },
+    {
+      "source": "warsaw",
+      "target": "athens",
+      "edge_type": "TRADE",
+      "weight": 0.565,
+      "volume": 172096834850,
+      "distance_km": 1609,
+      "is_active": true,
+      "tariff_rate": 0.061,
+      "description": "Trade route between Warsaw and Athens"
+    },
+    {
+      "source": "athens",
+      "target": "zagreb",
+      "edge_type": "POLITICAL",
+      "weight": 0.722,
+      "volume": 36419797923,
+      "distance_km": 1222,
+      "is_active": true,
+      "tariff_rate": 0.119,
+      "description": "Political alliance between Greece and Croatia"
+    },
+    {
+      "source": "berlin",
+      "target": "prague",
+      "edge_type": "POLITICAL",
+      "weight": 0.464,
+      "volume": 63863422819,
+      "distance_km": 294,
+      "is_active": true,
+      "tariff_rate": 0.055,
+      "description": "Political alliance between Germany and Czech Republic"
+    },
+    {
+      "source": "athens",
+      "target": "oslo",
+      "edge_type": "CULTURAL",
+      "weight": 0.483,
+      "volume": 836793081781,
+      "distance_km": 2828,
+      "is_active": true,
+      "tariff_rate": 0.105,
+      "description": "Cultural exchange between Athens and Oslo"
+    },
+    {
+      "source": "warsaw",
+      "target": "prague",
+      "edge_type": "CULTURAL",
+      "weight": 0.307,
+      "volume": 264085875593,
+      "distance_km": 767,
+      "is_active": true,
+      "tariff_rate": 0.111,
+      "description": "Cultural exchange between Warsaw and Prague"
+    },
+    {
+      "source": "zagreb",
+      "target": "tbilisi",
+      "edge_type": "POLITICAL",
+      "weight": 0.272,
+      "volume": 16385277669,
+      "distance_km": 3233,
+      "is_active": true,
+      "tariff_rate": 0.088,
+      "description": "Political alliance between Croatia and Georgia"
+    },
+    {
+      "source": "zagreb",
+      "target": "oslo",
+      "edge_type": "FINANCIAL",
+      "weight": 0.355,
+      "volume": 15120950131,
+      "distance_km": 1669,
+      "is_active": true,
+      "tariff_rate": 0.034,
+      "description": "Financial corridor Zagreb-Oslo"
+    },
+    {
+      "source": "amsterdam",
+      "target": "prague",
+      "edge_type": "TRADE",
+      "weight": 0.737,
+      "volume": 55377422870,
+      "distance_km": 1088,
+      "is_active": true,
+      "tariff_rate": 0.008,
+      "description": "Trade route between Amsterdam and Prague"
+    },
+    {
+      "source": "prague",
+      "target": "tbilisi",
+      "edge_type": "POLITICAL",
+      "weight": 0.674,
+      "volume": 85536439464,
+      "distance_km": 3498,
+      "is_active": true,
+      "tariff_rate": 0.002,
+      "description": "Political alliance between Czech Republic and Georgia"
+    },
+    {
+      "source": "prague",
+      "target": "helsinki",
+      "edge_type": "MIGRATORY",
+      "weight": 0.496,
+      "volume": 19382073680,
+      "distance_km": 1616,
+      "is_active": true,
+      "tariff_rate": 0.141,
+      "description": "Migration flow from Prague to Helsinki"
+    },
+    {
+      "source": "helsinki",
+      "target": "rome",
+      "edge_type": "ENERGY",
+      "weight": 0.159,
+      "volume": 25847695271,
+      "distance_km": 2453,
+      "is_active": true,
+      "tariff_rate": 0.103,
+      "description": "Energy pipeline/grid between Helsinki and Rome"
+    },
+    {
+      "source": "madrid",
+      "target": "bratislava",
+      "edge_type": "FINANCIAL",
+      "weight": 0.954,
+      "volume": 10919476815,
+      "distance_km": 2464,
+      "is_active": true,
+      "tariff_rate": 0.084,
+      "description": "Financial corridor Madrid-Bratislava"
+    },
+    {
+      "source": "dublin",
+      "target": "bucharest",
+      "edge_type": "FINANCIAL",
+      "weight": 0.812,
+      "volume": 185662832058,
+      "distance_km": 3726,
+      "is_active": true,
+      "tariff_rate": 0.068,
+      "description": "Financial corridor Dublin-Bucharest"
+    },
+    {
+      "source": "lisbon",
+      "target": "prague",
+      "edge_type": "ENERGY",
+      "weight": 0.63,
+      "volume": 59628786622,
+      "distance_km": 2904,
+      "is_active": true,
+      "tariff_rate": 0.009,
+      "description": "Energy pipeline/grid between Lisbon and Prague"
+    },
+    {
+      "source": "belgrade",
+      "target": "rome",
+      "edge_type": "ENERGY",
+      "weight": 0.287,
+      "volume": 4077299444,
+      "distance_km": 938,
+      "is_active": true,
+      "tariff_rate": 0.024,
+      "description": "Energy pipeline/grid between Belgrade and Rome"
+    },
+    {
+      "source": "amsterdam",
+      "target": "athens",
+      "edge_type": "TRADE",
+      "weight": 0.241,
+      "volume": 294909153109,
+      "distance_km": 2629,
+      "is_active": true,
+      "tariff_rate": 0.07,
+      "description": "Trade route between Amsterdam and Athens"
+    },
+    {
+      "source": "paris",
+      "target": "vienna",
+      "edge_type": "CULTURAL",
+      "weight": 0.736,
+      "volume": 477117412291,
+      "distance_km": 1558,
+      "is_active": true,
+      "tariff_rate": 0.103,
+      "description": "Cultural exchange between Paris and Vienna"
+    },
+    {
+      "source": "vilnius",
+      "target": "warsaw",
+      "edge_type": "ENERGY",
+      "weight": 0.812,
+      "volume": 550946548913,
+      "distance_km": 546,
+      "is_active": true,
+      "tariff_rate": 0.03,
+      "description": "Energy pipeline/grid between Vilnius and Warsaw"
+    },
+    {
+      "source": "rome",
+      "target": "athens",
+      "edge_type": "POLITICAL",
+      "weight": 0.683,
+      "volume": 149187404639,
+      "distance_km": 1320,
+      "is_active": true,
+      "tariff_rate": 0.011,
+      "description": "Political alliance between Italy and Greece"
+    },
+    {
+      "source": "amsterdam",
+      "target": "bratislava",
+      "edge_type": "CULTURAL",
+      "weight": 0.636,
+      "volume": 136508319128,
+      "distance_km": 1433,
+      "is_active": false,
+      "tariff_rate": 0.066,
+      "description": "Cultural exchange between Amsterdam and Bratislava"
+    },
+    {
+      "source": "lisbon",
+      "target": "tbilisi",
+      "edge_type": "CULTURAL",
+      "weight": 0.73,
+      "volume": 101329801234,
+      "distance_km": 5999,
+      "is_active": true,
+      "tariff_rate": 0.074,
+      "description": "Cultural exchange between Lisbon and Tbilisi"
+    },
+    {
+      "source": "berlin",
+      "target": "bucharest",
+      "edge_type": "TRADE",
+      "weight": 0.9,
+      "volume": 199980967396,
+      "distance_km": 1671,
+      "is_active": true,
+      "tariff_rate": 0.004,
+      "description": "Trade route between Berlin and Bucharest"
+    }
+  ],
+  "metrics": {
+    "betweenness": {
+      "london": 0.0011,
+      "paris": 0.0217,
+      "berlin": 0.0238,
+      "rome": 0.0162,
+      "madrid": 0.0006,
+      "amsterdam": 0.0281,
+      "brussels": 0.0264,
+      "vienna": 0.0106,
+      "warsaw": 0.0281,
+      "prague": 0.0081,
+      "stockholm": 0.0119,
+      "copenhagen": 0.0041,
+      "zurich": 0.0128,
+      "dublin": 0.0229,
+      "lisbon": 0.014,
+      "helsinki": 0.0262,
+      "oslo": 0.0312,
+      "athens": 0.0151,
+      "budapest": 0.0056,
+      "bucharest": 0.0044,
+      "istanbul": 0.001,
+      "kyiv": 0.0052,
+      "tbilisi": 0.0133,
+      "belgrade": 0.016,
+      "zagreb": 0.0183,
+      "bratislava": 0.0129,
+      "ljubljana": 0.0105,
+      "tallinn": 0.001,
+      "riga": 0.0024,
+      "vilnius": 0.0046
+    },
+    "degree": {
+      "london": 0.0115,
+      "paris": 0.0805,
+      "berlin": 0.069,
+      "rome": 0.069,
+      "madrid": 0.069,
+      "amsterdam": 0.092,
+      "brussels": 0.0805,
+      "vienna": 0.046,
+      "warsaw": 0.092,
+      "prague": 0.1149,
+      "stockholm": 0.0575,
+      "copenhagen": 0.023,
+      "zurich": 0.1149,
+      "dublin": 0.0575,
+      "lisbon": 0.0805,
+      "helsinki": 0.0805,
+      "oslo": 0.0805,
+      "athens": 0.0805,
+      "budapest": 0.0345,
+      "bucharest": 0.0345,
+      "istanbul": 0.023,
+      "kyiv": 0.0805,
+      "tbilisi": 0.0805,
+      "belgrade": 0.0805,
+      "zagreb": 0.069,
+      "bratislava": 0.0805,
+      "ljubljana": 0.0345,
+      "tallinn": 0.069,
+      "riga": 0.069,
+      "vilnius": 0.046
+    },
+    "closeness": {
+      "london": 0.3464,
+      "paris": 0.609,
+      "berlin": 0.646,
+      "rome": 0.63,
+      "madrid": 0.3005,
+      "amsterdam": 0.6477,
+      "brussels": 0.4848,
+      "vienna": 0.3217,
+      "warsaw": 0.5074,
+      "prague": 0.5491,
+      "stockholm": 0.4994,
+      "copenhagen": 0.4768,
+      "zurich": 0.3206,
+      "dublin": 0.4068,
+      "lisbon": 0.3524,
+      "helsinki": 0.4152,
+      "oslo": 0.6523,
+      "athens": 0.4939,
+      "budapest": 0.3115,
+      "bucharest": 0.552,
+      "istanbul": 0.6197,
+      "kyiv": 0.5839,
+      "tbilisi": 0.4243,
+      "belgrade": 0.3055,
+      "zagreb": 0.4632,
+      "bratislava": 0.3899,
+      "ljubljana": 0.6366,
+      "tallinn": 0.3454,
+      "riga": 0.6788,
+      "vilnius": 0.5591
+    },
+    "articulation_points": [
+      "madrid",
+      "helsinki",
+      "vilnius"
+    ],
+    "bridges": [
+      [
+        "prague",
+        "oslo"
+      ],
+      [
+        "tbilisi",
+        "warsaw"
+      ],
+      [
+        "dublin",
+        "ljubljana"
+      ],
+      [
+        "vienna",
+        "lisbon"
+      ],
+      [
+        "athens",
+        "madrid"
+      ],
+      [
+        "zurich",
+        "brussels"
+      ],
+      [
+        "vilnius",
+        "bucharest"
+      ]
+    ],
+    "ecowas_cut_vertices": [
+      "oslo",
+      "belgrade"
+    ],
+    "component_count": 1
+  },
+  "ftz_impact": {},
+  "trade_routes": {
+    "route-001": {
+      "risk": 0.754,
+      "redundancy": 0.555,
+      "min_cut": 1,
+      "shortest_path": [
+        "zagreb",
+        "bratislava",
+        "tallinn",
+        "dublin",
+        "stockholm"
+      ],
+      "shortest_cost": 5634,
+      "min_cut_nodes": [
+        "tallinn",
+        "dublin"
+      ]
+    },
+    "route-002": {
+      "risk": 0.333,
+      "redundancy": 0.734,
+      "min_cut": 2,
+      "shortest_path": [
+        "lisbon",
+        "athens",
+        "helsinki",
+        "copenhagen"
+      ],
+      "shortest_cost": 8460,
+      "min_cut_nodes": [
+        "helsinki",
+        "lisbon"
+      ]
+    },
+    "route-003": {
+      "risk": 0.621,
+      "redundancy": 0.694,
+      "min_cut": 2,
+      "shortest_path": [
+        "vienna",
+        "budapest",
+        "zurich",
+        "vilnius",
+        "zagreb",
+        "dublin",
+        "paris",
+        "stockholm"
+      ],
+      "shortest_cost": 7325,
+      "min_cut_nodes": [
+        "zurich",
+        "vilnius"
+      ]
+    },
+    "route-004": {
+      "risk": 0.332,
+      "redundancy": 0.27,
+      "min_cut": 2,
+      "shortest_path": [
+        "madrid",
+        "oslo",
+        "budapest"
+      ],
+      "shortest_cost": 2633,
+      "min_cut_nodes": [
+        "budapest",
+        "oslo"
+      ]
+    },
+    "route-005": {
+      "risk": 0.71,
+      "redundancy": 0.879,
+      "min_cut": 1,
+      "shortest_path": [
+        "belgrade",
+        "madrid",
+        "dublin"
+      ],
+      "shortest_cost": 8692,
+      "min_cut_nodes": [
+        "madrid",
+        "dublin"
+      ]
+    },
+    "route-006": {
+      "risk": 0.366,
+      "redundancy": 0.422,
+      "min_cut": 3,
+      "shortest_path": [
+        "tbilisi",
+        "zurich",
+        "istanbul",
+        "berlin",
+        "stockholm",
+        "kyiv",
+        "athens"
+      ],
+      "shortest_cost": 8994,
+      "min_cut_nodes": [
+        "athens",
+        "stockholm"
+      ]
+    },
+    "route-007": {
+      "risk": 0.542,
+      "redundancy": 0.845,
+      "min_cut": 1,
+      "shortest_path": [
+        "bucharest",
+        "berlin",
+        "vienna"
+      ],
+      "shortest_cost": 2480,
+      "min_cut_nodes": [
+        "berlin",
+        "bucharest"
+      ]
+    },
+    "route-008": {
+      "risk": 0.132,
+      "redundancy": 0.757,
+      "min_cut": 2,
+      "shortest_path": [
+        "tbilisi",
+        "tallinn",
+        "rome",
+        "lisbon",
+        "amsterdam",
+        "vilnius",
+        "prague",
+        "london"
+      ],
+      "shortest_cost": 6873,
+      "min_cut_nodes": [
+        "vilnius",
+        "lisbon"
+      ]
+    },
+    "route-009": {
+      "risk": 0.577,
+      "redundancy": 0.326,
+      "min_cut": 1,
+      "shortest_path": [
+        "vienna",
+        "oslo",
+        "dublin",
+        "budapest"
+      ],
+      "shortest_cost": 2293,
+      "min_cut_nodes": [
+        "budapest",
+        "dublin"
+      ]
+    },
+    "route-010": {
+      "risk": 0.422,
+      "redundancy": 0.667,
+      "min_cut": 2,
+      "shortest_path": [
+        "vienna",
+        "helsinki",
+        "budapest",
+        "madrid",
+        "vilnius",
+        "lisbon",
+        "istanbul",
+        "warsaw"
+      ],
+      "shortest_cost": 5712,
+      "min_cut_nodes": [
+        "budapest",
+        "vienna"
+      ]
+    },
+    "route-011": {
+      "risk": 0.275,
+      "redundancy": 0.792,
+      "min_cut": 1,
+      "shortest_path": [
+        "copenhagen",
+        "budapest",
+        "prague",
+        "istanbul",
+        "dublin",
+        "tbilisi"
+      ],
+      "shortest_cost": 7302,
+      "min_cut_nodes": [
+        "istanbul",
+        "copenhagen"
+      ]
+    }
+  },
+  "cascades": [
+    {
+      "name": "Brexit Impact Cascade",
+      "trigger": "UK trade policy shift",
+      "type": "TRADE_DISRUPTION",
+      "affected_cities": [
+        "zurich",
+        "budapest",
+        "copenhagen",
+        "riga",
+        "prague",
+        "tbilisi",
+        "bratislava",
+        "london"
+      ],
+      "isolated_cities": [
+        "prague",
+        "zurich",
+        "london",
+        "bratislava",
+        "riga"
+      ],
+      "trade_disrupted_cities": [
+        "riga",
+        "prague",
+        "copenhagen",
+        "budapest",
+        "bratislava"
+      ],
+      "new_components": 3,
+      "trade_volume_affected": 350376080,
+      "severity": 0.7
+    },
+    {
+      "name": "Ukraine Conflict Fallout",
+      "trigger": "Military conflict escalation",
+      "type": "SECURITY_CRISIS",
+      "affected_cities": [
+        "kyiv",
+        "ljubljana",
+        "madrid",
+        "istanbul",
+        "rome",
+        "riga",
+        "zagreb",
+        "paris",
+        "prague",
+        "lisbon",
+        "tbilisi",
+        "budapest",
+        "copenhagen",
+        "tallinn",
+        "berlin"
+      ],
+      "isolated_cities": [
+        "riga",
+        "budapest",
+        "zagreb",
+        "madrid"
+      ],
+      "trade_disrupted_cities": [
+        "madrid",
+        "copenhagen",
+        "prague",
+        "riga"
+      ],
+      "new_components": 3,
+      "trade_volume_affected": 501076857,
+      "severity": 0.8
+    },
+    {
+      "name": "Energy Crisis Cascade",
+      "trigger": "Gas pipeline shutdown",
+      "type": "ENERGY_SHOCK",
+      "affected_cities": [
+        "ljubljana",
+        "amsterdam",
+        "warsaw",
+        "vilnius",
+        "helsinki",
+        "prague",
+        "belgrade",
+        "stockholm",
+        "rome"
+      ],
+      "isolated_cities": [
+        "amsterdam",
+        "warsaw",
+        "belgrade",
+        "rome",
+        "vilnius"
+      ],
+      "trade_disrupted_cities": [
+        "prague",
+        "amsterdam",
+        "belgrade",
+        "vilnius",
+        "ljubljana",
+        "warsaw",
+        "rome"
+      ],
+      "new_components": 1,
+      "trade_volume_affected": 472871617,
+      "severity": 0.6
+    },
+    {
+      "name": "Schengen Collapse",
+      "trigger": "Border control reinstatement",
+      "type": "MIGRATION_CRISIS",
+      "affected_cities": [
+        "belgrade",
+        "kyiv",
+        "warsaw",
+        "budapest",
+        "zurich",
+        "istanbul",
+        "copenhagen",
+        "rome",
+        "riga",
+        "vienna",
+        "helsinki",
+        "london",
+        "athens",
+        "stockholm",
+        "zagreb"
+      ],
+      "isolated_cities": [
+        "helsinki",
+        "stockholm"
+      ],
+      "trade_disrupted_cities": [
+        "zagreb",
+        "london",
+        "zurich",
+        "helsinki",
+        "copenhagen",
+        "kyiv"
+      ],
+      "new_components": 1,
+      "trade_volume_affected": 227208087,
+      "severity": 0.5
+    },
+    {
+      "name": "Eurozone Debt Crisis",
+      "trigger": "Sovereign default",
+      "type": "FINANCIAL_CONTAGION",
+      "affected_cities": [
+        "prague",
+        "helsinki",
+        "rome",
+        "vienna",
+        "riga"
+      ],
+      "isolated_cities": [
+        "vienna",
+        "riga",
+        "helsinki"
+      ],
+      "trade_disrupted_cities": [
+        "riga",
+        "vienna",
+        "rome",
+        "prague",
+        "helsinki"
+      ],
+      "new_components": 3,
+      "trade_volume_affected": 259412981,
+      "severity": 0.65
+    }
+  ],
+  "opportunities": [
+    {
+      "city_id": "bucharest",
+      "city_name": "Bucharest",
+      "country": "Romania",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.271,
+      "model_score": 0.32,
+      "actual_score": 0.591,
+      "confidence": 0.73
+    },
+    {
+      "city_id": "lisbon",
+      "city_name": "Lisbon",
+      "country": "Portugal",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.158,
+      "model_score": 0.518,
+      "actual_score": 0.359,
+      "confidence": 0.943
+    },
+    {
+      "city_id": "copenhagen",
+      "city_name": "Copenhagen",
+      "country": "Denmark",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.287,
+      "model_score": 0.515,
+      "actual_score": 0.802,
+      "confidence": 0.739
+    },
+    {
+      "city_id": "brussels",
+      "city_name": "Brussels",
+      "country": "Belgium",
+      "signal_type": "NEUTRAL",
+      "gap": 0.269,
+      "model_score": 0.795,
+      "actual_score": 1.064,
+      "confidence": 0.632
+    },
+    {
+      "city_id": "brussels",
+      "city_name": "Brussels",
+      "country": "Belgium",
+      "signal_type": "RISK",
+      "gap": 0.058,
+      "model_score": 0.313,
+      "actual_score": 0.371,
+      "confidence": 0.875
+    },
+    {
+      "city_id": "vienna",
+      "city_name": "Vienna",
+      "country": "Austria",
+      "signal_type": "NEUTRAL",
+      "gap": 0.172,
+      "model_score": 0.423,
+      "actual_score": 0.595,
+      "confidence": 0.89
+    },
+    {
+      "city_id": "athens",
+      "city_name": "Athens",
+      "country": "Greece",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.17,
+      "model_score": 0.822,
+      "actual_score": 0.651,
+      "confidence": 0.715
+    },
+    {
+      "city_id": "madrid",
+      "city_name": "Madrid",
+      "country": "Spain",
+      "signal_type": "RISK",
+      "gap": 0.058,
+      "model_score": 0.466,
+      "actual_score": 0.524,
+      "confidence": 0.944
+    },
+    {
+      "city_id": "madrid",
+      "city_name": "Madrid",
+      "country": "Spain",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.179,
+      "model_score": 0.366,
+      "actual_score": 0.545,
+      "confidence": 0.903
+    },
+    {
+      "city_id": "madrid",
+      "city_name": "Madrid",
+      "country": "Spain",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.174,
+      "model_score": 0.443,
+      "actual_score": 0.617,
+      "confidence": 0.713
+    },
+    {
+      "city_id": "amsterdam",
+      "city_name": "Amsterdam",
+      "country": "Netherlands",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.224,
+      "model_score": 0.553,
+      "actual_score": 0.329,
+      "confidence": 0.64
+    },
+    {
+      "city_id": "berlin",
+      "city_name": "Berlin",
+      "country": "Germany",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.167,
+      "model_score": 0.608,
+      "actual_score": 0.775,
+      "confidence": 0.638
+    },
+    {
+      "city_id": "oslo",
+      "city_name": "Oslo",
+      "country": "Norway",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.069,
+      "model_score": 0.736,
+      "actual_score": 0.805,
+      "confidence": 0.918
+    },
+    {
+      "city_id": "kyiv",
+      "city_name": "Kyiv",
+      "country": "Ukraine",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.025,
+      "model_score": 0.878,
+      "actual_score": 0.853,
+      "confidence": 0.621
+    },
+    {
+      "city_id": "helsinki",
+      "city_name": "Helsinki",
+      "country": "Finland",
+      "signal_type": "RISK",
+      "gap": -0.044,
+      "model_score": 0.365,
+      "actual_score": 0.321,
+      "confidence": 0.849
+    },
+    {
+      "city_id": "lisbon",
+      "city_name": "Lisbon",
+      "country": "Portugal",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.252,
+      "model_score": 0.665,
+      "actual_score": 0.413,
+      "confidence": 0.623
+    },
+    {
+      "city_id": "warsaw",
+      "city_name": "Warsaw",
+      "country": "Poland",
+      "signal_type": "RISK",
+      "gap": 0.051,
+      "model_score": 0.727,
+      "actual_score": 0.779,
+      "confidence": 0.733
+    },
+    {
+      "city_id": "bucharest",
+      "city_name": "Bucharest",
+      "country": "Romania",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.028,
+      "model_score": 0.663,
+      "actual_score": 0.635,
+      "confidence": 0.635
+    },
+    {
+      "city_id": "tbilisi",
+      "city_name": "Tbilisi",
+      "country": "Georgia",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.093,
+      "model_score": 0.827,
+      "actual_score": 0.919,
+      "confidence": 0.793
+    },
+    {
+      "city_id": "tallinn",
+      "city_name": "Tallinn",
+      "country": "Estonia",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.029,
+      "model_score": 0.437,
+      "actual_score": 0.408,
+      "confidence": 0.719
+    },
+    {
+      "city_id": "lisbon",
+      "city_name": "Lisbon",
+      "country": "Portugal",
+      "signal_type": "OPPORTUNITY",
+      "gap": 0.138,
+      "model_score": 0.488,
+      "actual_score": 0.625,
+      "confidence": 0.709
+    },
+    {
+      "city_id": "warsaw",
+      "city_name": "Warsaw",
+      "country": "Poland",
+      "signal_type": "OPPORTUNITY",
+      "gap": -0.208,
+      "model_score": 0.854,
+      "actual_score": 0.645,
+      "confidence": 0.623
+    }
+  ]
+}

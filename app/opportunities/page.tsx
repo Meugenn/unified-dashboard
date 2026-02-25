@@ -1,11 +1,14 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { data, formatScore } from "@/lib/data";
+import { datasets, formatScore } from "@/lib/data";
+import { useRegion } from "@/lib/RegionContext";
 
 type SortKey = "gap" | "confidence" | "model_score" | "actual_score" | "signal_type";
 
 export default function OpportunitiesPage() {
+  const { region } = useRegion();
+  const data = datasets[region];
   const [sortKey, setSortKey] = useState<SortKey>("gap");
   const [sortAsc, setSortAsc] = useState(false);
   const [filterType, setFilterType] = useState<string>("ALL");
@@ -26,7 +29,7 @@ export default function OpportunitiesPage() {
       return sortAsc ? av - bv : bv - av;
     });
     return items;
-  }, [sortKey, sortAsc, filterType]);
+  }, [data.opportunities, sortKey, sortAsc, filterType]);
 
   const handleSort = (key: SortKey) => {
     if (key === sortKey) setSortAsc(!sortAsc);
@@ -42,7 +45,7 @@ export default function OpportunitiesPage() {
       c[o.signal_type]++;
     }
     return c;
-  }, []);
+  }, [data.opportunities]);
 
   return (
     <div>

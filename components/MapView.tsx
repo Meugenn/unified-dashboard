@@ -9,12 +9,13 @@ import {
   Popup,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { data, getBlocColor, getEdgeTypeColor, formatNumber } from "@/lib/data";
+import { datasets, getBlocColor, getEdgeTypeColor, formatNumber, Region } from "@/lib/data";
+import { useRegion } from "@/lib/RegionContext";
 import type { City, Edge } from "@/lib/types";
 
 const EDGE_TYPES = ["TRADE", "POLITICAL", "CULTURAL", "MIGRATORY", "LABOUR", "INFRASTRUCTURE", "FINANCIAL"];
 
-function CityPopup({ city }: { city: City }) {
+function CityPopup({ city, region }: { city: City; region: Region }) {
   return (
     <div style={{ minWidth: 180 }}>
       <div
@@ -45,9 +46,9 @@ function CityPopup({ city }: { city: City }) {
             fontSize: 8,
             fontWeight: 600,
             letterSpacing: "0.06em",
-            background: `${getBlocColor(city.bloc)}20`,
-            color: getBlocColor(city.bloc),
-            border: `1px solid ${getBlocColor(city.bloc)}40`,
+            background: `${getBlocColor(city.bloc, region)}20`,
+            color: getBlocColor(city.bloc, region),
+            border: `1px solid ${getBlocColor(city.bloc, region)}40`,
           }}
         >
           {city.bloc}
@@ -116,21 +117,52 @@ function CityPopup({ city }: { city: City }) {
 }
 
 export default function MapView() {
+  const { region } = useRegion();
+  const data = datasets[region];
   const [activeEdgeTypes, setActiveEdgeTypes] = useState<Set<string>>(
     new Set(EDGE_TYPES)
   );
+
+  // Get region-specific map center and zoom
+  const getMapCenter = () => {
+    switch (region) {
+      case "europe":
+        return [50, 10] as [number, number];
+      case "world":
+        return [20, 0] as [number, number];
+      case "regions":
+        return [15, 20] as [number, number];
+      case "west-africa":
+      default:
+        return [9.5, -2.0] as [number, number];
+    }
+  };
+
+  const getMapZoom = () => {
+    switch (region) {
+      case "europe":
+        return 4;
+      case "world":
+        return 2;
+      case "regions":
+        return 2;
+      case "west-africa":
+      default:
+        return 5;
+    }
+  };
 
   const cityMap = useMemo(() => {
     const m = new Map<string, City>();
     for (const c of data.cities) m.set(c.id, c);
     return m;
-  }, []);
+  }, [data.cities]);
 
   const filteredEdges = useMemo(() => {
     return data.edges.filter(
       (e) => e.is_active && activeEdgeTypes.has(e.edge_type)
     );
-  }, [activeEdgeTypes]);
+  }, [data.edges, activeEdgeTypes]);
 
   const toggleEdgeType = (type: string) => {
     setActiveEdgeTypes((prev) => {
@@ -235,8 +267,8 @@ export default function MapView() {
       </div>
 
       <MapContainer
-        center={[9.5, -2.0]}
-        zoom={5}
+        center={getMapCenter()}
+        zoom={getMapZoom()}
         style={{ width: "100%", height: "100%" }}
         zoomControl={true}
       >
@@ -258,7 +290,7 @@ export default function MapView() {
                 [tgt.lat, tgt.lng],
               ]}
               pathOptions={{
-                color: getEdgeTypeColor(edge.edge_type),
+                color: getEdgeTypeColor(edge.edge_type, region),
                 weight: Math.max(1, edge.weight * 2.5),
                 opacity: 0.35,
               }}
@@ -282,15 +314,15 @@ export default function MapView() {
               center={[city.lat, city.lng]}
               radius={radius}
               pathOptions={{
-                fillColor: getBlocColor(city.bloc),
+                fillColor: getBlocColor(city.bloc, region),
                 fillOpacity: city.is_ftz_target ? 0.9 : 0.7,
-                color: city.is_ftz_target ? "#fbbf24" : getBlocColor(city.bloc),
+                color: city.is_ftz_target ? "#fbbf24" : getBlocColor(city.bloc, region),
                 weight: city.is_ftz_target ? 2 : 1,
                 opacity: 0.8,
               }}
             >
               <Popup>
-                <CityPopup city={city} />
+                <CityPopup city={city} region={region} />
               </Popup>
             </CircleMarker>
           );

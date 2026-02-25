@@ -1,7 +1,12 @@
-import { data, formatNumber, formatScore, getBlocColor, getCityName } from "@/lib/data";
+"use client";
+
+import { datasets, formatNumber, formatScore, getBlocColor, getCityName } from "@/lib/data";
 import StatCard from "@/components/StatCard";
+import { useRegion } from "@/lib/RegionContext";
 
 export default function OverviewPage() {
+  const { region } = useRegion();
+  const data = datasets[region];
   const { summary, metrics, ftz_impact, cities } = data;
 
   // Convert betweenness dict to sorted array
@@ -131,16 +136,16 @@ export default function OverviewPage() {
                     <td style={{ color: "var(--text-muted)" }}>{i + 1}</td>
                     <td>
                       <span style={{ color: "var(--text-primary)" }}>
-                        {getCityName(c.city_id)}
+                        {getCityName(c.city_id, region)}
                       </span>
                       {city && (
                         <span
                           className="bloc-badge"
                           style={{
                             marginLeft: 8,
-                            background: `${getBlocColor(city.bloc)}15`,
-                            color: getBlocColor(city.bloc),
-                            border: `1px solid ${getBlocColor(city.bloc)}30`,
+                            background: `${getBlocColor(city.bloc, region)}15`,
+                            color: getBlocColor(city.bloc, region),
+                            border: `1px solid ${getBlocColor(city.bloc, region)}30`,
                           }}
                         >
                           {city.bloc}
@@ -193,7 +198,7 @@ export default function OverviewPage() {
                     <td style={{ color: "var(--text-muted)" }}>{i + 1}</td>
                     <td>
                       <span style={{ color: "var(--text-primary)" }}>
-                        {getCityName(f.city_id)}
+                        {getCityName(f.city_id, region)}
                       </span>
                       {city && (
                         <span
@@ -261,7 +266,7 @@ export default function OverviewPage() {
             {metrics.articulation_points.length}
           </div>
           <div style={{ fontSize: 10, color: "var(--text-muted)", marginTop: 4 }}>
-            {metrics.articulation_points.slice(0, 3).map(getCityName).join(", ")}
+            {metrics.articulation_points.slice(0, 3).map(id => getCityName(id, region)).join(", ")}
             {metrics.articulation_points.length > 3 && "..."}
           </div>
         </div>
