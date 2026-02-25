@@ -1,242 +1,239 @@
-"use client";
+import { data, formatNumber, formatScore, getBlocColor, getCityName } from "@/lib/data";
+import StatCard from "@/components/StatCard";
 
-import { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
-import {
-  LineChart,
-  Line,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
-import axios from "axios";
+export default function OverviewPage() {
+  const { summary, metrics, ftz_impact, cities } = data;
 
-// Dynamically import Leaflet to avoid SSR issues
-const Map = dynamic(() => import("@/components/Map"), { ssr: false });
+  // Convert betweenness dict to sorted array
+  const topCentrality = Object.entries(metrics.betweenness)
+    .map(([cityId, betweenness]) => ({
+      city_id: cityId,
+      betweenness,
+      degree: metrics.degree[cityId] ?? 0,
+      closeness: metrics.closeness[cityId] ?? 0,
+    }))
+    .sort((a, b) => b.betweenness - a.betweenness)
+    .slice(0, 5);
 
-interface DataPoint {
-  year: string;
-  gdp: number;
-  population?: number;
-  inflation?: number;
-}
-
-export default function Home() {
-  const [globalData, setGlobalData] = useState<DataPoint[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState("");
-
-  useEffect(() => {
-    fetchGlobalData();
-  }, []);
-
-  const fetchGlobalData = async () => {
-    try {
-      // Fetch data from all repositories
-      const urls = [
-        "https://raw.githubusercontent.com/Meugenn/west-africa-data/main/data/synthetic_gdp.csv",
-        "https://raw.githubusercontent.com/Meugenn/europe-data/main/data/synthetic_gdp.csv",
-        "https://raw.githubusercontent.com/Meugenn/world-data/main/data/synthetic_gdp.csv",
-        "https://raw.githubusercontent.com/Meugenn/regions-data/main/data/synthetic_gdp.csv",
-      ];
-
-      const responses = await Promise.all(urls.map(url => axios.get(url)));
-      
-      // Parse CSV data (simplified - in real app, use proper CSV parsing)
-      const allData: DataPoint[] = [];
-      responses.forEach((response, index) => {
-        const lines = response.data.split('\n');
-        lines.slice(1).forEach((line: string) => {
-          const [year, gdp] = line.split(',');
-          if (year && gdp) {
-            allData.push({
-              year: year.trim(),
-              gdp: parseFloat(gdp.trim()) || 0,
-            });
-          }
-        });
-      });
-
-      // Aggregate data by year
-      const aggregated = allData.reduce((acc: {[key: string]: DataPoint}, item) => {
-        if (!acc[item.year]) {
-          acc[item.year] = { ...item };
-        } else {
-          acc[item.year].gdp += item.gdp;
-        }
-        return acc;
-      }, {});
-
-      const sortedData = Object.values(aggregated)
-        .sort((a, b) => parseInt(a.year) - parseInt(b.year))
-        .slice(-10); // Last 10 years
-
-      setGlobalData(sortedData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      // Fallback sample data
-      setGlobalData([
-        { year: "2015", gdp: 78000 },
-        { year: "2016", gdp: 81000 },
-        { year: "2017", gdp: 85000 },
-        { year: "2018", gdp: 89000 },
-        { year: "2019", gdp: 92000 },
-        { year: "2020", gdp: 88000 },
-        { year: "2021", gdp: 95000 },
-        { year: "2022", gdp: 98000 },
-        { year: "2023", gdp: 102000 },
-        { year: "2024", gdp: 105000 },
-      ]);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const exportToCSV = () => {
-    const headers = ["Year", "GDP"];
-    const csvContent = [
-      headers.join(","),
-      ...globalData.map(row => [row.year, row.gdp].join(","))
-    ].join("\n");
-
-    const blob = new Blob([csvContent], { type: "text/csv" });
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "global_data.csv";
-    a.click();
-  };
-
-  const filteredData = globalData.filter(item =>
-    item.year.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // Convert ftz_impact dict to sorted array
+  const topFTZ = Object.entries(ftz_impact)
+    .map(([cityId, scores]) => ({
+      city_id: cityId,
+      ...scores,
+    }))
+    .sort((a, b) => b.composite - a.composite)
+    .slice(0, 5);
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <div>
-          <h1 className="text-3xl font-bold text-gray-800">Global Dashboard</h1>
-          <p className="text-gray-600">Overview of data from all pipelines</p>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search by year..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-          <button
-            onClick={exportToCSV}
-            className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-          >
-            Export to CSV
-          </button>
-        </div>
+    <div>
+      <div style={{ marginBottom: 8 }}>
+        <span className="label-mono">Dashboard</span>
+      </div>
+      <h1
+        style={{
+          fontSize: 24,
+          fontWeight: 600,
+          marginBottom: 8,
+          color: "var(--text-primary)",
+        }}
+      >
+        Network Overview
+      </h1>
+      <p
+        style={{
+          fontSize: 12,
+          color: "var(--text-muted)",
+          marginBottom: 32,
+        }}
+      >
+        Unified network analysis summary
+      </p>
+
+      {/* Summary Stats */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+          gap: 16,
+          marginBottom: 40,
+        }}
+      >
+        <StatCard
+          label="Nodes"
+          value={summary.nodes}
+          accent="var(--accent-green)"
+        />
+        <StatCard
+          label="Edges"
+          value={summary.edges}
+          accent="var(--accent-purple)"
+        />
+        <StatCard
+          label="ECOWAS Active"
+          value={summary.ecowas_active}
+          accent="var(--accent-green)"
+        />
+        <StatCard
+          label="UEMOA / CFA"
+          value={summary.uemoa_cfa}
+          accent="var(--accent-purple)"
+        />
+        <StatCard
+          label="Suspended"
+          value={summary.suspended}
+          accent="var(--accent-red)"
+        />
+        <StatCard
+          label="Port Cities"
+          value={summary.port_cities}
+          accent="var(--accent-amber)"
+        />
+        <StatCard
+          label="FTZ Targets"
+          value={summary.ftz_targets}
+          accent="var(--accent-green)"
+        />
+        <StatCard
+          label="External"
+          value={summary.external}
+          accent="var(--text-secondary)"
+        />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* World Map */}
-        <div className="bg-white p-4 rounded-xl shadow-md">
-          <h2 className="text-xl font-semibold mb-4">World Map</h2>
-          <div className="h-96 rounded-lg overflow-hidden">
-            <Map />
+      {/* Two column layout */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: 24,
+        }}
+      >
+        {/* Top Centrality */}
+        <div className="card" style={{ padding: 24 }}>
+          <div className="label-mono" style={{ marginBottom: 16 }}>
+            Top 5 Cities by Betweenness Centrality
           </div>
-        </div>
-
-        {/* GDP Growth Chart */}
-        <div className="bg-white p-4 rounded-xl shadow-md">
-          <h2 className="text-xl font-semibold mb-4">Global GDP Growth</h2>
-          <div className="h-96">
-            {loading ? (
-              <div className="flex items-center justify-center h-full">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-              </div>
-            ) : (
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={filteredData}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="year" />
-                  <YAxis />
-                  <Tooltip />
-                  <Legend />
-                  <Line
-                    type="monotone"
-                    dataKey="gdp"
-                    stroke="#3b82f6"
-                    strokeWidth={2}
-                    name="GDP (in billions)"
-                  />
-                </LineChart>
-              </ResponsiveContainer>
-            )}
-          </div>
-        </div>
-
-        {/* Comparative Bar Chart */}
-        <div className="bg-white p-4 rounded-xl shadow-md lg:col-span-2">
-          <h2 className="text-xl font-semibold mb-4">Regional Comparison</h2>
-          <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={filteredData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="year" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="gdp" fill="#10b981" name="Total GDP" />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
-      </div>
-
-      {/* Data Table */}
-      <div className="bg-white rounded-xl shadow-md overflow-hidden">
-        <div className="p-4 border-b">
-          <h2 className="text-xl font-semibold">Raw Data</h2>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-gray-50">
+          <table className="data-table">
+            <thead>
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Year
-                </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  GDP (in billions)
-                </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Growth Rate
-                </th>
+                <th>#</th>
+                <th>City</th>
+                <th>Betweenness</th>
+                <th>Degree</th>
+                <th>Closeness</th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
-              {filteredData.map((item, index) => {
-                const prevGdp = index > 0 ? filteredData[index - 1].gdp : item.gdp;
-                const growthRate = ((item.gdp - prevGdp) / prevGdp * 100).toFixed(2);
+            <tbody>
+              {topCentrality.map((c, i) => {
+                const city = cities.find((ct) => ct.id === c.city_id);
                 return (
-                  <tr key={item.year}>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      {item.year}
+                  <tr key={c.city_id}>
+                    <td style={{ color: "var(--text-muted)" }}>{i + 1}</td>
+                    <td>
+                      <span style={{ color: "var(--text-primary)" }}>
+                        {getCityName(c.city_id)}
+                      </span>
+                      {city && (
+                        <span
+                          className="bloc-badge"
+                          style={{
+                            marginLeft: 8,
+                            background: `${getBlocColor(city.bloc)}15`,
+                            color: getBlocColor(city.bloc),
+                            border: `1px solid ${getBlocColor(city.bloc)}30`,
+                          }}
+                        >
+                          {city.bloc}
+                        </span>
+                      )}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      ${item.gdp.toLocaleString()}
+                    <td>
+                      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                        <div className="score-bar" style={{ width: 60 }}>
+                          <div
+                            className="score-bar-fill"
+                            style={{
+                              width: `${(c.betweenness / 0.4) * 100}%`,
+                              background: "var(--accent-green)",
+                            }}
+                          />
+                        </div>
+                        <span>{formatScore(c.betweenness)}</span>
+                      </div>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm">
-                      <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                        parseFloat(growthRate) >= 0 
-                          ? "bg-green-100 text-green-800" 
-                          : "bg-red-100 text-red-800"
-                      }`}>
-                        {growthRate}%
+                    <td>{formatScore(c.degree)}</td>
+                    <td>{formatScore(c.closeness)}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Top FTZ Scores */}
+        <div className="card" style={{ padding: 24 }}>
+          <div className="label-mono" style={{ marginBottom: 16 }}>
+            Top 5 Cities by FTZ Impact Score
+          </div>
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>City</th>
+                <th>Composite</th>
+                <th>Connectivity</th>
+                <th>Stability</th>
+              </tr>
+            </thead>
+            <tbody>
+              {topFTZ.map((f, i) => {
+                const city = cities.find((ct) => ct.id === f.city_id);
+                return (
+                  <tr key={f.city_id}>
+                    <td style={{ color: "var(--text-muted)" }}>{i + 1}</td>
+                    <td>
+                      <span style={{ color: "var(--text-primary)" }}>
+                        {getCityName(f.city_id)}
+                      </span>
+                      {city && (
+                        <span
+                          style={{
+                            fontSize: 9,
+                            color: "var(--text-muted)",
+                            marginLeft: 6,
+                          }}
+                        >
+                          {city.country}
+                        </span>
+                      )}
+                    </td>
+                    <td>
+                      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                        <div className="score-bar" style={{ width: 60 }}>
+                          <div
+                            className="score-bar-fill"
+                            style={{
+                              width: `${f.composite * 100}%`,
+                              background: "var(--accent-purple)",
+                            }}
+                          />
+                        </div>
+                        <span style={{ color: "var(--accent-purple)" }}>
+                          {formatScore(f.composite)}
+                        </span>
+                      </div>
+                    </td>
+                    <td>{formatScore(f.connectivity)}</td>
+                    <td>
+                      <span
+                        style={{
+                          color:
+                            f.stability < 0.4
+                              ? "var(--accent-red)"
+                              : "var(--accent-green)",
+                        }}
+                      >
+                        {formatScore(f.stability)}
                       </span>
                     </td>
                   </tr>
@@ -244,6 +241,45 @@ export default function Home() {
               })}
             </tbody>
           </table>
+        </div>
+      </div>
+
+      {/* Network metrics */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: 16,
+          marginTop: 24,
+        }}
+      >
+        <div className="card" style={{ padding: "16px 20px" }}>
+          <div className="label-mono" style={{ marginBottom: 8 }}>
+            Articulation Points
+          </div>
+          <div style={{ fontSize: 20, fontWeight: 600, color: "var(--text-primary)" }}>
+            {metrics.articulation_points.length}
+          </div>
+          <div style={{ fontSize: 10, color: "var(--text-muted)", marginTop: 4 }}>
+            {metrics.articulation_points.slice(0, 3).map(getCityName).join(", ")}
+            {metrics.articulation_points.length > 3 && "..."}
+          </div>
+        </div>
+        <div className="card" style={{ padding: "16px 20px" }}>
+          <div className="label-mono" style={{ marginBottom: 8 }}>
+            Bridge Edges
+          </div>
+          <div style={{ fontSize: 20, fontWeight: 600, color: "var(--text-primary)" }}>
+            {metrics.bridges.length}
+          </div>
+        </div>
+        <div className="card" style={{ padding: "16px 20px" }}>
+          <div className="label-mono" style={{ marginBottom: 8 }}>
+            Components
+          </div>
+          <div style={{ fontSize: 20, fontWeight: 600, color: "var(--text-primary)" }}>
+            {metrics.component_count}
+          </div>
         </div>
       </div>
     </div>

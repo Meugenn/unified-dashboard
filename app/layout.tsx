@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
+import { Sidebar } from "@/components/Sidebar";
 
-const inter = Inter({ subsets: ["latin"] });
+const jetbrains = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Unified Data Dashboard",
-  description: "Dashboard for visualizing data from multiple pipelines",
+  description: "Network analysis dashboard for unified data infrastructure",
 };
 
 export default function RootLayout({
@@ -17,14 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50`}>
-        <div className="min-h-screen flex flex-col">
-          <Navigation />
-          <main className="flex-1 p-4 md:p-6">{children}</main>
-          <footer className="bg-white border-t p-4 text-center text-gray-600">
-            <p>Unified Data Dashboard © {new Date().getFullYear()}</p>
-          </footer>
-        </div>
+      <body className={`${jetbrains.variable} antialiased`}>
+        <Sidebar />
+        <main className="main-content">{children}</main>
       </body>
     </html>
   );
